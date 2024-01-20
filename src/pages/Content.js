@@ -87,7 +87,7 @@ const meta = {
         description: "Explore Shubh Thorat's portfolio, featuring innovative projects in full stack development, AI, and big data.",
         keywords: ["Shubh Thorat", "Full Stack Developer", "AI", "Big Data", "Portfolio"]
     },
-    projects: {
+    projects: { 
         title: "Shubh Thorat",
         description: "Explore Shubh Thorat's portfolio, featuring innovative projects in full stack development, AI, and big data.",
         keywords: ["Shubh Thorat", "Full Stack Developer", "AI", "Big Data", "Portfolio"]
