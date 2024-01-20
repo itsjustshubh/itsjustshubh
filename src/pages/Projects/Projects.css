@@ -1,26 +1,26 @@
+/* Main styling for the projects page */
 .projects-page {
-    overflow-y: auto;
+    overflow-y: auto; /* Enable vertical scrolling */
     height: 100%;
     color: white;
     padding: 2vh;
     text-align: center;
 }
 
+/* Container for all project cards */
 .projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 7%;
-    margin-left: 7%;
-    margin-right: 7%;
-    margin-bottom: 5%;
-    max-width: 81%;
-    padding: 2.5vh;
+    margin: 7% 7% 5% 7%;
+    max-width: 95%;
+    padding: 1vh;
     border-radius: 4vh;
     box-shadow: 0 0 1vh rgba(0, 0, 0, 0.5);
 }
 
+/* Individual project card styling */
 .project-card {
     flex-direction: column;
     align-items: center;
@@ -28,21 +28,24 @@
     background-color: rgba(255, 255, 255, 10%);
     border-radius: 7vh;
     box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.2);
-    width: 41%;
-    margin: 1.2vh;
+    width: 42%;
+    margin: 2vh;
 }
 
+/* Top part of the project card including image and header */
 .project-top {
     display: flex;
     width: 100%;
 }
 
+/* Container for the project image */
 .project-image-container {
     flex-shrink: 0;
     text-align: start;
     padding-right: 2vh;
 }
 
+/* Styling for project images */
 .project-image, .project-image-container img {
     height: 17vh;
     width: auto;
@@ -51,11 +54,13 @@
     padding-right: 1vh;
 }
 
+/* Header section of the project card */
 .project-header {
     font-size: 4vh;
     padding-left: 2vh;
 }
 
+/* Title styling within the project header */
 .project-title {
     text-align: start;
     font-size: 5vh;
@@ -63,6 +68,7 @@
     margin: 0;
 }
 
+/* Timeline styling within the project header */
 .project-timeline {
     text-align: start;
     font-weight: bold;
@@ -70,6 +76,7 @@
     margin-top: 1.2vh;
 }
 
+/* Description section of the project card */
 .project-description {
     text-align: left;
     font-weight: bold;
@@ -78,40 +85,37 @@
     width: 100%;
 }
 
+/* Container for buttons in project card */
 .project-button-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    justify-content: center; /* Center the grid items */
+    justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 2vh;
-    margin-left: 1vh;
-    margin-right: 1vh;
+    margin: 2vh 1vh;
 }
 
+/* Individual button styling within project cards */
 .ac_btn {
-    width: auto; /* Width determined by content */
-
+    width: auto;
     background-color: rgba(255, 255, 255, 4%);
     font-weight: bold;
-    font-size: 2.4vh;
+    font-size: 2.2vh;
     border: white 0.3vh solid;
     cursor: pointer;
     border-radius: 2vh;
-    margin: 1.5vh; /* Adjust margins for spacing */
+    margin: 1.5vh;
     text-decoration: none;
     transition: color 0.6s cubic-bezier(0.55, 0, 0.1, 1),
                 border-color 0.6s cubic-bezier(0.55, 0, 0.1, 1),
                 box-shadow 0.7s cubic-bezier(0.55, 0, 0.1, 1);
-
-    white-space: normal; /* Allow text to wrap */
-    text-align: center; /* Center-align the text */
-    padding: 1.2vh 1.6vh; /* Adjust padding as necessary */
-    height: auto; /* Allow button height to expand */
-    align-items: center; /* Center content vertically */
-
-    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
-    justify-content: flex-start; /* Align buttons to the start */
+    white-space: normal;
+    text-align: center;
+    padding: 1.2vh 1.6vh;
+    height: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .ac_btn .icon, .ac_btn svg {
@@ -147,12 +151,7 @@
     color: black; /* Text color on hover */
 }
 
-.ac_btn a .fa-icon { /* Assuming .fa-icon is the class used for FontAwesome icons */
-    margin-right: 0.7vh; /* Adjust the space as needed */
-}
-
-/* If you're not using a specific class for FontAwesome icons, you can target the SVG directly */
-.ac_btn a svg {
+.ac_btn a .fa-icon, .ac_btn a svg { /* Assuming .fa-icon is the class used for FontAwesome icons */
     margin-right: 0.7vh; /* Adjust the space as needed */
 }
 
@@ -168,6 +167,7 @@
     transition: all 0.7s cubic-bezier(0.55, 0, 0.1, 1);
 }
 
+/* Styling for back button */
 .back-button {
     position: absolute;
     top: var(--back-button-top, 2%);
@@ -184,7 +184,120 @@
     align-items: center;
 }
 
+/* Styling for back button icon */
 .back-button-icon {
     font-size: 3vh;
     margin-right: 2vh;
+}
+
+/* Responsive adjustments for mobile screens */
+@media screen and (max-width: 600px) {
+    .body {
+        /* Adjustments for the body on mobile */
+        overflow: hidden; /* Enable vertical scrolling */
+    }
+
+    .projects-page {
+        /* Adjustments for the main projects page on mobile */
+        padding: 2vh 0; /* Adjust padding to have no horizontal padding */
+        /*overflow: hidden; !* Disable horizontal scrolling *!*/
+    }
+
+    /* Container for all project cards */
+    .projects-container {
+        /* Adjust the container for mobile */
+        display: flex;
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center align project cards horizontally */
+        justify-content: flex-start; /* Align items from the start vertically */
+        margin: 5% auto; /* Adjust margin to center the container */
+        max-width: 94%; /* Adjust maximum width */
+        left: 0; /* Reset left alignment */
+        padding: 0; /* Remove padding */
+        padding-bottom: 10vh;
+        /*overflow: auto;*/
+    }
+
+    .project-card {
+        /* Adjust project cards for center alignment */
+        max-width: 78.5%; /* Adjust maximum width */
+        width: 100%; /* Full width for each project card */
+    }
+
+    .project-top {
+        /* Adjust the top part of the project card for mobile */
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .project-image-container {
+        /* Adjust the project image container for mobile */
+        text-align: center; /* Center align images */
+        padding: 1vh 0; /* Adjust padding */
+    }
+
+    .project-image, .project-image-container img {
+        /* Adjust project images for mobile */
+        height: 9vh; /* Adjust height for better visibility */
+        padding: 0; /* Remove left and right padding */
+    }
+
+    .project-header {
+        /* Adjust project header for mobile */
+        font-size: 4vh; /* Smaller font size */
+        padding: 0; /* Remove left padding */
+    }
+
+    .project-title {
+        font-size: 3.5vh;
+    }
+
+    .project-timeline {
+        font-size: 2.5vh;
+    }
+
+    .project-description {
+        font-size: 2vh;
+    }
+
+    .project-title, .project-timeline, .project-description {
+        /* Adjust text alignment for all textual elements */
+        text-align: center; /* Center align text */
+    }
+
+    .project-description {
+        /* Adjust text alignment for all textual elements */
+        text-align: left; /* Center align text */
+    }
+
+    .project-button-container {
+        /* Adjust button container for mobile */
+        grid-template-columns: 1fr; /* Single column layout */
+        justify-content: center; /* Center the grid items */
+        width: 100%; /* Full width */
+        margin: 2vh 0; /* Adjust margin */
+    }
+
+    .ac_btn {
+        /* Adjust project buttons for mobile */
+        font-size: 2.5vh; /* Increase font size for readability */
+        padding: 1.5vh 2vh; /* Adjust padding */
+        margin: 1vh 0; /* Adjust margin */
+    }
+
+    .ac_btn .icon, .ac_btn svg {
+        /* Adjust icon size within buttons */
+        height: 3vh; /* Increase icon size */
+        margin-right: 1vh; /* Adjust margin */
+    }
+
+    /* Adjust back button for mobile */
+    .back-button {
+        font-size: 2.5vh; /* Smaller font size */
+        top: 5%; /* Adjust position */
+        left: 5%; /* Adjust position */
+    }
+
+    .back-button-icon {
+        font-size: 2.5vh; /* Smaller icon size */
+    }
 }

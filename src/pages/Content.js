@@ -11,6 +11,7 @@ import { backgroundVideo,
     ryanInternationalSchoolLogo,
 
     // Icons
+    personWalkingArrowLoopLeft,
     devpost,
     instagram,
     awtl,
@@ -81,9 +82,16 @@ import {
 
 // Content Configuration
 const meta = {
-    title: "Shubh Thorat - Full Stack Developer",
-    description: "Explore Shubh Thorat's portfolio, featuring innovative projects in full stack development, AI, and big data.",
-    keywords: ["Shubh Thorat", "Full Stack Developer", "AI", "Big Data", "Portfolio"]
+    home: {
+        title: "Shubh Thorat",
+        description: "Explore Shubh Thorat's portfolio, featuring innovative projects in full stack development, AI, and big data.",
+        keywords: ["Shubh Thorat", "Full Stack Developer", "AI", "Big Data", "Portfolio"]
+    },
+    projects: {
+        title: "Shubh Thorat",
+        description: "Explore Shubh Thorat's portfolio, featuring innovative projects in full stack development, AI, and big data.",
+        keywords: ["Shubh Thorat", "Full Stack Developer", "AI", "Big Data", "Portfolio"]
+    },
 };
 
 const styling = {
@@ -207,7 +215,7 @@ const education = [
   // Add more entries below
 ];
 
-const socialprofils = [
+const socialProfiles = [
     {
         name: "Github",
         color: "rgb(0,62,84)",
@@ -261,11 +269,32 @@ const socialprofils = [
 const projects = [
     {
         hours: "1",
+        name: "Project Loading Screen",
+        backgroundColor: "rgb(255,99,71,50%)", // Example background color
+        image: personWalkingArrowLoopLeft,
+        timeline: "Jan 2023 - Present", // Example timeline
+        description: "'Project Loading Screen' is an inventive display of the iconic Apple and Windows loading screens, refined to perfection. This project, developed by Shubh Thorat, presents these familiar visuals in a perpetual loop, turning a simple concept into an intriguing endless experience.\n" +
+            "\n" +
+            "Designed to showcase exceptional React skills, this project playfully explores the boundaries of user patience and perception. It’s an artistic interpretation of the endless wait, offering a polished, mesmerizing version of the screens we often encounter but rarely appreciate. Enjoy this endless journey through the most iconic loading screens, crafted to captivate and amuse.",
+
+        buttons: [
+            {
+                buttonIcon: faChrome,
+                buttonText: "Explore Project Loading Screen",
+                buttonLink: "https://project-loading-screen.vercel.app/",
+            },
+            // ... other buttons if needed ...
+        ]
+    },
+    {
+        hours: "1",
         name: "A Will To Live (AWTL)",
         backgroundColor: "rgb(0,62,84,50%)",
         image: awtl,
         timeline: "Oct 2020 - Dec 2021",
-        description: "AWTL, a project close to my heart, focuses on aiding individuals battling mental health challenges. The initiative provides resources and support, fostering a community where everyone feels empowered to seek the help they need. My role as President of Technology and Logistics involved spearheading the website development, strategizing marketing approaches, and partnering with social influencers to promote wellness.",
+        description: "AWTL, a project close to my heart, focuses on aiding individuals battling mental health challenges. The initiative provides resources and support, fostering a community where everyone feels empowered to seek the help they need.\n" +
+            "\n" +
+            "My role as President of Technology and Logistics involved spearheading the website development, strategizing marketing approaches, and partnering with social influencers to promote wellness.\n",
 
         buttons: [
             {
@@ -286,7 +315,9 @@ const projects = [
         backgroundColor: "rgb(0,123,255,30%)",
         image: socialCloud,
         timeline: "Aug 2020 - Dec 2021",
-        description: "Social Cloud is an innovative platform where business ideas meet big data for a noble cause – supporting NGOs and Charities. I was part of an enthusiastic student team that built this unique agency, specializing in customized social marketing. Our efforts aimed to harness the power of digital platforms to create positive global impact.",
+        description: "Social Cloud is an innovative platform where business ideas meet big data for a noble cause – supporting NGOs and Charities. I was part of an enthusiastic student team that built this unique agency, specializing in customized social marketing.\n" +
+            "\n" +
+            "Our efforts aimed to harness the power of digital platforms to create positive global impact.\n",
 
         buttons: [
             {
@@ -307,7 +338,9 @@ const projects = [
         backgroundColor: "rgb(255,165,0,50%)",
         image: faPaintbrush,
         timeline: "Feb 2020 - Present",
-        description: "My journey in Graphic Design began with a keen interest in video production and typography. I focus on creating instructional tech videos, aiming to bridge the technology gap for seniors. My work, which began with assisting the older generation in technology adoption, has now expanded to collaborating on diverse multimedia projects.",
+        description: "My journey in Graphic Design began with a keen interest in video production and typography. I focus on creating instructional tech videos, aiming to bridge the technology gap for seniors.\n" +
+            "\n" +
+            "My work, which began with assisting the older generation in technology adoption, has now expanded to collaborating on diverse multimedia projects.\n",
 
         buttons: [
             {
@@ -328,7 +361,9 @@ const projects = [
         backgroundColor: "rgb(256,256,256,25%)",
         image: edith,
         timeline: "Oct 2023 - Present",
-        description: "Edith redefines planning in the digital age, seamlessly integrating life's many facets into a single, intuitive planner. More than just a scheduling tool, Edith offers academic planning, mood-based music suggestions, astrological insights, and activity planning based on weather forecasts. This project, developed using agile methodologies and diverse APIs, stands out by prioritizing holistic well-being in daily organization.",
+        description: "Edith redefines planning in the digital age, seamlessly integrating life's many facets into a single, intuitive planner. More than just a scheduling tool, Edith offers academic planning, mood-based music suggestions, astrological insights, and activity planning based on weather forecasts.\n" +
+            "\n" +
+            "This project, developed using agile methodologies and diverse APIs, stands out by prioritizing holistic well-being in daily organization.\n",
 
         buttons: [
             {
@@ -419,7 +454,7 @@ export {
     data,
     skills,
     education,
-    socialprofils,
+    socialProfiles,
     projects,
     errorPage,
 };

@@ -13,6 +13,7 @@ export { default as podarInternationalSchoolLogo } from '../assets/images/educat
 export { default as ryanInternationalSchoolLogo } from '../assets/images/education/ryan-international.png';
 
 // Exporting icon assets
+export { default as personWalkingArrowLoopLeft } from "../assets/icons/person-walking-arrow-loop-left.svg";
 export { default as devpost } from '../assets/icons/devpost.svg';
 export { default as instagram } from '../assets/icons/instagram.svg';
 export { default as awtl } from '../assets/icons/awtl.svg';

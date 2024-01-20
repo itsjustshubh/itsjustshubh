@@ -5,36 +5,48 @@ import { faArrowCircleLeft } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from 'react-router-dom';
 import { errorPage } from '../Content';
 
+/**
+ * NotFoundPage component renders a 404 error page.
+ * It displays a title, subtitle, a navigational button, and rotating quotes.
+ */
 const NotFoundPage = () => {
     const navigate = useNavigate();
     const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
     const [fadeOut, setFadeOut] = useState(false);
 
+    /**
+     * Effect to hide the navbar when the page is rendered.
+     */
     useEffect(() => {
-        // Hide the navbar
         const navbar = document.querySelector('.navbar');
         if (navbar) navbar.style.display = 'none';
 
-        // Reset the navbar style when component unmounts
+        // Reset the navbar style on component unmount
         return () => {
             if (navbar) navbar.style.display = '';
         };
     }, []);
 
+    /**
+     * Navigates to the specified page when the button is clicked.
+     */
     const goToPage = () => {
         navigate(errorPage.button.link);
     };
 
+    /**
+     * Effect to handle the rotation and fading of quotes.
+     */
     useEffect(() => {
         const interval = setInterval(() => {
-            setFadeOut(true); // Start fade out
+            setFadeOut(true);
             setTimeout(() => {
                 setCurrentQuoteIndex(prevIndex =>
                     (prevIndex + 1) % errorPage.quotes.length
                 );
-                setFadeOut(false); // Reset for fade in
-            }, 1000); // Change quote after fade out (1s duration)
-        }, 4000); // Change quote every 4 seconds (includes 1s for fade out)
+                setFadeOut(false);
+            }, 1000);
+        }, 4000);
 
         return () => clearInterval(interval);
     }, []);

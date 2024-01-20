@@ -134,9 +134,9 @@ function Home({loaded}) {
   return (
     <div>
       <Helmet>
-        <title>{meta.title}</title>
-        <meta name="description" content={meta.description} />
-        <meta name="keywords" content={meta.keywords.join(", ")} />
+        <title>{meta.home.title}</title>
+        <meta name="description" content={meta.home.description} />
+        <meta name="keywords" content={meta.home.keywords.join(", ")} />
         {/* Add other meta tags as needed */}
       </Helmet>
 

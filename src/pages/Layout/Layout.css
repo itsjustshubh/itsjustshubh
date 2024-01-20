@@ -1,11 +1,14 @@
+/* Main layout background styling */
 .layout-background {
   cursor: none; /* Hides the default cursor */
   position: fixed;
+  z-index: 0;
   width: 100%;
   height: 100%;
   overflow-y: auto;
 }
 
+/* Styling for background video */
 .background-video {
   position: fixed;
   top: 0;
@@ -16,32 +19,51 @@
   z-index: -1;
 }
 
+/* Styling for the second layout button */
+.layout-button-two {
+  margin-left: calc(0.15vh + 0.15vw);
+  border-radius: 20%;
+  border: white 0.25vh solid;
+  font-size: calc(0.6vh + 0.6vw);
+  height: inherit;
+  aspect-ratio: 1 / 1;
+  background-color: transparent;
+}
+
+/* Styling for the first layout button */
 .layout_button {
-  border: white 0.2vh solid;
-  /*height: 2vh;*/
-  /*width: 2vh;*/
+  border: white 0.25vh solid;
   border-radius: 20%;
   background-color: transparent;
   font-weight: bold;
   color: white;
   transition: border 0.5s ease;
+  margin-left: 1vh;
+  height: inherit;
+  aspect-ratio: 1 / 1;
+  padding: calc(0.05vh + 0.05vw);
+  padding-left: calc(0.3vh + 0.3vw);
+  padding-right: calc(0.3vh + 0.3vw);
+  font-size: calc(0.6vh + 0.6vw);
 }
 
+/* Styling for the navigation bar */
 .navbar {
   position: fixed;
-  top: 4%; /* Adjust as needed to create space from the top */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust position to truly center based on width */
-  width: 50%; /* Adjust width as necessary */
-  border-radius: 5vh; /* Rounds the corners */
-  display: flex; /* Enables Flexbox */
-  justify-content: space-around; /* Spaces items evenly */
-  align-items: center; /* Align items vertically */
+  top: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  border-radius: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   font-weight: bold;
   font-size: 2vh;
   z-index: 1;
 }
 
+/* Styling for navigation list */
 .navbar ul {
   list-style-type: none;
   margin: 0;
@@ -52,84 +74,80 @@
   align-items: center;
 }
 
+/* Styling for each navigation list item */
 .navbar ul li {
-  background-color: rgb(0, 0, 0, 80%);
-  flex: 1; /* Distribute space evenly */
+  background-color: rgba(0, 0, 0, 0.8);
+  flex: 1;
   text-align: center;
-  margin: 0 0.5%; /* Adjust margins to ensure even spacing */
+  margin: 0 0.5%;
   border-radius: 5vh;
 }
 
+/* Base styling for navigation links */
 .nav-link {
   display: block;
   color: white;
   padding: 1.5vh 1.6vh;
   border-radius: 5vh;
   text-decoration: none;
-  transition: box-shadow 0.5s ease; /* Smooth transition effect */
-  box-shadow: inset 0 0 0 0 navajowhite;
+  box-shadow: inset 0 0 1vh 0 whitesmoke;
+  transition: box-shadow 1s ease, background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
+/* Styling for navigation links on hover */
 .nav-link:hover {
-  box-shadow: inset 0 0 1vh 0 navajowhite; /* Shadow covers the button area */
+  box-shadow: inset 0 0 2vh 0 black;
   font-weight: bold;
-  color: black; /* Optional: Change text color on hover */
-  .layout_button {
-    border: firebrick 0.2vh solid;
-    color: grey;
-  }
+  color: black;
+  background-color: navajowhite;
 }
 
+/* Styling for active navigation links */
 .nav-link-active {
-  background-color: transparent; /* Replace with your highlight color */
+  background-color: transparent;
   border: navajowhite 0.5vh solid;
   padding: 1.1vh 1.6vh;
-  .layout_button {
-    border: navajowhite 0.2vh solid;
-  }
 }
 
+/* Responsive design adjustments for smaller screens */
 @media screen and (max-width: 600px) {
-    .layout-background {
-        cursor: auto;
-    }
-
+    /* Hide the default navbar on mobile */
     .navbar {
-        background-color: navajowhite;
-        position: fixed; /* Stick navbar to the bottom of the viewport */
-        top: 90%; /* Align to the bottom */
-        border-radius: 0;
-        font-size: 1vh;
-        width: 100%; /* Ensure it covers the full width */
-        margin: 0; /* Remove any margins */
-        padding: 2vh 2vh; /* Adjust padding if necessary */
-        z-index: 10; /* Ensure it's above other elements */
+        display: none;
     }
 
-    .navbar ul {
-      display: flex; /* Enable flexbox */
-      justify-content: space-around; /* Adjust as per design */
-      width: 100%; /* Ensure the full width is used */
+    /* Mobile icon navbar styling */
+    .mobile-icon-navbar {
+        position: fixed; /* Fixed at the bottom */
+        bottom: 0;
+        left: 0;
+        width: 100%; /* Full width */
+        height: 9.5vh; /* Fixed height */
+        background-color: black; /* Black background for the navbar */
+        box-shadow: 0 -2px 5px white; /* White shadow for depth and separation */
+        display: flex; /* Flex layout for the icons */
+        justify-content: space-around; /* Space out icons evenly */
+        align-items: center; /* Center items vertically */
+        z-index: 1; /* Ensure it's above other elements */
     }
 
-    .navbar ul li {
-      border-radius: 0;
-      margin: 0; /* Remove margin */
-      width: auto; /* Allow each item to size naturally */
-      padding: 0 0; /* Add some vertical padding for better tap targets */
+    /* Style for each icon link in the navbar */
+    .mobile-icon-navbar a {
+        display: flex;
+        align-items: center; /* Center align items */
+        justify-content: center; /* Center justify items */
+        text-decoration: none; /* Remove text decoration */
+        color: white; /* White color for the icons */
     }
 
-    .nav-link {
-      padding: 0; /* Adjust as per design */
+    .mobile-icon-navbar a.active svg {
+        color: #00BFFF; /* Or any color you prefer for the active state */
     }
 
-    .nav-link:hover {
-      padding: 0; /* Adjust as per design */
+    /* Style for the icons */
+    .mobile-icon-navbar a svg {
+        width: 3.5vh; /* Width of the icon */
+        padding-bottom: 2.5vh;
+        height: auto; /* Height of the icon */
     }
-
-    .nav-link-active {
-      padding: 0; /* Adjust as per design */
-    }
-
-    /* Adjustments for nav-link if necessary */
 }

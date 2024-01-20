@@ -1,63 +1,102 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { projects } from '../Content'; // Update the path if necessary
+import { Helmet } from 'react-helmet';
+import { meta, projects } from '../Content'; // Ensure this path is correct
 import './Projects.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Masonry from 'masonry-layout';
 import imagesLoaded from 'imagesloaded';
 
+/**
+ * Projects component displays a list of projects with Masonry layout.
+ */
 function Projects() {
     const navigate = useNavigate();
 
+    /**
+     * Checks if the provided icon is an SVG.
+     * @param {string|Object} icon - The icon to check.
+     * @returns {boolean} True if icon is an SVG, false otherwise.
+     */
     const isSvgIcon = (icon) => {
-        // Check if the icon is not a FontAwesome object
         return !(icon && icon.prefix && icon.iconName);
     };
 
-
+    /**
+     * Navigates back to the home page.
+     */
     const handleBackClick = () => {
         navigate('/');
     };
 
+    /**
+     * Renders the project description.
+     * @param {string} description - The project description text.
+     * @returns {JSX.Element} The formatted description.
+     */
     const renderDescription = (description) => {
         return description.split('\n').map((line, index) => (
             <React.Fragment key={index}>{line}<br /></React.Fragment>
         ));
     };
 
+    /**
+     * Sets up the Masonry layout for project cards.
+     */
     useEffect(() => {
-    // Masonry setup for project cards
+        // Initialize Masonry for the projects container
         const msnry = new Masonry('.projects-container', {
             itemSelector: '.project-card',
             columnWidth: '.project-card',
             percentPosition: true
         });
 
+        // Layout Masonry after images have loaded
         imagesLoaded('.projects-container', () => {
             msnry.layout();
         });
 
-        // Masonry setup for each button container
+        // Initialize Masonry for each button container
         document.querySelectorAll('.project-button-container').forEach(container => {
             const buttonMsnry = new Masonry(container, {
                 itemSelector: '.ac_btn',
-                columnWidth: 1 // Assuming the width of each button is the same
+                columnWidth: 1 // Assuming equal width for all buttons
             });
 
+            // Layout Masonry after images have loaded
             imagesLoaded(container, () => {
                 buttonMsnry.layout();
             });
         });
     }, []);
 
+    /**
+     * Renders the icon, either as an image, SVG, or FontAwesome icon.
+     * @param {string|Object} icon - The icon to render.
+     * @returns {JSX.Element} The icon component.
+     */
     const renderIcon = (icon) => {
-        return isSvgIcon(icon) ? (
-            <img src={icon} className="icon" alt="Icon" />
-        ) : (
-            <FontAwesomeIcon icon={icon} />
-        );
+        // Check if the icon is a string (URL to an image or SVG)
+        if (typeof icon === 'string') {
+            return <img src={icon} className="icon" alt="Icon" />;
+        }
+        // Check if the icon is a FontAwesome object
+        else if (icon && icon.prefix && icon.iconName) {
+            return <FontAwesomeIcon icon={icon} />;
+        }
+        // Handle other cases (e.g., JavaScript imported images)
+        else {
+            // Assuming the icon is imported as a JavaScript image
+            return <img src={icon} className="icon" alt="Icon" />;
+        }
     };
 
+    /**
+     * Renders a project button.
+     * @param {Object} button - The button object to render.
+     * @param {number} key - The key for React list rendering.
+     * @returns {JSX.Element} The button component.
+     */
     const renderButton = (button, key) => {
         return (
             <div className="ac_btn" key={key}
@@ -83,14 +122,18 @@ function Projects() {
     };
 
     // Sorting projects in descending order based on hours
-    const sortedProjects = [...projects].sort((a, b) => {
-        const hoursA = a.hours || 0; // Default to 0 if hours is not given
-        const hoursB = b.hours || 0; // Default to 0 if hours is not given
-        return hoursB - hoursA; // Descending order
+    const sortedProjects = projects.sort((a, b) => {
+        return (b.hours || 0) - (a.hours || 0);
     });
 
     return (
         <div className="projects-page">
+            <Helmet>
+                <title>{meta.projects.title}</title>
+                <meta name="description" content={meta.projects.description} />
+                <meta name="keywords" content={meta.projects.keywords.join(", ")} />
+                {/* Add other meta tags as needed */}
+            </Helmet>
             <div className="projects-container">
                 {sortedProjects.map((project, index) => (
                     <div key={index} className="project-card"

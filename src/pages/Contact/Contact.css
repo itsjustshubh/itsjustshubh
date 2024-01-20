@@ -62,3 +62,52 @@
     width: auto; /* Maintain aspect ratio */
     margin-right: 10px;
 }
+
+/* Responsive adjustments for mobile screens */
+@media screen and (max-width: 600px) {
+    .contact-page {
+        /* Adjust the layout for mobile */
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        min-height: 90vh;
+    }
+
+    .contact-container {
+        /* Adjust the container for mobile */
+        margin-top: -25%; /* Adjust this value as needed */
+        height: auto; /* Auto height for flexible content */
+        max-width: 100%;
+        padding-top: 2vh; /* Adjusted padding at the top */
+    }
+
+    .contact-header {
+        /* Adjust the header font size for mobile */
+        font-size: 3vh;
+    }
+
+    .social-links {
+        /* Adjust the social links layout for mobile */
+        flex-direction: column; /* Stack social links vertically */
+        width: 100%; /* Use full container width */
+    }
+
+    .social-link, .icon {
+        font-size: 5vh; /* Increase font size for readability */
+        height: 5vh; /* Increase icon size */
+    }
+
+    .social-link {
+        /* Adjust the social link buttons for mobile */
+        margin: 1.3vh 0; /* Adjust margin for stacked layout */
+        padding: 1vh 2vh; /* Increase padding for touch targets */
+        width: auto; /* Allow the width to adjust based on content */
+        flex-grow: 1; /* Allow buttons to grow and fill space */
+        text-align: center; /* Center the text and icon */
+    }
+
+    .icon {
+        /* Adjust the icon size for mobile */
+        margin-right: 2vh; /* Adjust margin between icon and text */
+    }
+}

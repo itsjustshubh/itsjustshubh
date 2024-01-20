@@ -14,34 +14,6 @@ body {
   position: relative;
 }
 
-/* Navigation Link Styles */
-.vertical-menu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 25%;
-  left: 3%;
-  z-index: 1;
-  color: white;
-  line-height: 5vh;
-  font-weight: bold;
-  font-size: 3.5vh;
-  font-family: Helvetica, sans-serif;
-  text-align: left;
-}
-
-.nav-link {
-  color: white;
-  text-decoration: none;
-  font-size: 1em; /* Relative font size */
-}
-
-.nav-link:hover {
-  color: dimgrey;
-  text-decoration: none;
-}
-
 /* Loading Animation Styles */
 .loading-background {
   position: absolute;
@@ -123,7 +95,8 @@ body {
   position: absolute;
   top: 30%;
   color: white;
-  font-size: 10vh;
+  /*font-size: 10vh;*/
+  font-size: calc(3.6vh + 3.6vw);
   font-weight: bold;
 }
 
@@ -134,7 +107,8 @@ body {
   position: absolute;
   top: 36%;
   color: white;
-  font-size: 8vh;
+  /*font-size: 8vh;*/
+  font-size: calc(2.9vh + 2.9vw);
 }
 
 .description {
@@ -142,32 +116,34 @@ body {
   position: absolute;
   top: 55%;
   color: white;
-  font-size: 2.3vh;
   line-height: 1.5;
   font-family: 'Questrial', sans-serif;
   font-weight: bold;
-  max-width: 90vh;
   text-align: left;
+  /*font-size: 2.3vh;*/
+  /*max-width: 100vh;*/
+  max-width: calc(20vh + 50vw);  /* Reduced reliance on vh to adjust for reduced height */
+  font-size: calc(0.5vh + 1vw); /* Increased vw proportion for consistent font size relative to width */
 }
 
 .home_project_btn_container {
   position: absolute;
   top: 35%;
-  left: 70%;
+  right: 1%;
   border-radius: 5vh;
 
   /* Optional: additional styling */
-  width: 40vh; /* Example width */
-  height: 55vh; /* Example height */
+  width: 47vh; /* Example width */
+  height: 60vh; /* Example height */
   /*transform: translate(-50%, -50%); !* Center the element at the specified position *!*/
   padding: 2vh; /* Example padding */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Adjust the space between buttons */
+  gap: 2vh; /* Adjust the space between buttons */
   justify-content: flex-start; /* Align buttons to the start */
   align-items: flex-start; /* Align items at the start vertically */
-  overflow: auto; /* Hide overflow */
+  overflow: hidden; /* Hide overflow */
 }
 
 .home_project_btn {
@@ -193,7 +169,7 @@ body {
   min-width: 30%; /* Minimum width of each button, adjust as needed */
   margin: 0.1vh; /* Reduced margin */
   font-size: 4.5vh; /* Reduced font size, adjust as needed */
-  padding: 0.3vh 1vh; /* Adjusted padding, modify as needed */
+  padding: 1vh 1vh; /* Adjusted padding, modify as needed */
   text-overflow: ellipsis; /* Add an ellipsis for overflowed text */
   overflow: hidden; /* Hide text overflow */
   white-space: nowrap; /* Prevent text from wrapping */
@@ -202,9 +178,9 @@ body {
 }
 
 .home_project_btn .icon, .home_project_btn svg {
-    height: 3.8vh; /* Adjust based on your design */
+    height: 5vh; /* Adjust based on your design */
     width: auto; /* Maintain aspect ratio */
-    margin-right: 0.7vh; /* Space between icon and text */
+    margin-right: 1vh; /* Space between icon and text */
 }
 
 .home_project_btn:hover {
@@ -215,7 +191,7 @@ body {
 
 .skillText_container {
   top: 30%;
-  left: 71%;
+  right: 6%;
   position: absolute;
   width: 40vh;
   height: 6vh;

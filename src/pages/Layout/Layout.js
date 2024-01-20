@@ -1,90 +1,112 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useState } from 'react';
 import AnimatedCursor from 'react-animated-cursor';
 import { styling } from "../Content";
 import { useLocation, NavLink } from 'react-router-dom';
+import { FaHome, FaGraduationCap, FaBriefcase, FaEnvelope } from 'react-icons/fa';
 import './Layout.css';
 
+/**
+ * Layout component used to structure the main layout of the application.
+ *
+ * @param {Object} props - The component props.
+ * @param {React.ReactNode} props.children - The children elements to be rendered within the layout.
+ * @param {boolean} props.loading - The loading state of the application.
+ * @returns {React.ReactElement} - The rendered layout component.
+ */
 function Layout({ children, loading }) {
-  const cursorConfig = {
-      innerSize: 0.015 * window.innerHeight, // Size of the inner cursor circle
-      outerSize: 0.04 * window.innerHeight, // Size of the outer cursor circle
-      color: '256, 256, 256', // RGB equivalent of orangered
-      outerAlpha: 0.4, // Transparency of the outer cursor circle
-      innerScale: 0.5, // Scale of the inner cursor circle on hover
-      outerScale: 2, // Scale of the outer cursor circle on hover
-  };
-
-  function preloadImagesFromDirectory(directory) {
-      const images = directory.keys().map(directory);
-      images.forEach((imageSrc) => {
-        const img = new Image();
-        img.src = imageSrc;
-      });
-  }
-
-  function preloadVideo(videoSrc) {
-    const video = document.createElement('video');
-    video.src = videoSrc;
-    video.onloadeddata = () => {
-      console.log('Background video preloaded');
-    };
-  }
+  // Initialize isMobile state with a function to ensure window object is available
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth < 600;
+    }
+    return false; // Default value if window is not available
+  });
 
   useEffect(() => {
-    // Preload images
-    const imagesDirectory = require.context('../../assets/images', false, /\.(png|jpe?g|svg)$/);
-    preloadImagesFromDirectory(imagesDirectory);
+    const handleResize = () => {
+      if (typeof window !== 'undefined') {
+        setIsMobile(window.innerWidth < 600);
+      }
+    };
 
-    // Preload background video
-    preloadVideo(styling.background);
+    window.addEventListener('resize', handleResize);
+    // Call handleResize initially in case the initial width is not < 600
+    handleResize();
+
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Configuration for the animated cursor
+  const cursorConfig = {
+    innerSize: 0.007 * window.innerHeight + 0.007 * window.innerWidth,
+    outerSize: 0.02 * window.innerHeight + 0.02 * window.innerWidth,
+    color: '256, 256, 256', // RGB equivalent of orangered
+    outerAlpha: 0.4,
+    innerScale: 0.5,
+    outerScale: 2,
+  };
+
+  // Hook to access the current location
   const location = useLocation();
 
-  const isActive = (path) => {
-    return location.pathname === path;
-  };
+  /**
+   * Determines if the provided path is the active route.
+   *
+   * @param {string} path - The path to check against the current location.
+   * @returns {boolean} - True if the path is active, false otherwise.
+   */
+  const isActive = (path) => location.pathname === path;
 
   return (
       <div className="layout-background">
-          <div className="navbar">
-              <ul>
-                  <li><NavLink to="/" className={isActive('/') ? 'nav-link nav-link-active' : 'nav-link'}>
-                      Home&nbsp;
-                      <button className="layout_button">
-                          /
-                      </button>
-                  </NavLink>
-                  </li>
-                  <li><NavLink to="/education"
-                               className={isActive('/education') ? 'nav-link nav-link-active' : 'nav-link'}>Education</NavLink>
-                  </li>
-                  <li><NavLink to="/projects"
-                               className={isActive('/projects') ? 'nav-link nav-link-active' : 'nav-link'}>Projects</NavLink>
-                  </li>
-                  <li><NavLink to="/contact"
-                               className={isActive('/contact') ? 'nav-link nav-link-active' : 'nav-link'}>Contact</NavLink>
-                  </li>
-              </ul>
-          </div>
-          <AnimatedCursor {...cursorConfig} />
-          <video className="background-video" autoPlay muted loop playsInline>
-              <source src={styling.background} type="video/mp4"/>
-          </video>
+        <div className="navbar">
+          <ul>
+            <li>
+              <NavLink to="/" className={isActive('/') ? 'nav-link nav-link-active' : 'nav-link'}>
+                Home&nbsp;
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/education" className={isActive('/education') ? 'nav-link nav-link-active' : 'nav-link'}>
+                Education
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/projects" className={isActive('/projects') ? 'nav-link nav-link-active' : 'nav-link'}>
+                Projects
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" className={isActive('/contact') ? 'nav-link nav-link-active' : 'nav-link'}>
+                Contact
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        <AnimatedCursor {...cursorConfig} />
+        <video className="background-video" autoPlay muted loop playsInline>
+          <source src={styling.background} type="video/mp4"/>
+        </video>
+        {children}
 
-          {children}
+        {isMobile && (
+        <div className="mobile-icon-navbar">
+          <NavLink to="/" className={isActive('/') ? 'active' : ''}>
+            <FaHome/>
+          </NavLink>
+          <NavLink to="/education" className={isActive('/education') ? 'active' : ''}>
+            <FaGraduationCap/>
+          </NavLink>
+          <NavLink to="/projects" className={isActive('/projects') ? 'active' : ''}>
+            <FaBriefcase/>
+          </NavLink>
+          <NavLink to="/contact" className={isActive('/contact') ? 'active' : ''}>
+            <FaEnvelope/>
+          </NavLink>
+        </div>
+        )}
       </div>
   );
 }
-
-document.querySelectorAll('.navbar ul li a').forEach(item => {
-    item.addEventListener('mouseover', () => {
-        item.style.transition = 'all 0.8s ease-in';
-    });
-
-    item.addEventListener('mouseout', () => {
-        item.style.transition = 'all 0.5s ease-out';
-    });
-});
 
 export default Layout;

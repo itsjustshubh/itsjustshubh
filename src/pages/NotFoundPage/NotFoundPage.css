@@ -86,3 +86,37 @@
 .fade-out {
     animation: fadeOut 1s ease;
 }
+
+/* Responsive adjustments for mobile screens */
+@media screen and (max-width: 600px) {
+    .page__title {
+        /* Adjust the title size for mobile */
+        font-size: 15vh; /* Smaller font size for mobile */
+        margin-top: 3vh; /* Less margin on top */
+    }
+
+    .page__subtitle {
+        /* Adjust the subtitle size for mobile */
+        font-size: 2vh;
+        left: 50%;
+        max-width: 80%;
+    }
+
+    .page__text, .page__text__writer {
+        /* Adjust the text size for mobile */
+        font-size: 1.3vh;
+        max-width: 100%;
+    }
+
+    .page__button {
+        /* Adjust the button size and padding for mobile */
+        padding: 1vh 1vh;
+        font-size: 2vh;
+    }
+
+    .quote-container {
+        /* Adjust the quote container for mobile */
+        margin-top: 10vh; /* Less margin */
+        max-width: 90%; /* Increase max-width for better readability */
+    }
+}
