@@ -31,12 +31,14 @@ jobs:
         with:
           node-version: '14' # Use the Node.js version that matches your environment
       - run: npm install
+      - name: Bundle Update Script
+        run: npm run bundle-update-script
       - name: Update README
-        run: node src/updateReadme.js # Ensure this is the correct path to your script
+        run: node dist/updateReadmeBundle.js
       - name: Commit and push if README changed
         run: |
           git config --local user.email "reapers-arras.0y@icloud.com"
-          git config --local user.name "Shubh Thorat"
+          git config --local user.name "Automated Updater"
           git add README.md
           git commit -m "Update README" -a || exit 0
           git push
