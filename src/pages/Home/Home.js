@@ -130,18 +130,37 @@ function Home({loaded}) {
     ));
 };
 
+  useEffect(() => {
+    // Create a link element for the favicon
+    const link = document.createElement('link');
+    link.rel = 'icon';
+    link.href = meta.home.favicon;
+
+    // Append the link to the head of the document
+    document.head.appendChild(link);
+
+    // Remove the link when the component unmounts
+    return () => {
+      document.head.removeChild(link);
+    };
+  }, []);
+
+  // Fallback logic for images
+  const faviconImage = meta.home.favicon || meta.home.og.image;
+  const twitterImage = meta.home.twitter.image || meta.home.og.image;
+  const ogImage = meta.home.og.image;
 
   return (
     <div>
-      <Helmet>
-        <title>{meta.home.title}</title>
-        <meta name="description" content={meta.home.description} />
-        <meta name="keywords" content={meta.home.keywords.join(", ")} />
-        {/* Add other meta tags as needed */}
-      </Helmet>
+        <Helmet>
+            <title>{meta.home.title}</title>
+            <meta name="description" content={meta.home.description}/>
+            <meta name="keywords" content={meta.home.keywords.join(", ")}/>
+            {/* Add additional meta tags as needed */}
+        </Helmet>
 
-      {loading && (
-        <div className={`loading-background ${slideLoading ? 'slide-out' : ''}`}>
+        {loading && (
+            <div className={`loading-background ${slideLoading ? 'slide-out' : ''}`}>
             <div className="loader">
                 <span className="loadTitleOne">{data.loadTitleOne} </span>
                 <span className="loadTitleTwo"> {data.loadTitleTwo}</span>

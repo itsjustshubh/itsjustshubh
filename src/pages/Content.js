@@ -85,7 +85,14 @@ const meta = {
     home: {
         title: "Shubh Thorat",
         description: "Explore Shubh Thorat's portfolio, featuring innovative projects in full stack development, AI, and big data.",
-        keywords: ["Shubh Thorat", "Full Stack Developer", "AI", "Big Data", "Portfolio"]
+        keywords: ["Shubh Thorat", "Full Stack Developer", "AI", "Big Data", "Portfolio"],
+        favicon: "../assets/images/education/northeastern.png", // Path to favicon
+        og: {
+            image: londonEconomicsLogo // Path to Open Graph image
+        },
+        twitter: {
+            image: londonEconomicsLogo // Path to Twitter Card image
+        }
     },
     projects: { 
         title: "Shubh Thorat",
