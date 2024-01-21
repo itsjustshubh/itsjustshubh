@@ -76,7 +76,7 @@ These formative years were crucial in shaping my character and personal developm
 ## 🏅 Projects
 
 ### Project Loading Screen
-![Project Loading Screen Image](path/to/project/image/assets/person-walking-arrow-loop-left.svg)
+![Project Loading Screen Image](assets/person-walking-arrow-loop-left.svg)
 - **Timeline:** Jan 2023 - Present
 - **Description:** 'Project Loading Screen' is an inventive display of the iconic Apple and Windows loading screens, refined to perfection. This project, developed by Shubh Thorat, presents these familiar visuals in a perpetual loop, turning a simple concept into an intriguing endless experience.
 
@@ -84,7 +84,7 @@ Designed to showcase exceptional React skills, this project playfully explores t
 [![Explore Project Loading Screen](https://img.shields.io/badge/-Explore%20Project%20Loading%20Screen-brightgreen?style=flat&logo=[object Object])](https://project-loading-screen.vercel.app/)
 
 ### A Will To Live (AWTL)
-![A Will To Live (AWTL) Image](path/to/project/image/assets/awtl.svg)
+![A Will To Live (AWTL) Image](assets/awtl.svg)
 - **Timeline:** Oct 2020 - Dec 2021
 - **Description:** AWTL, a project close to my heart, focuses on aiding individuals battling mental health challenges. The initiative provides resources and support, fostering a community where everyone feels empowered to seek the help they need.
 
@@ -94,7 +94,7 @@ My role as President of Technology and Logistics involved spearheading the websi
 [![Detailed Insights](https://img.shields.io/badge/-Detailed%20Insights-brightgreen?style=flat&logo=[object Object])](/education)
 
 ### Social Cloud
-![Social Cloud Image](path/to/project/image/assets/social-cloud.svg)
+![Social Cloud Image](assets/social-cloud.svg)
 - **Timeline:** Aug 2020 - Dec 2021
 - **Description:** Social Cloud is an innovative platform where business ideas meet big data for a noble cause – supporting NGOs and Charities. I was part of an enthusiastic student team that built this unique agency, specializing in customized social marketing.
 
@@ -104,7 +104,7 @@ Our efforts aimed to harness the power of digital platforms to create positive g
 [![Social Cloud Insights](https://img.shields.io/badge/-Social%20Cloud%20Insights-brightgreen?style=flat&logo=[object Object])](https://socialcloud.org)
 
 ### Graphic Design
-![Graphic Design Image](path/to/project/image/[object Object])
+![Graphic Design Image]([object Object])
 - **Timeline:** Feb 2020 - Present
 - **Description:** My journey in Graphic Design began with a keen interest in video production and typography. I focus on creating instructional tech videos, aiming to bridge the technology gap for seniors.
 
@@ -114,7 +114,7 @@ My work, which began with assisting the older generation in technology adoption,
 [![Watch Tutorial Videos](https://img.shields.io/badge/-Watch%20Tutorial%20Videos-brightgreen?style=flat&logo=[object Object])](https://socialcloud.org)
 
 ### Edith (An AI Calendar App)
-![Edith (An AI Calendar App) Image](path/to/project/image/assets/edith.svg)
+![Edith (An AI Calendar App) Image](assets/edith.svg)
 - **Timeline:** Oct 2023 - Present
 - **Description:** Edith redefines planning in the digital age, seamlessly integrating life's many facets into a single, intuitive planner. More than just a scheduling tool, Edith offers academic planning, mood-based music suggestions, astrological insights, and activity planning based on weather forecasts.
 
