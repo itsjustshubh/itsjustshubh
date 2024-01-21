@@ -28,7 +28,11 @@ function formatSkill(skill) {
 
     // Check if the readMeIcon property exists and set iconPath
     if (skill.readMeIcon) {
+        console.log("Original Path:", skill.readMeIcon);  // Debugging: Log the original path
+
         iconPath = skill.readMeIcon.replace('src/assets/imported-icons/', 'assets/');
+
+        console.log("Modified Path:", iconPath);  // Debugging: Log the modified path
     } else {
         // Handle the case where readMeIcon is not defined
         return `<code>${skill.name}</code>`;
