@@ -31,7 +31,13 @@ function generateMarkdownForProjects(projects) {
 
 function updateReadme() {
     // Read the template content
-    const templateContent = fs.readFileSync('../templates/README/readmeTemplate.md', 'utf8');
+    const templatePath = path.join(__dirname, '..', 'templates', 'README', 'readmeTemplate.md');
+    if (fs.existsSync(templatePath)) {
+        console.log('Template file found.');
+    } else {
+        console.error('Template file not found at:', templatePath);
+        process.exit(1);
+    }
 
     // Generate dynamic content
     const educationContent = generateMarkdownForEducation(education);
