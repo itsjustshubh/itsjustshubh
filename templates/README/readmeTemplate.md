@@ -10,10 +10,10 @@
 
 <h5 align="center">
   <code><a href="https://www.linkedin.com/in/shubhthorat/" title="LinkedIn Profile"><img width="22" src="src/assets/imported-icons/linkedin.svg"> LinkedIn</a></code>
-  <code><a href="https://www.hackerrank.com/zumrudu_anka" title="HackerRank Profile"><img width="22" src="src/assets/imported-icons/hackerrank.svg"> HackerRank</a></code>
-  <code><a href="https://stackoverflow.com/users/12578260/osman-durdag" title="Stack Overflow Profile"><img width="22" src="src/assets/imported-icons/stackoverflow.svg"> Stack Overflow</a></code>
+  <code><a href="https://www.hackerrank.com/shubhthorat" title="HackerRank Profile"><img width="22" src="src/assets/imported-icons/hackerrank.svg"> HackerRank</a></code>
+  <code><a href="https://stackoverflow.com/users/23278666/shubhthorat" title="Stack Overflow Profile"><img width="22" src="src/assets/imported-icons/stackoverflow.svg"> Stack Overflow</a></code>
   <code><a href="https://devpost.com/itsjustshubh/" title="Instagram Profile"><img width="22" src="src/assets/imported-icons/devpost.svg"> Devpost</a></code>
-  <code><a href="https://www.instagram.com/osman__durdag/" title="Instagram Profile"><img width="22" src="src/assets/imported-icons/instagram.svg"> Instagram</a></code>
+  <code><a href="https://www.instagram.com/_itsjustshubh/" title="Instagram Profile"><img width="22" src="src/assets/imported-icons/instagram.svg"> Instagram</a></code>
 </h5>
 
 Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, and the founder of Social Cloud. Currently pursuing my BS in Computer Science at Northeastern University, I'm passionate about leveraging technology for social good. I thrive on challenges and constantly set goals for myself, so I have something to strive toward. I'm not comfortable with settling, and I'm always looking for an opportunity to do better and achieve greatness. 🚀
