@@ -61,20 +61,25 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Use the PAT for checkout
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '14'
       - run: npm install
+      - name: List files in outputs directory
+        run: ls -l outputs/
       - name: Generate Resume
         run: |
-          if [ -f outputs/resume.pdf ]; then
-            echo "Resume file exists. Deleting."
-            rm outputs/resume.pdf
-          fi
-          echo "Generating new resume file."
           node src/generateResume.js
+          if [ -f outputs/resume.pdf ]; then
+            echo "Resume file exists. Deleting and recreating."
+            rm outputs/resume.pdf
+            node src/generateResume.js
+          else
+            echo "Creating resume file."
+            node src/generateResume.js
+          fi
       - name: Commit and push resume
         run: |
           git config --local user.email "reapers-arras.0y@icloud.com"
