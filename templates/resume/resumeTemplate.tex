@@ -1,6 +1,7 @@
 \documentclass[letterpaper,10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{geometry}
+\usepackage{hyperref}
 
 \geometry{letterpaper, portrait, margin=1in}
 
@@ -8,19 +9,23 @@
 
 \begin{center}
     {\Large \textbf{{{{Name}}}}} \\
-    {{{Address}}} \\
-    {{{Email}}} | {{{Phone}}} | {{{LinkedIn}}} | {{{GitHub}}}
+    {\normalsize {{{Address}}}} \\
+    \href{mailto:{{{{Email}}}}}{\textcolor{blue}{{{{Email}}}}} |
+    \href{tel:{{{{Phone}}}}}{\textcolor{blue}{{{{Phone}}}}} |
+    \href{https://github.com/{{{{gitHub}}}}}{\textcolor{blue}{github.com/{{{{gitHub}}}}}} |
+    \href{https://linkedin.com/in/{{{{linkedIn}}}}}{\textcolor{blue}{linkedin.com/in/{{{{linkedIn}}}}}} |
+    \href{https://shubhthorat.com}{\textcolor{blue}{shubhthorat.com}}
 \end{center}
 
-\section*{Education}
+\section*{\large \textbf{Education}}
 \textbf{{{{Education1_University}}}}, {{{Education1_Location}}} \\
 {{{{Education1_Degree}}}} in {{{{Education1_Field}}}}, {{{Education1_Dates}}}
 
-\section*{Skills}
+\section*{\large \textbf{Skills}}
 \textbf{Languages:} {{{Skills_Languages}}} \\
 \textbf{Tools:} {{{Skills_Tools}}}
 
-\section*{Projects}
+\section*{\large \textbf{Projects}}
 \textbf{{{{Project1_Name}}}} \\
 {{{{Project1_Description}}}}
 
