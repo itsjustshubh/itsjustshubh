@@ -23,8 +23,18 @@ function formatEducation(education) {
 }
 
 function formatSkill(skill) {
-    // Adding prefix to the icon path
-    const iconPath = `src/assets/imported-icons/${skill.readMeIcon}`;
+    // Initialize iconPath outside of the if block
+    let iconPath;
+
+    // Check if the readMeIcon property exists and set iconPath
+    if (skill.readMeIcon) {
+        iconPath = skill.readMeIcon.replace('src/assets/imported-icons/', 'assets/');
+    } else {
+        // Handle the case where readMeIcon is not defined
+        return `<code>${skill.name}</code>`;
+    }
+
+    // Use iconPath in the return statement
     return `<code><img title="${skill.name}" height="25" src="${iconPath}"></code>`;
 }
 
