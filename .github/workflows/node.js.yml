@@ -80,20 +80,12 @@ jobs:
             echo "Creating resume file."
             node src/generateResume.js
           fi
-      - name: Commit any unstaged changes
-        run: |
-          git config --local user.email "reapers-arras.0y@icloud.com"
-          git config --local user.name "Resume Writer Bot"
-          git add -A
-          git commit -m "Intermediate commit before rebase" || echo "No changes to commit"
-      - name: Fetch and Rebase
-        run: |
-          git fetch
-          git rebase origin/main
+      - name: Pull latest changes from remote
+        run: git pull origin main
       - name: Commit and push resume
         run: |
           git config --local user.email "reapers-arras.0y@icloud.com"
-          git config --local user.name "Resume Writer Bot"
+          git config --local user.name "Bot Finalised"
           git add outputs/resume.pdf
           git commit -m "Bot Finalised resume" -a
           git push
