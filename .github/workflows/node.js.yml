@@ -60,6 +60,8 @@ jobs:
         with:
           node-version: '14'
       - run: npm install
+      - name: Create Outputs Directory
+        run: mkdir -p outputs
       - name: Generate Resume
         run: node src/generateResume.js
       - name: Check for resume changes
