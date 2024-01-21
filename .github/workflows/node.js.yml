@@ -45,7 +45,7 @@ jobs:
         if: steps.git-check.outputs.changes_exist == 'true'
         run: |
           git config --local user.email "reapers-arras.0y@icloud.com"
-          git config --local user.name "Automated Updater"
+          git config --local user.name "README Writer Bot"
           git add README.md
           git commit -m "Auto-update README" -a
           git push
@@ -74,7 +74,7 @@ jobs:
       - name: Commit and push resume
         run: |
           git config --local user.email "reapers-arras.0y@icloud.com"
-          git config --local user.name "Automated Updater"
+          git config --local user.name "Resume Writer Bot"
           git add outputs/resume.pdf
           git commit -m "Auto-update Resume" -a
           git push
