@@ -60,6 +60,8 @@ jobs:
         with:
           node-version: '14'
       - run: npm install
+      - name: List files in outputs directory
+        run: ls -l outputs/
       - name: Generate Resume
         run: |
           node src/generateResume.js
