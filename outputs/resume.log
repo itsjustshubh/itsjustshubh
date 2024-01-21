@@ -1,10 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.31)  21 JAN 2024 00:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.31)  21 JAN 2024 01:01
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**resume.tex
-(./resume.tex
+**"/Users/shubhthorat/Desktop/Working Projects/React/itsjustshubh/outputs/resum
+e.tex"
+
+(/Users/shubhthorat/Desktop/Working Projects/React/itsjustshubh/outputs/resume.
+tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
@@ -60,7 +62,8 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count196
 \l__pdf_internal_box=\box51
 )
-No file resume.aux.
+(/Users/shubhthorat/Desktop/Working Projects/React/itsjustshubh/outputs/resume.
+aux)
 \openout1 = `resume.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -77,6 +80,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -114,20 +118,22 @@ LaTeX Font Info:    ... okay on input line 7.
 [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./resume.aux) ) 
+(/Users/shubhthorat/Desktop/Working Projects/React/itsjustshubh/outputs/resume.
+aux) ) 
 Here is how much of TeX's memory you used:
- 1069 strings out of 476025
- 18758 string characters out of 5790017
+ 1072 strings out of 476025
+ 19415 string characters out of 5790017
  1851388 words of memory out of 5000000
  21584 multiletter control sequences out of 15000+600000
  513200 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,5n,62p,152b,155s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb>
-Output written on resume.pdf (1 page, 48575 bytes).
+ 57i,5n,62p,225b,155s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10
+.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b>
+Output written on "/Users/shubhthorat/Desktop/Working Projects/React/itsjustshu
+bh/outputs/resume.pdf" (1 page, 48624 bytes).
 PDF statistics:
  23 PDF objects out of 1000 (max. 8388607)
  13 compressed objects within 1 object stream
