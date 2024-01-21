@@ -91,4 +91,6 @@ jobs:
           git config --local user.name "Resume Writer Bot"
           git add outputs/resume.pdf
           git commit -m "Bot Finalised resume" -a
+          git fetch
+          git rebase origin/main
           git push
