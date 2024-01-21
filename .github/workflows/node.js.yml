@@ -38,17 +38,12 @@ jobs:
         run: npm run bundle-update-script
       - name: Update README
         run: node dist/updateReadmeBundle.js
-      - name: Check for changes
-        id: git-check
-        run: |
-          git diff --exit-code || echo "::set-output name=_exist::true"
       - name: Commit changes if any
-        if: steps.git-check.outputs.changes_exist == 'true'
         run: |
           git config --local user.email "reapers-arras.0y@icloud.com"
           git config --local user.name "README Writer Bot"
           git add README.md
-          git commit -m "Bot Finalised README.md" -a
+          git commit -m "Bot Finalised README.md" -a || echo "No changes to commit"
       - name: Fetch and Rebase
         run: |
           git fetch
