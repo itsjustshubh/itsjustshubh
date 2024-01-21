@@ -20,6 +20,8 @@ import { backgroundVideo,
     husky,
     northeastern,
     react,
+    hackerRank,
+    stackoverflow,
 
     // Add any other asset imports below...
     python,
@@ -259,52 +261,58 @@ const education = [
 const socialProfiles = [
     {
         name: "Github",
-        color: "rgb(0,62,84)",
+        backgroundColor: "rgb(0,62,84)",
         link: "https://www.github.com/itsjustshubh",
         icon: faGithub,
     },
     {
+        name: "HackerRank",
+        backgroundColor: "rgb(50,199,101)",
+        link: "https://www.hackerrank.com/shubhthorat",
+        icon: hackerRank,
+    },
+    {
+        name: "Stack Overflow",
+        backgroundColor: "rgb(244,128,35)",
+        link: "https://stackoverflow.com/users/23278666/shubhthorat",
+        icon: stackoverflow,
+    },
+    {
         name: "Linkedin",
-        color: "rgb(11,101,194)",
+        backgroundColor: "rgb(11,101,194)",
         link: "https://www.linkedin.com/in/shubhthorat/",
         icon: faLinkedin,
     },
     {
         name: "Instagram",
-        color: "LightSlateGrey",
+        backgroundColor: "LightSlateGrey",
         link: "https://www.instagram.com/_itsjustshubh/",
         icon: instagram,
     },
     {
         name: "YouTube",
-        color: "rgb(255,0,0)",
+        backgroundColor: "rgb(255,0,0)",
         link: "https://www.youtube.com/@shubhthorat",
         icon: faYoutube,
     },
     {
         name: "Medium",
-        color: "black",
+        backgroundColor: "black",
         link: "https://shubhthorat.medium.com/",
         icon: faMedium,
     },
     {
         name: "iCloud Mail",
-        color: "black",
+        backgroundColor: "black",
         link: "mailto:reapers-arras.0y@icloud.com",
         icon: faApple,
     },
     {
         name: "Devpost",
-        color: "rgb(100,148,185)",
+        backgroundColor: "rgb(100,148,185)",
         link: "https://devpost.com/software/edith-brshpa",
         icon: devpost,
     },
-    // {
-    //     name: "Khoury News",
-    //     color: "grey",
-    //     link: "https://www.khoury.northeastern.edu/meet-edith-the-ai-powered-schedule-assistant-designed-to-reduce-your-stress/",
-    //     icon: faNewspaper,
-    // },
 ];
 
 const projects = [

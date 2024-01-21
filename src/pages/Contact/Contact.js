@@ -37,7 +37,7 @@ function Contact() {
                            target="_blank"
                            rel="noopener noreferrer"
                            className="social-link"
-                           style={{ backgroundColor: profile.color }}>
+                           style={{ backgroundColor: profile.backgroundColor , color: profile.color}}>
                             {isSvgIcon(profile.icon) ?
                                 <img src={profile.icon} className="icon" alt={profile.name} /> :
                                 <FontAwesomeIcon icon={profile.icon} className="icon" />

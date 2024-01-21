@@ -34,5 +34,6 @@ export { default as git } from '../assets/imported-icons/git-original.svg';
 export { default as reactIcon } from '../assets/imported-icons/react-original.svg';
 export { default as mysql } from '../assets/imported-icons/mysql.svg';
 export { default as firebase } from '../assets/imported-icons/firebase-icon.svg';
-
+export { default as hackerRank } from '../assets/imported-icons/hackerrank-black.svg';
+export { default as stackoverflow } from '../assets/imported-icons/stackoverflow.svg';
 // Add any other asset exports below...
