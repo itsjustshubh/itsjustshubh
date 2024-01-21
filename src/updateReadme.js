@@ -26,15 +26,14 @@ function formatSkill(skill) {
     let iconPath;
 
     if (skill.readMeIcon) {
-        // Check if 'src/assets/imported-icons/' is part of the path
-        if (skill.readMeIcon.includes('src/assets/imported-icons/')) {
-            console.log("Original Path:", skill.readMeIcon);  // Debugging: Log the original path
-            iconPath = skill.readMeIcon.replace('src/assets/imported-icons/', 'assets/');
-            console.log("Modified Path:", iconPath);  // Debugging: Log the modified path
-        } else {
-            // If the path does not contain 'src/assets/imported-icons/', use it as is
-            iconPath = skill.readMeIcon;
-        }
+        // Extract the basename (filename) from the path
+        const iconName = path.basename(skill.readMeIcon);
+
+        // Construct the new path using the required base directory
+        iconPath = path.join('assets', iconName);
+
+        // Log the modified path for debugging
+        console.log("Modified Path:", iconPath);
     } else {
         // Handle the case where readMeIcon is not defined
         return `<code>${skill.name}</code>`;
