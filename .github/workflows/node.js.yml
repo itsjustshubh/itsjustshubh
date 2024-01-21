@@ -9,7 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
@@ -31,16 +30,21 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14' # Use the Node.js version that matches your environment
+          node-version: '14'
       - run: npm install
       - name: Bundle Update Script
         run: npm run bundle-update-script
       - name: Update README
         run: node dist/updateReadmeBundle.js
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code || echo "::set-output name=changes_exist::true"
       - name: Commit and push if README changed
+        if: steps.git-check.outputs.changes_exist == 'true'
         run: |
           git config --local user.email "reapers-arras.0y@icloud.com"
           git config --local user.name "Automated Updater"
           git add README.md
-          git commit -m "Update README" -a || exit 0
+          git commit -m "Update README" -a
           git push

@@ -14,7 +14,19 @@ function generateMarkdownForSkills(skills) {
 }
 
 function generateMarkdownForProjects(projects) {
-    return projects.map(project => `### ${project.name}\n- **Timeline:** ${project.timeline}\n- **Description:** ${project.description}\n`).join('\n');
+    return projects.map(project => {
+        let projectMarkdown = `### ${project.name}\n`;
+        projectMarkdown += `![${project.name} Image](path/to/project/image/${project.image})\n`; // Replace with actual path
+        projectMarkdown += `- **Timeline:** ${project.timeline}\n`;
+        projectMarkdown += `- **Description:** ${project.description}\n`;
+
+        // Add buttons
+        project.buttons.forEach(button => {
+            projectMarkdown += `[![${button.buttonText}](https://img.shields.io/badge/-${encodeURIComponent(button.buttonText)}-brightgreen?style=flat&logo=${button.buttonIcon})](${button.buttonLink})\n`;
+        });
+
+        return projectMarkdown;
+    }).join('\n');
 }
 
 function updateReadme() {

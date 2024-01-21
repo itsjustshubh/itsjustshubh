@@ -11,23 +11,17 @@ Hi there! 👋 I'm Shubh Thorat, an aspiring computer scientist, innovator, and 
 
 <!-- DYNAMIC_EDUCATION -->
 
-[More static content...]
-
 ---
 
 ## 🌟 Skills
 
 <!-- DYNAMIC_SKILLS -->
 
-[More static content...]
-
 ---
 
 ## 🏅 Projects
 
 <!-- DYNAMIC_PROJECTS -->
-
-[Remaining static content...]
 
 ---
 
