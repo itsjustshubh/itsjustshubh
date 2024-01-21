@@ -24,23 +24,24 @@ function formatEducation(education) {
 
 function formatSkill(skill) {
     let iconPath;
+    let skillLink = skill.link || '#'; // Default to '#' if no link is provided
 
     if (skill.readMeIcon) {
         // Extract the basename (filename) from the path
         const iconName = path.basename(skill.readMeIcon);
         console.log("Icon Path:", iconName);
+
         // Construct the new path using the required base directory
         iconPath = path.join('src/assets/imported-icons/', iconName);
-        // Log the modified path for debugging
         console.log("Modified Path:", iconPath);
     } else {
-        // Handle the case where readMeIcon is not defined
+        // Return just the skill name if readMeIcon is not defined
         return `<code>${skill.name}</code>`;
     }
 
-    return `<code><img title="${skill.name}" height="25" src="${iconPath}"></code>`;
+    // Return the skill icon wrapped in an anchor tag
+    return `<a href="${skillLink}" target="_blank" title="${skill.name}"><code><img height="25" src="${iconPath}"></code></a>`;
 }
-
 
 function formatProject(project) {
     let projectMarkdown = `<details><summary>${project.name}</summary>\n`;
