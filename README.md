@@ -8,12 +8,27 @@
   Hi there, I'm <a href="https://shubhthorat.vercel.app/" target="_blank">Shubh Thorat</a>
   <img src="src/assets/imported-icons/Hi.gif" height="30" width="30" />
 </h1>
+
 <h5 align="center">
-  <code><a href="https://www.linkedin.com/in/shubhthorat/" title="LinkedIn Profile"><img width="22" src="src/assets/imported-icons/linkedin.svg"> LinkedIn</a></code>
-  <code><a href="https://www.hackerrank.com/shubhthorat" title="HackerRank Profile"><img width="22" src="src/assets/imported-icons/hackerrank.svg"> HackerRank</a></code>
-  <code><a href="https://stackoverflow.com/users/23278666/shubhthorat" title="Stack Overflow Profile"><img width="22" src="src/assets/imported-icons/stackoverflow.svg"> Stack Overflow</a></code>
-  <code><a href="https://devpost.com/itsjustshubh/" title="Instagram Profile"><img width="22" src="src/assets/imported-icons/devpost.svg"> Devpost</a></code>
-  <code><a href="https://www.instagram.com/_itsjustshubh/" title="Instagram Profile"><img width="22" src="src/assets/imported-icons/instagram.svg"> Instagram</a></code>
+<code><a href="https://www.github.com/itsjustshubh" target="_blank" title="Github" style="background-color: rgb(0,62,84); padding: 5px; margin: 0 5px; border-radius: 4px;">
+    <img src="src/assets/imported-icons/[object Object].svg" height="30" alt="Github">
+  </a></code><code><a href="https://www.hackerrank.com/shubhthorat" target="_blank" title="HackerRank" style="background-color: rgb(50,199,101); padding: 5px; margin: 0 5px; border-radius: 4px;">
+    <img src="src/assets/imported-icons/assets/hackerrank-black.svg.svg" height="30" alt="HackerRank">
+  </a></code><code><a href="https://stackoverflow.com/users/23278666/shubhthorat" target="_blank" title="Stack Overflow" style="background-color: rgb(244,128,35); padding: 5px; margin: 0 5px; border-radius: 4px;">
+    <img src="src/assets/imported-icons/assets/stackoverflow.svg.svg" height="30" alt="Stack Overflow">
+  </a></code><code><a href="https://www.linkedin.com/in/shubhthorat/" target="_blank" title="Linkedin" style="background-color: rgb(11,101,194); padding: 5px; margin: 0 5px; border-radius: 4px;">
+    <img src="src/assets/imported-icons/[object Object].svg" height="30" alt="Linkedin">
+  </a></code><code><a href="https://www.instagram.com/_itsjustshubh/" target="_blank" title="Instagram" style="background-color: LightSlateGrey; padding: 5px; margin: 0 5px; border-radius: 4px;">
+    <img src="src/assets/imported-icons/assets/instagram.svg.svg" height="30" alt="Instagram">
+  </a></code><code><a href="https://www.youtube.com/@shubhthorat" target="_blank" title="YouTube" style="background-color: rgb(255,0,0); padding: 5px; margin: 0 5px; border-radius: 4px;">
+    <img src="src/assets/imported-icons/[object Object].svg" height="30" alt="YouTube">
+  </a></code><code><a href="https://shubhthorat.medium.com/" target="_blank" title="Medium" style="background-color: black; padding: 5px; margin: 0 5px; border-radius: 4px;">
+    <img src="src/assets/imported-icons/[object Object].svg" height="30" alt="Medium">
+  </a></code><code><a href="mailto:reapers-arras.0y@icloud.com" target="_blank" title="iCloud Mail" style="background-color: black; padding: 5px; margin: 0 5px; border-radius: 4px;">
+    <img src="src/assets/imported-icons/[object Object].svg" height="30" alt="iCloud Mail">
+  </a></code><code><a href="https://devpost.com/software/edith-brshpa" target="_blank" title="Devpost" style="background-color: rgb(100,148,185); padding: 5px; margin: 0 5px; border-radius: 4px;">
+    <img src="src/assets/imported-icons/assets/devpost.svg.svg" height="30" alt="Devpost">
+  </a></code>
 </h5>
 
 Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, and the founder of Social Cloud. Currently pursuing my BS in Computer Science at Northeastern University, I'm passionate about leveraging technology for social good. I thrive on challenges and constantly set goals for myself, so I have something to strive toward. I'm not comfortable with settling, and I'm always looking for an opportunity to do better and achieve greatness. 🚀
