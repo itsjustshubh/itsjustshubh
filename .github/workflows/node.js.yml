@@ -37,6 +37,10 @@ jobs:
         run: npm run bundle-update-script
       - name: Update README
         run: node dist/updateReadmeBundle.js
+      - name: Fetch and Rebase
+        run: |
+          git fetch
+          git rebase origin/main
       - name: Check for changes
         id: git-check
         run: |
