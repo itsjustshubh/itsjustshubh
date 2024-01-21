@@ -20,6 +20,17 @@ import { backgroundVideo,
     husky,
     northeastern,
     react,
+
+    // Add any other asset imports below...
+    python,
+    c,
+    java,
+    javascript,
+    git,
+    reactIcon,
+    mysql,
+    firebase,
+    nodeIcon,
 } from './Assets';
 
 import {
@@ -124,38 +135,57 @@ const skills = [
         hours: 1,
         name: "Python",
         icon: faPython,
+        readMeIcon: python,
+        link: "https://www.python.org/",
     },
     {
         hours: 1,
         name: "Java",
         icon: faJava,
+        readMeIcon: java,
+        link: "https://www.java.com/en/",
+    },
+    {
+        hours: 4,
+        name: "Git",
+        icon: faGit,
+        readMeIcon: git,
+        link: "",
     },
     {
         hours: 1,
         name: "React",
         icon: faReact,
+        readMeIcon: reactIcon,
+        link: "",
     },
     // ... other skills ...
     {
         hours: 1,
         name: "JavaScript",
         icon: faJs,
+        readMeIcon: javascript,
+        link: "",
     },
     // ... Add other skills here
     {
         hours: 1,
         name: "Node.js",
         icon: faNode,
+        readMeIcon: nodeIcon,
+        link: "",
     },
     {
         hours: 1,
         name: "HTML5",
         icon: faHtml5,
+        link: "",
     },
     {
         hours: 1,
         name: "AWS",
         icon: faAws,
+        link: "",
     },
     // ... Continue adding other skills
 ];

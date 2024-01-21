@@ -69,17 +69,14 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y texlive
       - name: List files in outputs directory
         run: ls -l outputs/
-      - name: Generate Resume
-        run: | 
-          node src/generateResume.js
+      - name: Delete existing resume file if exists
+        run: |
           if [ -f outputs/resume.pdf ]; then
-            echo "Resume file exists. Deleting and recreating."
+            echo "Deleting existing resume file."
             rm outputs/resume.pdf
-            node src/generateResume.js
-          else
-            echo "Creating resume file."
-            node src/generateResume.js
           fi
+      - name: Generate Resume
+        run: node src/generateResume.js
       - name: Pull latest changes from remote
         run: git pull origin main
       - name: Commit and push resume

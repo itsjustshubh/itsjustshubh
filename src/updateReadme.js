@@ -4,56 +4,65 @@ const path = require('path');
 // Adjust the path to your content.js file
 const { education, skills, projects } = require('./pages/Content');
 
-// Function to generate markdown for each section
-function generateMarkdownForEducation(education) {
-    return education.map(edu => `### ${edu.degree}\n- **Institution:** ${edu.institution}\n- **Period:** ${edu.period}\n- **Description:** ${edu.description}\n`).join('\n');
+// Function to generate markdown for each section with expandable lists
+function generateExpandableMarkdown(sectionTitle, items, formatter) {
+    const detailsStartTag = `<details><summary>${sectionTitle}</summary>\n`;
+    const detailsEndTag = '</details>\n';
+
+    const formattedItems = items.map(formatter).join('\n');
+
+    return detailsStartTag + formattedItems + detailsEndTag;
 }
 
-function generateMarkdownForSkills(skills) {
-    return skills.map(skill => `- ${skill.name}`).join('\n');
+function formatEducation(education) {
+    return `<details><summary>${education.degree}</summary>
+- **Institution:** ${education.institution}
+- **Period:** ${education.period}
+- **Description:** ${education.description}
+</details>`;
 }
 
-function generateMarkdownForProjects(projects) {
-    return projects.map(project => {
-        let projectMarkdown = `### ${project.name}\n`;
-        projectMarkdown += `![${project.name} Image](${project.image})\n`; // Replace with actual path
-        projectMarkdown += `- **Timeline:** ${project.timeline}\n`;
-        projectMarkdown += `- **Description:** ${project.description}\n`;
+function formatSkill(skill) {
+    // Format skill as an HTML image tag with the skill icon
+    return `<code><img title="${skill.name}" height="25" src="${skill.readMeIcon}"></code>`;
+}
 
-        // Add buttons
-        project.buttons.forEach(button => {
-            projectMarkdown += `[![${button.buttonText}](https://img.shields.io/badge/-${encodeURIComponent(button.buttonText)}-brightgreen?style=flat&logo=${button.buttonIcon})](${button.buttonLink})\n`;
-        });
+function formatProject(project) {
+    let projectMarkdown = `<details><summary>${project.name}</summary>\n`;
+    projectMarkdown += `![${project.name} Image](${project.image})\n`; // Replace with actual path
+    projectMarkdown += `- **Timeline:** ${project.timeline}\n`;
+    projectMarkdown += `- **Description:** ${project.description}\n`;
 
-        return projectMarkdown;
-    }).join('\n');
+    // Add buttons
+    project.buttons.forEach(button => {
+        projectMarkdown += `[![${button.buttonText}](https://img.shields.io/badge/-${encodeURIComponent(button.buttonText)}-brightgreen?style=flat&logo=${button.buttonIcon})](${button.buttonLink})\n`;
+    });
+    projectMarkdown += '</details>';
+
+    return projectMarkdown;
 }
 
 function updateReadme() {
-    // Define the path to the README template
     const templatePath = path.join(__dirname, '..', 'templates', 'README', 'readmeTemplate.md');
-
-    // Check if the README template exists
     if (!fs.existsSync(templatePath)) {
         console.error('Template file not found at:', templatePath);
         return;
     }
 
-    // Read the README template content
     const templateContent = fs.readFileSync(templatePath, 'utf8');
 
     // Generate dynamic content
-    const educationContent = generateMarkdownForEducation(education);
-    const skillsContent = generateMarkdownForSkills(skills);
-    const projectsContent = generateMarkdownForProjects(projects);
+    const educationContent = generateExpandableMarkdown('Education', education, formatEducation);
+    const skillsContent = `<p align="center">${skills.map(formatSkill).join(' ')}</p>`;
+    const projectsContent = generateExpandableMarkdown('Projects', projects, formatProject);
 
-    // Replace placeholders in the template with dynamic content
+    // Replace placeholders in the template
     const updatedContent = templateContent
         .replace('<!-- DYNAMIC_EDUCATION -->', educationContent)
         .replace('<!-- DYNAMIC_SKILLS -->', skillsContent)
         .replace('<!-- DYNAMIC_PROJECTS -->', projectsContent);
 
-    // Write the updated content to README.md
+    // Write to README.md
     fs.writeFileSync('README.md', updatedContent, 'utf8');
     console.log('README updated successfully.');
 }

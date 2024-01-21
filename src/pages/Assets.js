@@ -24,3 +24,13 @@ export { default as husky } from '../assets/icons/northeastern-husky.svg';
 export { default as react } from '../assets/icons/react.svg';
 
 // Add any other asset exports below...
+export { default as python } from "../assets/imported-icons/python-original.svg";
+export { default as java } from '../assets/imported-icons/java-original.svg';
+export { default as javascript } from '../assets/imported-icons/javascript.svg';
+export { default as nodeIcon } from '../assets/imported-icons/javascript.svg';
+export { default as git } from '../assets/imported-icons/git-original.svg';
+export { default as reactIcon } from '../assets/imported-icons/react-original.svg';
+export { default as mysql } from '../assets/imported-icons/mysql.svg';
+export { default as firebase } from '../assets/imported-icons/firebase-icon.svg';
+
+// Add any other asset exports below...
