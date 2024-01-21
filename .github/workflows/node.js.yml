@@ -3,22 +3,29 @@ name: Node.js CI
 on:
   push:
     branches: [ "main" ]
-    paths-ignore:
-      - 'README.md' # Optionally, continue to ignore direct changes to README.md
   pull_request:
     branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    # Conditional to prevent running this job if the commit message is 'Auto-update README'
-    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, 'Auto-update README') }}
+    steps:name: Node.js CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14' # Specify your Node.js version
+          node-version: '14'
           cache: 'npm'
       - run: npm ci
       - run: npm run build --if-present
@@ -27,7 +34,6 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     needs: build
-    # Conditional to prevent running this job if the commit message is 'Auto-update README'
     if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, 'Auto-update README') }}
     steps:
       - uses: actions/checkout@v3
@@ -53,4 +59,29 @@ jobs:
           git config --local user.name "Automated Updater"
           git add README.md
           git commit -m "Auto-update README" -a
+          git push
+
+  generate-resume:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: npm install
+      - name: Generate Resume
+        run: node src/generateResume.js
+      - name: Check for resume changes
+        id: resume-check
+        run: |
+          git diff --exit-code outputs/resume.pdf || echo "::set-output name=changes_exist::true"
+      - name: Commit and push if resume changed
+        if: steps.resume-check.outputs.changes_exist == 'true'
+        run: |
+          git config --local user.email "reapers-arras.0y@icloud.com"
+          git config --local user.name "Automated Updater"
+          git add outputs/resume.pdf
+          git commit -m "Auto-update Resume" -a
           git push

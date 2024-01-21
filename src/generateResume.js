@@ -29,8 +29,25 @@ const data = {
 };
 
 async function generateResume() {
+    console.log('Generating resume...');
+
+    // Define the path for the TeX template
+    const texTemplatePath = path.join(__dirname, '..', 'templates', 'resume', 'resumeTemplate.tex');
+
+    // Check if the TeX template exists
+    if (!fs.existsSync(texTemplatePath)) {
+        console.error('TeX template file not found.');
+        return;
+    }
+
     // Load TeX template
-    let texTemplate = fs.readFileSync(path.join(__dirname, '..', 'templates', 'resume', 'resumeTemplate.tex'), 'utf8');
+    let texTemplate;
+    try {
+        texTemplate = fs.readFileSync(texTemplatePath, 'utf8');
+    } catch (error) {
+        console.error(`Error reading TeX template: ${error.message}`);
+        return;
+    }
 
     // Replace placeholders with actual data
     texTemplate = texTemplate.replace('{{Name}}', data.name)
@@ -50,18 +67,29 @@ async function generateResume() {
                              .replace('{{Project1_Description}}', data.project1.description);
     // ... Add more replacements as needed
 
-    // Check if the outputs directory exists, if not, create it
+    // Define the output path for the resume
     const outputPath = path.join(__dirname, '..', 'outputs');
     if (!fs.existsSync(outputPath)) {
         fs.mkdirSync(outputPath, { recursive: true });
     }
 
-    // Save the TeX file
+    // Define the output file path
     const outputFilePath = path.join(outputPath, 'resume.tex');
-    fs.writeFileSync(outputFilePath, texTemplate);
 
-    // Compile the TeX file into a PDF using MacTeX
-    exec(`pdflatex -output-directory=${outputPath} ${outputFilePath}`, (error, stdout, stderr) => {
+    // Save the TeX file
+    try {
+        fs.writeFileSync(outputFilePath, texTemplate);
+        console.log('TeX file saved, starting PDF generation...');
+    } catch (error) {
+        console.error(`Error writing TeX file: ${error.message}`);
+        return;
+    }
+
+    // Compile the TeX file into a PDF
+    const command = `pdflatex -output-directory="${outputPath}" "${outputFilePath}"`;
+    console.log(`Executing command: ${command}`);
+
+    exec(command, (error, stdout, stderr) => {
         if (error) {
             console.error(`Error: ${error.message}`);
             return;
