@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: ${{ !contains(github.event.head_commit.message, 'Bot Changes Finalised README.md') &&
+           !contains(github.event.head_commit.message, 'Bot Changes Finalised resume') }}
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js
@@ -23,8 +25,7 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     needs: build
-    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, 'Bot Changes Finalised README.md')
-      || !contains(github.event.head_commit.message, 'Bot Changes Finalised resume')}}
+    if: ${{ !contains(github.event.head_commit.message, 'Bot Changes Finalised README.md') }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -59,21 +60,19 @@ jobs:
   generate-resume:
     runs-on: ubuntu-latest
     needs: build
-    if: ${{ contains(github.event.head_commit.message, 'Bot Changes Finalised README.md') }}
+    if: ${{ contains(github.event.head_commit.message, 'Bot Changes Finalised README.md') &&
+           !contains(github.event.head_commit.message, 'Bot Changes Finalised resume') }}
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Use the PAT for checkout
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '14'
       - run: npm install
-
-      # Add a step here to install LaTeX
       - name: Install LaTeX
         run: sudo apt-get update && sudo apt-get install -y texlive
-
       - name: List files in outputs directory
         run: ls -l outputs/
       - name: Generate Resume
@@ -90,8 +89,7 @@ jobs:
       - name: Commit and push resume
         run: |
           git config --local user.email "reapers-arras.0y@icloud.com"
-          git config --local user.name "Bot Changes Finalised"
+          git config --local user.name "Resume Writer Bot"
           git add outputs/resume.pdf
           git commit -m "Bot Changes Finalised resume" -a
           git push
-
