@@ -24,7 +24,10 @@
 [//]: # (</h5>)
 
 <h3 align="center">🔥 My Languages & Frameworks & Tools & Abilities 🔥</h3>
-<p align="center"><code><img title="Python" height="25" src="assets/python-original.svg"></code> <code><img title="Java" height="25" src="assets/java-original.svg"></code> <code><img title="Git" height="25" src="assets/git-original.svg"></code> <code><img title="React" height="25" src="assets/react-original.svg"></code> <code><img title="JavaScript" height="25" src="assets/javascript.svg"></code> <code><img title="Node.js" height="25" src="assets/javascript.svg"></code> <code>HTML5</code> <code>AWS</code></p>
+<p align="center"><code><img title="Python" height="25" src="assets/python-original.svg"></code> 
+<code><img title="Java" height="25" src="assets/java-original.svg">
+</code> <code><img title="Git" height="25" src="assets/git-original.svg">
+</code> <code><img title="React" height="25" src="assets/react-original.svg"></code> <code><img title="JavaScript" height="25" src="assets/javascript.svg"></code> <code><img title="Node.js" height="25" src="assets/javascript.svg"></code> <code>HTML5</code> <code>AWS</code></p>
 <hr>
 
 Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, and the founder of Social Cloud. Currently pursuing my BS in Computer Science at Northeastern University, I'm passionate about leveraging technology for social good. I thrive on challenges and constantly set goals for myself, so I have something to strive toward. I'm not comfortable with settling, and I'm always looking for an opportunity to do better and achieve greatness. 🚀
