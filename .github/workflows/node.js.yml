@@ -60,7 +60,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     if: ${{ contains(github.event.head_commit.message, 'Bot Finalised README.md') &&
-           !contains(github.event.head_commit.message, 'Bot Finalised resume') }}
+      !contains(github.event.head_commit.message, 'Bot Finalised resume') }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -85,12 +85,20 @@ jobs:
             echo "Creating resume file."
             node src/generateResume.js
           fi
+      - name: Commit any unstaged changes
+        run: |
+          git config --local user.email "reapers-arras.0y@icloud.com"
+          git config --local user.name "Resume Writer Bot"
+          git add -A
+          git commit -m "Intermediate commit before rebase" || echo "No changes to commit"
+      - name: Fetch and Rebase
+        run: |
+          git fetch
+          git rebase origin/main
       - name: Commit and push resume
         run: |
           git config --local user.email "reapers-arras.0y@icloud.com"
           git config --local user.name "Resume Writer Bot"
           git add outputs/resume.pdf
           git commit -m "Bot Finalised resume" -a
-          git fetch
-          git rebase origin/main
           git push
