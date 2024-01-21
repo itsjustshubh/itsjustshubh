@@ -58,11 +58,10 @@ jobs:
   generate-resume:
     runs-on: ubuntu-latest
     needs: build
-    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, 'Bot Changes Finalised resume.pdf') }}
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Use the PAT for checkout
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -70,20 +69,16 @@ jobs:
       - run: npm install
       - name: Generate Resume
         run: |
-          node src/generateResume.js
-      - name: Check if resume file exists
-        id: check-file
-        run: |
           if [ -f outputs/resume.pdf ]; then
-            echo "::set-output name=exists::true"
-          else
-            echo "::set-output name=exists::false"
+            echo "Resume file exists. Deleting."
+            rm outputs/resume.pdf
           fi
+          echo "Generating new resume file."
+          node src/generateResume.js
       - name: Commit and push resume
-        if: steps.check-file.outputs.exists == 'true'
         run: |
           git config --local user.email "reapers-arras.0y@icloud.com"
           git config --local user.name "Resume Writer Bot"
           git add outputs/resume.pdf
-          git commit -m "Bot Changes Finalised resume.pdf" -a
+          git commit -m "Auto-update Resume" -a
           git push
