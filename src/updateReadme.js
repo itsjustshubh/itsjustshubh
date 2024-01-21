@@ -30,13 +30,16 @@ function generateMarkdownForProjects(projects) {
 }
 
 function updateReadme() {
-    // Read the template content
+    // Define the path to the README template
     const templatePath = path.join(__dirname, '..', 'templates', 'README', 'readmeTemplate.md');
+
+    // Check if the README template exists
     if (!fs.existsSync(templatePath)) {
         console.error('Template file not found at:', templatePath);
-        process.exit(1);
+        return;
     }
 
+    // Read the README template content
     const templateContent = fs.readFileSync(templatePath, 'utf8');
 
     // Generate dynamic content
