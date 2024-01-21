@@ -3,12 +3,16 @@ name: Node.js CI
 on:
   push:
     branches: [ "main" ]
+    paths-ignore:
+      - 'README.md' # Optionally, continue to ignore direct changes to README.md
   pull_request:
     branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Conditional to prevent running this job if the commit message is 'Auto-update README'
+    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, 'Auto-update README') }}
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js
@@ -23,7 +27,7 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     needs: build
-    # Run if the workflow was not triggered by a push with a specific commit message
+    # Conditional to prevent running this job if the commit message is 'Auto-update README'
     if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, 'Auto-update README') }}
     steps:
       - uses: actions/checkout@v3

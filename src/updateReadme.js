@@ -16,7 +16,7 @@ function generateMarkdownForSkills(skills) {
 function generateMarkdownForProjects(projects) {
     return projects.map(project => {
         let projectMarkdown = `### ${project.name}\n`;
-        projectMarkdown += `![${project.name} Image](path/to/project/image/${project.image})\n`; // Replace with actual path
+        projectMarkdown += `![${project.name} Image](${project.image})\n`; // Replace with actual path
         projectMarkdown += `- **Timeline:** ${project.timeline}\n`;
         projectMarkdown += `- **Description:** ${project.description}\n`;
 
@@ -31,7 +31,7 @@ function generateMarkdownForProjects(projects) {
 
 function updateReadme() {
     // Read the template content
-    const templateContent = fs.readFileSync('TEMPLATE.md', 'utf8');
+    const templateContent = fs.readFileSync('../templates/README/readmeTemplate.md', 'utf8');
 
     // Generate dynamic content
     const educationContent = generateMarkdownForEducation(education);
