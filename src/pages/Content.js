@@ -172,7 +172,6 @@ const skills = [
         hours: 1,
         name: "Node.js",
         icon: faNode,
-        readMeIcon: nodeIcon,
         link: "",
     },
     {
