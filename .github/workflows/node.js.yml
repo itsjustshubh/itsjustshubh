@@ -53,6 +53,7 @@ jobs:
   generate-resume:
     runs-on: ubuntu-latest
     needs: build
+    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, 'Auto-update README') }}
     steps:
       - uses: actions/checkout@v3
       - name: Set up Node.js
