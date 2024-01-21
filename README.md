@@ -130,21 +130,7 @@ This project, developed using agile methodologies and diverse APIs, stands out b
 
 ## 🚀 About Me
 
-🎓 **Education:** Computer Science, Northeastern University (Class of 2026)
-
-💻 **Skills:** Java, Python, C, Data Science, AI
-
-🏆 **Accomplishments:** Winner at HackHarvard; Developer of the "Edith" project
-
-🔗 **Connect:** [Website](https://www.shubhthorat.com) | [LinkedIn](https://www.linkedin.com/in/shubhthorat/) | [GitHub](https://github.com/itsjustshubh) | [Email](mailto:reapers-arras.0y@icloud.com)
-
----
-
-## 🌟 Professional Highlights
-
-- **Founder, Social Cloud:** Enhancing NGO fundraising through innovative tech solutions.
-- **Leadership:** Active roles at HackHarvard, student government, and dorm management.
-- **Interests:** AI, big data, and technology for social good.
+<!-- DYNAMIC_ABOUT -->
 
 ---
 
@@ -158,43 +144,23 @@ This project, developed using agile methodologies and diverse APIs, stands out b
 
 ## 🏅 Achievements & Contributions
 
-- **Projects:** 
-  - **Social Cloud:** Brief description of the project.
-  - **Edith:** Details about the project and its impact.
+<!-- DYNAMIC_ACHIEVEMENTS -->
 
 ---
 
 ## 📚 Continuous Learning
 
-- Committed to exploring advanced topics in AI and Data Science.
-- Actively seeking opportunities for innovation and collaborative learning.
+<!-- DYNAMIC_LEARNING -->
 
 ---
 
 ## 🔗 Let's Connect!
 
-- Feel free to reach out for collaborations or discussions about technology and innovation.
-- Always eager to connect with fellow tech enthusiasts and professionals.
+<!-- DYNAMIC_CONNECT -->
 
 ---
 
 ### 💫 Extra
 
-- 🚀 **Current Learning:** Advanced AI and Data Science Concepts
-- 🤝 **Looking for Collaboration:** Tech solutions for social good
-- 📰 **Latest Blog Posts:** [Your Blog](https://www.shubhthorat.com/blog)
-- 🎧 **Listening to:** [Spotify Playlists](https://spotify.com)
-- 📚 **Currently Reading:** [Your Favorite Books](https://www.goodreads.com/user/show/yourprofile)
-- 🎮 **Gaming:** Favorite games or gaming platforms
-- 📺 **Watching:** [Your Favorite Shows](https://www.netflix.com)
-- 📸 **Photography:** Link to your photography portfolio
-- 🎤 **Podcasts:** Favorite podcasts or episodes
-- 📝 **Writing:** Articles, papers, or books you've authored
+<!-- DYNAMIC_EXTRA -->
 
-![Visitor Count](https://komarev.com/ghpvc/?username=itsjustshubh&color=blue)
-![GitHub followers](https://img.shields.io/github/followers/itsjustshubh?label=Follow&style=social)
-![Profile Views](https://img.shields.io/badge/Profile%20Views-Count-blue)
-
----
-
-_🌍 Looking forward to making a global impact through technology and innovation!_
