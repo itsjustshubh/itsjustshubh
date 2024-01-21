@@ -5,7 +5,7 @@
 [![Instagram Follow](https://img.shields.io/badge/Instagram-Follow-purple?style=for-the-badge&logo=instagram)](https://www.linkedin.com/in/shubhthorat/)
 [![Email](https://img.shields.io/badge/icloud-Send_Mail-white?style=for-the-badge&logo=apple)](mailto:reapers-arras.0y@icloud.com)
 
-Hi there! 👋 I'm Shubh, an aspiring computer scientist, innovator, and the founder of Social Cloud. Currently pursuing my BS in Computer Science at Northeastern University, I'm passionate about leveraging technology for social good.
+Hi there! 👋 I'm Shubh Thorat, an aspiring computer scientist, innovator, and the founder of Social Cloud. Currently pursuing my BS in Computer Science at Northeastern University, I'm passionate about leveraging technology for social good.
 
 ## 📚 Education
 
