@@ -23,7 +23,7 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     needs: build
-    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, 'Bot Changes Finalised README.md') }}
+    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, 'Bot Changes Finalised') }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -47,7 +47,7 @@ jobs:
           git config --local user.email "reapers-arras.0y@icloud.com"
           git config --local user.name "README Writer Bot"
           git add README.md
-          git commit -m "Bot Changes Finalised README.md" -a
+          git commit -m "Bot Changes Finalised" -a
       - name: Fetch and Rebase
         run: |
           git fetch
@@ -58,6 +58,7 @@ jobs:
   generate-resume:
     runs-on: ubuntu-latest
     needs: build
+    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, 'Bot Changes Finalised') }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -83,7 +84,7 @@ jobs:
       - name: Commit and push resume
         run: |
           git config --local user.email "reapers-arras.0y@icloud.com"
-          git config --local user.name "Resume Writer Bot"
+          git config --local user.name "Bot Changes Finalised"
           git add outputs/resume.pdf
           git commit -m "Auto-update Resume" -a
           git push
