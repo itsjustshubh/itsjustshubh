@@ -61,18 +61,17 @@ jobs:
           node-version: '14'
       - run: npm install
       - name: Generate Resume
-        run: node src/generateResume.js
-      - name: Check for resume file
-        id: check-resume
         run: |
+          node src/generateResume.js
           if [ -f outputs/resume.pdf ]; then
-            echo "Resume file exists."
-            echo "::set-output name=resume_exists::true"
+            echo "Resume file exists. Deleting and recreating."
+            rm outputs/resume.pdf
+            node src/generateResume.js
           else
-            echo "Resume file does not exist."
-            echo "::set-output name=resume_exists::false"
-      - name: Commit and push if resume changed
-        if: steps.check-resume.outputs.resume_exists == 'true'
+            echo "Creating resume file."
+            node src/generateResume.js
+          fi
+      - name: Commit and push resume
         run: |
           git config --local user.email "reapers-arras.0y@icloud.com"
           git config --local user.name "Automated Updater"
