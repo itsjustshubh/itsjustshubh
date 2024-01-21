@@ -1,11 +1,11 @@
 [//]: # (![Shubh Thorat Banner]&#40;link-to-your-banner-image&#41;)
 
 <div align="center">
-  <img src="../../public/logo192.png" height="200" style="margin-bottom: 0;" />
+  <img src="public/logo192.png" height="200" style="margin-bottom: 0;" />
 </div>
-<h1 align="center" style="margin-top: -10vh;">
+<h1 align="center" style="margin-top: -6vh;">
   Hi there, I'm <a href="https://shubhthorat.vercel.app/" target="_blank">Shubh Thorat</a>
-  <img src="../../src/assets/imported-icons/Hi.gif" height="30" />
+  <img src="src/assets/imported-icons/Hi.gif" height="30" />
 </h1>
 <hr>
 
