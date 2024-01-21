@@ -70,7 +70,7 @@ jobs:
       - name: List files in outputs directory
         run: ls -l outputs/
       - name: Generate Resume
-        run: |
+        run: | 
           node src/generateResume.js
           if [ -f outputs/resume.pdf ]; then
             echo "Resume file exists. Deleting and recreating."
