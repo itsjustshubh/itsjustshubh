@@ -5,7 +5,7 @@
 </div>
 <h1 align="center" style="margin-top: -6vh;">
   Hi there, I'm <a href="https://shubhthorat.vercel.app/" target="_blank">Shubh Thorat</a>
-  <img src="src/assets/imported-icons/Hi.gif" height="30" />
+  <img src="src/assets/imported-icons/Hi.gif" height="30" width="30" />
 </h1>
 <hr>
 
