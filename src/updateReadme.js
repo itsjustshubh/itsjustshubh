@@ -30,8 +30,8 @@ function generateMarkdownForProjects(projects) {
 }
 
 function updateReadme() {
-    // Read the existing README content
-    const readmeTemplate = fs.readFileSync('README.md', 'utf8');
+    // Read the template content
+    const templateContent = fs.readFileSync('TEMPLATE.md', 'utf8');
 
     // Generate dynamic content
     const educationContent = generateMarkdownForEducation(education);
@@ -39,13 +39,13 @@ function updateReadme() {
     const projectsContent = generateMarkdownForProjects(projects);
 
     // Replace placeholders in the template with dynamic content
-    const updatedReadme = readmeTemplate
+    const updatedContent = templateContent
         .replace('<!-- DYNAMIC_EDUCATION -->', educationContent)
         .replace('<!-- DYNAMIC_SKILLS -->', skillsContent)
         .replace('<!-- DYNAMIC_PROJECTS -->', projectsContent);
 
-    // Write the updated README
-    fs.writeFileSync('README.md', updatedReadme, 'utf8');
+    // Write the updated content to README.md
+    fs.writeFileSync('README.md', updatedContent, 'utf8');
     console.log('README updated successfully.');
 }
 

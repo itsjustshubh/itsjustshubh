@@ -14,7 +14,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14' # specify your Node.js version
+          node-version: '14' # Specify your Node.js version
           cache: 'npm'
       - run: npm ci
       - run: npm run build --if-present
@@ -23,8 +23,8 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     needs: build
-    # Prevent this job from running if the last commit message is 'Auto-update README'
-    if: "!contains(github.event.head_commit.message, 'Auto-update README')"
+    # Run if the workflow was not triggered by a push with a specific commit message
+    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, 'Auto-update README') }}
     steps:
       - uses: actions/checkout@v3
         with:
