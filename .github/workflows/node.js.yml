@@ -51,38 +51,38 @@ jobs:
       - name: Push changes
         run: git push
 
-  generate-resume:
-    runs-on: ubuntu-latest
-    needs: build
-    if: ${{ contains(github.event.head_commit.message, 'Bot Finalised README.md') &&
-      !contains(github.event.head_commit.message, 'Bot Finalised resume') }}
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-      - run: npm install
-      - name: Install LaTeX
-        run: sudo apt-get update && sudo apt-get install -y texlive
-      - name: List files in outputs directory
-        run: ls -l outputs/
-      - name: Delete existing resume file if exists
-        run: |
-          if [ -f outputs/resume.pdf ]; then
-            echo "Deleting existing resume file."
-            rm outputs/resume.pdf
-          fi
-      - name: Generate Resume
-        run: node src/generateResume.js
-      - name: Pull latest changes from remote
-        run: git pull origin main
-      - name: Commit and push resume
-        run: |
-          git config --local user.email "reapers-arras.0y@icloud.com"
-          git config --local user.name "Bot Finalised"
-          git add outputs/resume.pdf
-          git commit -m "Bot Finalised resume" -a
-          git push
+#  generate-resume:
+#    runs-on: ubuntu-latest
+#    needs: build
+#    if: ${{ contains(github.event.head_commit.message, 'Bot Finalised README.md') &&
+#      !contains(github.event.head_commit.message, 'Bot Finalised resume') }}
+#    steps:
+#      - uses: actions/checkout@v3
+#        with:
+#          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+#      - name: Set up Node.js
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: '14'
+#      - run: npm install
+#      - name: Install LaTeX
+#        run: sudo apt-get update && sudo apt-get install -y texlive
+#      - name: List files in outputs directory
+#        run: ls -l outputs/
+#      - name: Delete existing resume file if exists
+#        run: |
+#          if [ -f outputs/resume.pdf ]; then
+#            echo "Deleting existing resume file."
+#            rm outputs/resume.pdf
+#          fi
+#      - name: Generate Resume
+#        run: node src/generateResume.js
+#      - name: Pull latest changes from remote
+#        run: git pull origin main
+#      - name: Commit and push resume
+#        run: |
+#          git config --local user.email "reapers-arras.0y@icloud.com"
+#          git config --local user.name "Bot Finalised"
+#          git add outputs/resume.pdf
+#          git commit -m "Bot Finalised resume" -a
+#          git push

@@ -23,8 +23,9 @@ function formatEducation(education) {
 }
 
 function formatSkill(skill) {
-    // Format skill as an HTML image tag with the skill icon
-    return `<code><img title="${skill.name}" height="25" src="${skill.readMeIcon}"></code>`;
+    // Adding prefix to the icon path
+    const iconPath = skill.readMeIcon.replace('../assets/imported-icons/', 'src/assets/imported-icons/');
+    return `<code><img title="${skill.name}" height="25" src="${iconPath}"></code>`;
 }
 
 function formatProject(project) {
