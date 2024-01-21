@@ -59,8 +59,15 @@ function formatProject(project) {
 }
 
 function formatSocialProfile(profile) {
+  const iconName = path.basename(profile.link);
+        console.log("Icon Path:", iconName);
+
+        // Construct the new path using the required base directory
+        iconPath = path.join('src/assets/imported-icons/', iconName);
+        console.log("Modified Path:", iconPath);
+
   return `<code><a href="${profile.link}" target="_blank" title="${profile.name}" style="background-color: ${profile.backgroundColor}; padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/${profile.icon}.svg" height="30" alt="${profile.name}">
+    <img src="src/assets/imported-icons/${iconPath}" height="30" alt="${profile.name}">
   </a></code>`;
 }
 
