@@ -11,23 +11,23 @@
 
 <h5 align="center">
 <code><a href="https://www.github.com/itsjustshubh" target="_blank" title="Github" style="background-color: rgb(0,62,84); padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/[object Object].svg" height="30" alt="Github">
+    <img src="src/assets/imported-icons/src/assets/imported-icons/itsjustshubh" height="30" alt="Github">
   </a></code><code><a href="https://www.hackerrank.com/shubhthorat" target="_blank" title="HackerRank" style="background-color: rgb(50,199,101); padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/assets/hackerrank-black.svg.svg" height="30" alt="HackerRank">
+    <img src="src/assets/imported-icons/src/assets/imported-icons/shubhthorat" height="30" alt="HackerRank">
   </a></code><code><a href="https://stackoverflow.com/users/23278666/shubhthorat" target="_blank" title="Stack Overflow" style="background-color: rgb(244,128,35); padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/assets/stackoverflow.svg.svg" height="30" alt="Stack Overflow">
+    <img src="src/assets/imported-icons/src/assets/imported-icons/shubhthorat" height="30" alt="Stack Overflow">
   </a></code><code><a href="https://www.linkedin.com/in/shubhthorat/" target="_blank" title="Linkedin" style="background-color: rgb(11,101,194); padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/[object Object].svg" height="30" alt="Linkedin">
+    <img src="src/assets/imported-icons/src/assets/imported-icons/shubhthorat" height="30" alt="Linkedin">
   </a></code><code><a href="https://www.instagram.com/_itsjustshubh/" target="_blank" title="Instagram" style="background-color: LightSlateGrey; padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/assets/instagram.svg.svg" height="30" alt="Instagram">
+    <img src="src/assets/imported-icons/src/assets/imported-icons/_itsjustshubh" height="30" alt="Instagram">
   </a></code><code><a href="https://www.youtube.com/@shubhthorat" target="_blank" title="YouTube" style="background-color: rgb(255,0,0); padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/[object Object].svg" height="30" alt="YouTube">
+    <img src="src/assets/imported-icons/src/assets/imported-icons/@shubhthorat" height="30" alt="YouTube">
   </a></code><code><a href="https://shubhthorat.medium.com/" target="_blank" title="Medium" style="background-color: black; padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/[object Object].svg" height="30" alt="Medium">
+    <img src="src/assets/imported-icons/src/assets/imported-icons/shubhthorat.medium.com" height="30" alt="Medium">
   </a></code><code><a href="mailto:reapers-arras.0y@icloud.com" target="_blank" title="iCloud Mail" style="background-color: black; padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/[object Object].svg" height="30" alt="iCloud Mail">
+    <img src="src/assets/imported-icons/src/assets/imported-icons/mailto:reapers-arras.0y@icloud.com" height="30" alt="iCloud Mail">
   </a></code><code><a href="https://devpost.com/software/edith-brshpa" target="_blank" title="Devpost" style="background-color: rgb(100,148,185); padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/assets/devpost.svg.svg" height="30" alt="Devpost">
+    <img src="src/assets/imported-icons/src/assets/imported-icons/edith-brshpa" height="30" alt="Devpost">
   </a></code>
 </h5>
 
