@@ -37,22 +37,23 @@ jobs:
         run: npm run bundle-update-script
       - name: Update README
         run: node dist/updateReadmeBundle.js
-      - name: Fetch and Rebase
-        run: |
-          git fetch
-          git rebase origin/main
       - name: Check for changes
         id: git-check
         run: |
           git diff --exit-code || echo "::set-output name=changes_exist::true"
-      - name: Commit and push if README changed
+      - name: Commit changes if any
         if: steps.git-check.outputs.changes_exist == 'true'
         run: |
           git config --local user.email "reapers-arras.0y@icloud.com"
           git config --local user.name "README Writer Bot"
           git add README.md
           git commit -m "Auto-update README" -a
-          git push
+      - name: Fetch and Rebase
+        run: |
+          git fetch
+          git rebase origin/main
+      - name: Push changes
+        run: git push
 
   generate-resume:
     runs-on: ubuntu-latest
