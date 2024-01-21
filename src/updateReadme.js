@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Adjust the path to your content.js file
-const { education, skills, projects } = require('./pages/Content');
+const { education, skills, projects, socialProfiles } = require('./pages/Content');
 
 // Function to generate markdown for each section with expandable lists
 function generateExpandableMarkdown(sectionTitle, items, formatter) {
@@ -58,6 +58,12 @@ function formatProject(project) {
     return projectMarkdown;
 }
 
+function formatSocialProfile(profile) {
+  return `<code><a href="${profile.link}" target="_blank" title="${profile.name}" style="background-color: ${profile.backgroundColor}; padding: 5px; margin: 0 5px; border-radius: 4px;">
+    <img src="src/assets/imported-icons/${profile.icon}.svg" height="30" alt="${profile.name}">
+  </a></code>`;
+}
+
 function updateReadme() {
     const templatePath = path.join(__dirname, '..', 'templates', 'README', 'readmeTemplate.md');
     if (!fs.existsSync(templatePath)) {
@@ -71,12 +77,13 @@ function updateReadme() {
     const educationContent = generateExpandableMarkdown('Education', education, formatEducation);
     const skillsContent = `<p align="center">${skills.map(formatSkill).join(' ')}</p>`;
     const projectsContent = generateExpandableMarkdown('Projects', projects, formatProject);
+    const socialProfilesContent = socialProfiles.map(formatSocialProfile).join('');
 
-    // Replace placeholders in the template
     const updatedContent = templateContent
         .replace('<!-- DYNAMIC_EDUCATION -->', educationContent)
         .replace('<!-- DYNAMIC_SKILLS -->', skillsContent)
-        .replace('<!-- DYNAMIC_PROJECTS -->', projectsContent);
+        .replace('<!-- DYNAMIC_PROJECTS -->', projectsContent)
+        .replace('<!-- DYNAMIC_SOCIAL_PROFILES -->', socialProfilesContent);
 
     // Write to README.md
     fs.writeFileSync('README.md', updatedContent, 'utf8');
