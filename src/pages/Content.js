@@ -31,6 +31,8 @@ import { backgroundVideo,
     mysql,
     firebase,
     nodeIcon,
+    html5,
+    aws,
 } from './Assets';
 
 import {
@@ -172,18 +174,21 @@ const skills = [
         hours: 1,
         name: "Node.js",
         icon: faNode,
+        readMeIcon: nodeIcon,
         link: "",
     },
     {
         hours: 1,
         name: "HTML5",
         icon: faHtml5,
+        readMeIcon: html5,
         link: "",
     },
     {
         hours: 1,
         name: "AWS",
         icon: faAws,
+        readMeIcon: aws,
         link: "",
     },
     // ... Continue adding other skills
