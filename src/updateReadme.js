@@ -28,9 +28,10 @@ function formatSkill(skill) {
     if (skill.readMeIcon) {
         // Extract the basename (filename) from the path
         const iconName = path.basename(skill.readMeIcon);
+        console.log("Icon Path:", iconName);
 
         // Construct the new path using the required base directory
-        iconPath = path.join('assets', iconName);
+        iconPath = path.join('src/assets/imported-icons/', iconName);
 
         // Log the modified path for debugging
         console.log("Modified Path:", iconPath);
