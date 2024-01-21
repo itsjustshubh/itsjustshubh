@@ -9,6 +9,13 @@ Hi there! 👋 I'm Shubh Thorat, an aspiring computer scientist, innovator, and 
 
 ## 📚 Education
 
+### Bachelor of Science in Computer Science
+- **Institution:** Northeastern University
+- **Period:** Sep 2022 - Apr 2026
+- **Description:** Engaged in a comprehensive Computer Science program at Northeastern University, focusing on Artificial Intelligence. This course is enriching my knowledge in algorithms, AI applications, and system design. 
+
+Complementing this, my minor in Business Administration offers valuable insights into the synergy between technology and business management, equipping me with leadership and strategic skills vital in the tech industry. My involvement in various leadership roles on campus has further enhanced my practical experience.
+
 ### Summer School Program
 - **Institution:** London School Of Economics
 - **Period:** Jun 2023 - Aug 2023
