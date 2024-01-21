@@ -55,6 +55,8 @@ jobs:
     needs: build
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Use the PAT for checkout
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
