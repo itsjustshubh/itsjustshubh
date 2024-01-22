@@ -11,7 +11,7 @@
 <p align="center"><a href="https://www.github.com/itsjustshubh" target="_blank" title="Github" style="margin: 0 10px;">
             <code><img height="35" src="src/assets/imported-icons/github.svg"></code>
         </a><a href="https://www.hackerrank.com/shubhcthorat" target="_blank" title="HackerRank" style="margin: 0 10px;">
-            <code><img height="35" src="src/assets/imported-icons/hackerrank-black.svg"></code>
+            <code><img height="35" src="src/assets/imported-icons/hackerrank.svg"></code>
         </a><a href="https://www.linkedin.com/in/shubhthorat/" target="_blank" title="Linkedin" style="margin: 0 10px;">
             <code><img height="35" src="src/assets/imported-icons/linkedin.svg"></code>
         </a><a href="https://www.instagram.com/_itsjustshubh/" target="_blank" title="Instagram" style="margin: 0 10px;">
