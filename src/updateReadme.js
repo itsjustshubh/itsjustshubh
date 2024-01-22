@@ -15,28 +15,11 @@ function generateExpandableMarkdown(sectionTitle, items, formatter) {
 }
 
 function formatEducation(education) {
-    let educationMarkup = `<details>\n`;
-    educationMarkup += `<summary><h2>📚 Education</h2></summary>\n`;
-
-    if (Array.isArray(education)) {
-        education.forEach(edu => {
-            educationMarkup += `<details>\n`;
-            educationMarkup += `<summary>${edu.degree}</summary>\n`;
-            educationMarkup += `<div>\n`;
-            educationMarkup += `- **Institution:** ${edu.institution}<br>\n`;
-            educationMarkup += `- **Period:** ${edu.period}<br>\n`;
-            educationMarkup += `- **Description:** ${edu.description}<br>\n`;
-            educationMarkup += `</div>\n`;
-            educationMarkup += `</details>\n`;
-        });
-    } else {
-        console.error('Education data is not an array');
-        // Handle the case where education is not an array
-        // For instance, you could return a default message or an empty string
-    }
-
-    educationMarkup += `</details>\n`;
-    return educationMarkup;
+    return `<details><summary>${education.degree}</summary>
+- **Institution:** ${education.institution}
+- **Period:** ${education.period}
+- **Description:** ${education.description}
+</details>`;
 }
 
 function formatSkill(skill) {
