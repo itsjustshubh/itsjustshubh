@@ -40,7 +40,7 @@ function formatSkill(skill) {
     }
 
     // Return the skill icon wrapped in an anchor tag with margin for spacing
-    return `<a href="${skillLink}" target="_blank" title="${skill.name}" style="margin: 0 10px;"><code><img height="45" src="${iconPath}"></code></a>`;
+    return `<a href="${skillLink}" target="_blank" title="${skill.name}" style="margin: 0 10px;"><code><img height="35" src="${iconPath}"></code></a>`;
 }
 
 function formatProject(project) {
@@ -67,8 +67,8 @@ function formatSocialProfiles(profiles) {
         const textColor = profile.color || 'white'; // Use profile's color or default to inherit
 
         profilesMarkup += `<a href="${profile.link}" target="_blank" title="${profile.name}" style="background-color: ${profile.backgroundColor}; padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center; color: ${textColor};">
-            <img src="${iconPath}" height="30" alt="${profile.name}" style="margin-right: 5px;">
-            <strong style="font-size: 16px;">${profile.name}</strong>
+            <img src="${iconPath}" height="35" alt="${profile.name}" style="margin-right: 5px;">
+            <strong style="font-size: 30px;">${profile.name}</strong>
         </a>`;
     });
 
