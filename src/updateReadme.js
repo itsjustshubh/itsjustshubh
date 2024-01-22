@@ -91,7 +91,7 @@ function updateReadme() {
     const educationContent = generateExpandableMarkdown('Education', education, formatEducation);
     const skillsContent = `<p align="center">${skills.map(formatSkill).join(' ')}</p>`;
     const projectsContent = generateExpandableMarkdown('Projects', projects, formatProject);
-    const socialProfilesContent = socialProfiles.map(socialProfiles).join('');
+    const socialProfilesContent = socialProfiles.map(formatSocialProfiles).join('');
 
     const updatedContent = templateContent
         .replace('<!-- DYNAMIC_EDUCATION -->', educationContent)
