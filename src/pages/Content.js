@@ -301,13 +301,13 @@ const socialProfiles = [
         link: "https://devpost.com/software/edith-brshpa",
         icon: devpost,
     },
-    {
-        name: "Medium",
-        backgroundColor: "black",
-        color: "white",
-        link: "https://shubhthorat.medium.com/",
-        icon: medium,
-    },
+    // {
+    //     name: "Medium",
+    //     backgroundColor: "black",
+    //     color: "white",
+    //     link: "https://shubhthorat.medium.com/",
+    //     icon: medium,
+    // },
     // {
     //     name: "Stack Overflow",
     //     backgroundColor: "rgb(244,128,35)",
