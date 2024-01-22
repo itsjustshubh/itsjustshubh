@@ -33,10 +33,10 @@ Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, 
 
 <details><summary><h2><b>📚 Education</b></h2></summary>
 <details>
-<summary><h3><b>Bachelor of Science in Computer Science</b></h3></summary>
-<img src="src/assets/images/education/northeastern.png" alt="Northeastern University Logo" style="width:200px; height:200px;"><br>
+<summary><h3><b>Bachelor of Busines</b></h3></summary>
+<img src="src/assets/images/education/northeastern.png" alt="Boston University Logo" style="width:200px; height:200px;"><br>
 
-- **Institution:** Northeastern University
+- **Institution:** Boston University
 - **Period:** Sep 2022 - Apr 2026
 - **Course:** Specialization in Artificial Intelligence<br>
 - **Description:** Engaged in a comprehensive Computer Science program at Northeastern University, focusing on Artificial Intelligence. This course is enriching my knowledge in algorithms, AI applications, and system design.  Complementing this, my minor in Business Administration offers valuable insights into the synergy between technology and business management, equipping me with leadership and strategic skills vital in the tech industry. My involvement in various leadership roles on campus has further enhanced my practical experience.
