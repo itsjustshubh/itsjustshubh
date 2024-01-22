@@ -31,37 +31,22 @@ Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, 
 
 ---
 
-## 🚀 About Me
-<!-- DYNAMIC_ABOUT -->
+<details><summary><h2><b>📈 My GitHub Stats</b></h2></summary>
 
----
+<details><summary><h3><b>GitHub Stats</b></h3></summary>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=itsjustshubh&show_icons=true&theme=vision-friendly-dark" />
+</details>
 
-## 📈 My GitHub Stats
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=itsjustshubh&show_icons=true&theme=vision-friendly-dark)
+<details><summary><h3><b>Top Languages</b></h3></summary>
+!<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsjustshubh&layout=compact&theme=vision-friendly-dark" />
+</details>
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=itsjustshubh&layout=compact&theme=vision-friendly-dark)
-
----
-
-## 🏅 Achievements & Contributions
-
-<!-- DYNAMIC_ACHIEVEMENTS -->
-
----
-
-## 📚 Continuous Learning
-
-<!-- DYNAMIC_LEARNING -->
-
----
-
-## 🔗 Let's Connect!
-
-<!-- DYNAMIC_CONNECT -->
+</details>
 
 ---
 
 ### 💫 Extra
-
+<a href="https://www.buymeacoffee.com/shubhthorat" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="150" ></a>
+<br>
 <!-- DYNAMIC_EXTRA -->
 
