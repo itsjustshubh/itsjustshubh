@@ -33,34 +33,55 @@ Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, 
 
 ## 📚 Education
 <details><summary>Education</summary>
-<details>
-<summary><h2>📚 Education</h2></summary>
-</details>
+<details><summary>Bachelor of Science in Computer Science</summary>
+- **Institution:** Northeastern University
+- **Period:** Sep 2022 - Apr 2026
+- **Description:** Engaged in a comprehensive Computer Science program at Northeastern University, focusing on Artificial Intelligence. This course is enriching my knowledge in algorithms, AI applications, and system design. 
 
-<details>
-<summary><h2>📚 Education</h2></summary>
+Complementing this, my minor in Business Administration offers valuable insights into the synergy between technology and business management, equipping me with leadership and strategic skills vital in the tech industry. My involvement in various leadership roles on campus has further enhanced my practical experience.
 </details>
+<details><summary>Summer School Program</summary>
+- **Institution:** London School Of Economics
+- **Period:** Jun 2023 - Aug 2023
+- **Description:** At LSE's Summer School, I delved into Data Science and Marketing, gaining in-depth knowledge in big data analytics, machine learning's role in decision-making, and effective marketing strategies.
 
-<details>
-<summary><h2>📚 Education</h2></summary>
+The courses provided valuable insights into customer behavior, data interpretation, and applying these insights to real-world business strategies, enriching my understanding of the interplay between technology and market dynamics.
 </details>
+<details><summary>International Baccalaureate</summary>
+- **Institution:** Singapore International School
+- **Period:** Jul 2020 - May 2022
+- **Description:** Completing the International Baccalaureate at Singapore International School, I was challenged with an academically rigorous curriculum, focusing on Mathematics, Physics, and Chemistry at higher levels, alongside Business Management, Spanish, and English. 
 
-<details>
-<summary><h2>📚 Education</h2></summary>
+The diverse academic environment fostered a global outlook and equipped me with the skills needed to excel in multicultural settings, preparing me for a global academic and professional landscape.
 </details>
+<details><summary>Introduction to Computer Science with Python</summary>
+- **Institution:** Harvard Summer School
+- **Period:** Apr 2021 - Sep 2021
+- **Description:** My course at Harvard Summer School served as my formal introduction to computer science and programming. Centering around Python, the curriculum was an excellent blend of theoretical concepts and practical applications and computational problem-solving. 
 
-<details>
-<summary><h2>📚 Education</h2></summary>
+The course laid a solid foundation in computer science principles, significantly influencing my academic trajectory. It spurred my curiosity in the field, driving me to explore more complex and diverse areas of computer science, and shaping my future academic pursuits in technology.
 </details>
+<details><summary>C-Language Course</summary>
+- **Institution:** George Computer Tuition
+- **Period:** Sep 2019 - Apr 2020
+- **Description:** Beginning my programming journey with George Computer Tuition, I undertook a comprehensive course in C-language. This initial step into coding introduced me to fundamental concepts and logical structures, forming the basis of my understanding of computer programming. 
 
-<details>
-<summary><h2>📚 Education</h2></summary>
+The rigorous training in this foundational language proved to be a critical stepping stone, igniting my passion for programming and significantly influencing my decision to major in Computer Science at Northeastern University. This course was a pivotal moment, setting the direction for my academic and professional pursuits in technology.
 </details>
+<details><summary>IGCSE</summary>
+- **Institution:** Podar International School
+- **Period:** Sep 2017 - Apr 2020
+- **Description:** At Podar International School, the IGCSE curriculum provided me with a broad and varied academic experience. I navigated through challenging subjects, learning to adapt and develop effective study techniques. This period was critical for my academic growth, teaching me the value of resilience and adaptability in the face of challenges. 
 
-<details>
-<summary><h2>📚 Education</h2></summary>
+The comprehensive curriculum laid a solid foundation in various subjects, contributing significantly to my overall development and shaping my approach to learning. This phase was instrumental in preparing me for higher academic endeavors and setting a robust foundation for future success.
 </details>
-</details>
+<details><summary>CBSE</summary>
+- **Institution:** Ryan International School
+- **Period:** Jun 2013 - Aug 2017
+- **Description:** My time at Ryan International School was foundational, marked by a diverse and enriching educational experience under the CBSE curriculum. The school's holistic approach to education emphasized not just academic excellence but also the development of key life skills such as communication, teamwork, and ethical decision-making. 
+
+These formative years were crucial in shaping my character and personal development, instilling in me a strong sense of discipline and a passion for learning. The experiences and skills gained during this period have had a lasting impact, laying a strong foundation for my subsequent educational journey.
+</details></details>
 
 
 ---
