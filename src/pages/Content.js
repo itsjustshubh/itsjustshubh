@@ -274,7 +274,7 @@ const socialProfiles = [
     {
         name: "HackerRank",
         backgroundColor: "rgb(50,199,101)",
-        link: "https://www.hackerrank.com/shubhthorat",
+        link: "https://www.hackerrank.com/shubhcthorat",
         icon: hackerRank,
     },
     {
@@ -303,8 +303,8 @@ const socialProfiles = [
     },
     {
         name: "Medium",
-        backgroundColor: "white",
-        color: "black",
+        backgroundColor: "black",
+        color: "white",
         link: "https://shubhthorat.medium.com/",
         icon: medium,
     },
