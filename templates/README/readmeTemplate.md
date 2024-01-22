@@ -19,8 +19,9 @@ Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, 
 <!-- DYNAMIC_SKILLS -->
 <hr>
 
-## 📚 Education
+<details><summary><h2><b>📚 Education</b></h2></summary>
 <!-- DYNAMIC_EDUCATION -->
+</details>
 
 ---
 

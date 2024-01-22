@@ -15,9 +15,12 @@ function generateExpandableMarkdown(sectionTitle, items, formatter) {
 }
 
 function formatEducation(education) {
-    return `<details><summary>${education.degree}</summary>
+    return `<details>
+<summary><h3><b>${education.degree}</b></h3></summary>
+<img src="${education.image}" alt="${education.institution} Logo" style="max-width:100px; max-height:100px;"><br>
 - **Institution:** ${education.institution}
 - **Period:** ${education.period}
+${education.course ? `- **Course:** ${education.course}<br>` : ''}
 - **Description:** ${education.description}
 </details>`;
 }
@@ -84,14 +87,13 @@ function updateReadme() {
 
     const templateContent = fs.readFileSync(templatePath, 'utf8');
 
-    // Generate dynamic content
-    const educationContent = generateExpandableMarkdown('Education', education, formatEducation);
+    // Generate dynamic content for each section
+    const educationContent = education.map(formatEducation).join('\n');
     const skillsContent = `<p align="center">${skills.map(formatSkill).join(' ')}</p>`;
-    const projectsContent = generateExpandableMarkdown('Projects', projects, formatProject);
-
-    // Map over socialProfiles using formatSocialProfiles function
+    const projectsContent = projects.map(formatProject).join('\n');
     const socialProfilesContent = formatSocialProfiles(socialProfiles);
 
+    // Replace placeholders in the template with generated content
     const updatedContent = templateContent
         .replace('<!-- DYNAMIC_EDUCATION -->', educationContent)
         .replace('<!-- DYNAMIC_SKILLS -->', skillsContent)
