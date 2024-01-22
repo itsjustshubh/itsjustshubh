@@ -32,14 +32,14 @@ ${education.course ? `- **Course:** ${education.course}<br>` : ''}
 }
 
 function formatProject(project) {
-    console.log("Project Image:", project.image);
-    const iconName = path.basename(project.image);
-    const iconPath = `src/assets/icons/${iconName}`;
+    console.log("Project Image:", path.basename(project.image));
+    // const iconName = path.basename(project.image);
+    // const iconPath = `src/assets/icons/${iconName}`;
     const formattedDescription = project.description.replace(/\n\n/g, " ");
 
     return `<details>
 <summary><h3><b>${project.name}</b></h3></summary>
-<!--<img src="${iconPath}" alt="${project.name} Logo" style="width:200px; height:200px;"><br>-->
+<!--<img src="" alt="${project.name} Logo" style="width:200px; height:200px;"><br>-->
 
 ${project.languages ? `- **Lenguages:** ${project.languages}<br>` : ''}
 - **Timeline:** ${project.timeline}
