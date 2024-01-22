@@ -204,8 +204,8 @@ const skills = [
 
 const education = [
   {
-    degree: "Bachelor of Busines",
-    institution: "Boston University",
+    degree: "Bachelor of Science in Computer Science",
+    institution: "Northeastern University",
     period: "Sep 2022 - Apr 2026",
     course: "Specialization in Artificial Intelligence",
     description: "Engaged in a comprehensive Computer Science program at Northeastern University, focusing on Artificial Intelligence. This course is enriching my knowledge in algorithms, AI applications, and system design. " +
