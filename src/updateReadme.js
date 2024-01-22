@@ -15,6 +15,9 @@ function generateExpandableMarkdown(sectionTitle, items, formatter) {
 }
 
 function formatEducation(education) {
+    // Replace double newlines with a space in the description
+    const formattedDescription = education.description.replace(/\n\n/g, " ");
+
     return `<details>
 <summary><h3><b>${education.degree}</b></h3></summary>
 <img src="${education.image}" alt="${education.institution} Logo" style="max-width:100px; max-height:100px;"><br>
@@ -22,7 +25,7 @@ function formatEducation(education) {
 - **Institution:** ${education.institution}
 - **Period:** ${education.period}
 ${education.course ? `- **Course:** ${education.course}<br>` : ''}
-- **Description:** ${education.description}
+- **Description:** ${formattedDescription}
 </details>`;
 }
 
