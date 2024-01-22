@@ -10,25 +10,25 @@
 <h5 align="center">
 <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;"><a href="https://www.github.com/itsjustshubh" target="_blank" title="Github" style="background-color: rgb(0,62,84); padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center; color: white;">
             <img src="src/assets/imported-icons/github.svg" height="35" alt="Github" style="margin-right: 5px;">
-            <strong style="font-size: 30px;">Github</strong>
+<!--            <strong style="font-size: 30px;">Github</strong>-->
         </a><a href="https://www.hackerrank.com/shubhthorat" target="_blank" title="HackerRank" style="background-color: rgb(50,199,101); padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center; color: white;">
             <img src="src/assets/imported-icons/hackerrank-black.svg" height="35" alt="HackerRank" style="margin-right: 5px;">
-            <strong style="font-size: 30px;">HackerRank</strong>
+<!--            <strong style="font-size: 30px;">HackerRank</strong>-->
         </a><a href="https://www.linkedin.com/in/shubhthorat/" target="_blank" title="Linkedin" style="background-color: rgb(0,101,153); padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center; color: white;">
             <img src="src/assets/imported-icons/linkedin.svg" height="35" alt="Linkedin" style="margin-right: 5px;">
-            <strong style="font-size: 30px;">Linkedin</strong>
+<!--            <strong style="font-size: 30px;">Linkedin</strong>-->
         </a><a href="https://www.instagram.com/_itsjustshubh/" target="_blank" title="Instagram" style="background-color: LightSlateGrey; padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center; color: white;">
             <img src="src/assets/imported-icons/instagram.svg" height="35" alt="Instagram" style="margin-right: 5px;">
-            <strong style="font-size: 30px;">Instagram</strong>
+<!--            <strong style="font-size: 30px;">Instagram</strong>-->
         </a><a href="mailto:reapers-arras.0y@icloud.com" target="_blank" title="iCloud Mail" style="background-color: rgb(88,117,255); padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center; color: white;">
             <img src="src/assets/imported-icons/apple-mail.svg" height="35" alt="iCloud Mail" style="margin-right: 5px;">
-            <strong style="font-size: 30px;">iCloud Mail</strong>
+<!--            <strong style="font-size: 30px;">iCloud Mail</strong>-->
         </a><a href="https://devpost.com/software/edith-brshpa" target="_blank" title="Devpost" style="background-color: rgb(100,148,185); padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center; color: white;">
             <img src="src/assets/imported-icons/devpost.svg" height="35" alt="Devpost" style="margin-right: 5px;">
-            <strong style="font-size: 30px;">Devpost</strong>
+<!--            <strong style="font-size: 30px;">Devpost</strong>-->
         </a><a href="https://shubhthorat.medium.com/" target="_blank" title="Medium" style="background-color: white; padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center; color: black;">
             <img src="src/assets/imported-icons/medium.svg" height="35" alt="Medium" style="margin-right: 5px;">
-            <strong style="font-size: 30px;">Medium</strong>
+<!--            <strong style="font-size: 30px;">Medium</strong>-->
         </a></div>
 </h5>
 
