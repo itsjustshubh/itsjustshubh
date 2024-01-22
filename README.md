@@ -10,21 +10,28 @@
 </h1>
 
 <h5 align="center">
-<code><a href="https://www.github.com/itsjustshubh" target="_blank" title="Github" style="background-color: rgb(0,62,84); padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/github.svg" height="30" alt="Github"><strong style="font-size: 20px;"> Github</strong>
-  </a></code><code><a href="https://www.hackerrank.com/shubhthorat" target="_blank" title="HackerRank" style="background-color: rgb(50,199,101); padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/hackerrank-black.svg" height="30" alt="HackerRank"><strong style="font-size: 16px;"> HackerRank</strong>
-  </a></code><code><a href="https://www.linkedin.com/in/shubhthorat/" target="_blank" title="Linkedin" style="background-color: rgb(0,101,153); padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/linkedin.svg" height="30" alt="Linkedin"><strong style="font-size: 16px;"> Linkedin</strong>
-  </a></code><code><a href="https://www.instagram.com/_itsjustshubh/" target="_blank" title="Instagram" style="background-color: LightSlateGrey; padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/instagram.svg" height="30" alt="Instagram"><strong style="font-size: 16px;"> Instagram</strong>
-  </a></code><code><a href="mailto:reapers-arras.0y@icloud.com" target="_blank" title="iCloud Mail" style="background-color: rgb(88,117,255); padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/apple-mail.svg" height="30" alt="iCloud Mail"><strong style="font-size: 16px;"> iCloud Mail</strong>
-  </a></code><code><a href="https://devpost.com/software/edith-brshpa" target="_blank" title="Devpost" style="background-color: rgb(100,148,185); padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/devpost.svg" height="30" alt="Devpost"><strong style="font-size: 16px;"> Devpost</strong>
-  </a></code><code><a href="https://shubhthorat.medium.com/" target="_blank" title="Medium" style="background-color: white; padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/medium.svg" height="30" alt="Medium"><strong style="font-size: 16px;"> Medium</strong>
-  </a></code>
+<div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;"><a href="https://www.github.com/itsjustshubh" target="_blank" title="Github" style="background-color: rgb(0,62,84); padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center;">
+      <img src="src/assets/imported-icons/github.svg.svg" height="30" alt="Github" style="margin-right: 5px;">
+      <strong style="font-size: 16px;">Github</strong>
+    </a><a href="https://www.hackerrank.com/shubhthorat" target="_blank" title="HackerRank" style="background-color: rgb(50,199,101); padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center;">
+      <img src="src/assets/imported-icons/hackerrank-black.svg.svg" height="30" alt="HackerRank" style="margin-right: 5px;">
+      <strong style="font-size: 16px;">HackerRank</strong>
+    </a><a href="https://www.linkedin.com/in/shubhthorat/" target="_blank" title="Linkedin" style="background-color: rgb(0,101,153); padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center;">
+      <img src="src/assets/imported-icons/linkedin.svg.svg" height="30" alt="Linkedin" style="margin-right: 5px;">
+      <strong style="font-size: 16px;">Linkedin</strong>
+    </a><a href="https://www.instagram.com/_itsjustshubh/" target="_blank" title="Instagram" style="background-color: LightSlateGrey; padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center;">
+      <img src="src/assets/imported-icons/instagram.svg.svg" height="30" alt="Instagram" style="margin-right: 5px;">
+      <strong style="font-size: 16px;">Instagram</strong>
+    </a><a href="mailto:reapers-arras.0y@icloud.com" target="_blank" title="iCloud Mail" style="background-color: rgb(88,117,255); padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center;">
+      <img src="src/assets/imported-icons/apple-mail.svg.svg" height="30" alt="iCloud Mail" style="margin-right: 5px;">
+      <strong style="font-size: 16px;">iCloud Mail</strong>
+    </a><a href="https://devpost.com/software/edith-brshpa" target="_blank" title="Devpost" style="background-color: rgb(100,148,185); padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center;">
+      <img src="src/assets/imported-icons/devpost.svg.svg" height="30" alt="Devpost" style="margin-right: 5px;">
+      <strong style="font-size: 16px;">Devpost</strong>
+    </a><a href="https://shubhthorat.medium.com/" target="_blank" title="Medium" style="background-color: white; padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center;">
+      <img src="src/assets/imported-icons/medium.svg.svg" height="30" alt="Medium" style="margin-right: 5px;">
+      <strong style="font-size: 16px;">Medium</strong>
+    </a></div>
 </h5>
 
 Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, and the founder of Social Cloud. Currently pursuing my BS in Computer Science at Northeastern University, I'm passionate about leveraging technology for social good. I thrive on challenges and constantly set goals for myself, so I have something to strive toward. I'm not comfortable with settling, and I'm always looking for an opportunity to do better and achieve greatness. 🚀
