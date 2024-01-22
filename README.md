@@ -11,19 +11,19 @@
 
 <h5 align="center">
 <code><a href="https://www.github.com/itsjustshubh" target="_blank" title="Github" style="background-color: rgb(0,62,84); padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/github.svg" height="30" alt="Github"><strong style="font-size: 20px;"> Github</strong>
+    <img src="src/assets/imported-icons/github.svg" height="30" alt="Github">
   </a></code><code><a href="https://www.hackerrank.com/shubhthorat" target="_blank" title="HackerRank" style="background-color: rgb(50,199,101); padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/hackerrank-black.svg" height="30" alt="HackerRank"><strong style="font-size: 16px;"> HackerRank</strong>
+    <img src="src/assets/imported-icons/hackerrank-black.svg" height="30" alt="HackerRank">
   </a></code><code><a href="https://www.linkedin.com/in/shubhthorat/" target="_blank" title="Linkedin" style="background-color: rgb(0,101,153); padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/linkedin.svg" height="30" alt="Linkedin"><strong style="font-size: 16px;"> Linkedin</strong>
+    <img src="src/assets/imported-icons/linkedin.svg" height="30" alt="Linkedin">
   </a></code><code><a href="https://www.instagram.com/_itsjustshubh/" target="_blank" title="Instagram" style="background-color: LightSlateGrey; padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/instagram.svg" height="30" alt="Instagram"><strong style="font-size: 16px;"> Instagram</strong>
+    <img src="src/assets/imported-icons/instagram.svg" height="30" alt="Instagram">
   </a></code><code><a href="mailto:reapers-arras.0y@icloud.com" target="_blank" title="iCloud Mail" style="background-color: rgb(88,117,255); padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/apple-mail.svg" height="30" alt="iCloud Mail"><strong style="font-size: 16px;"> iCloud Mail</strong>
+    <img src="src/assets/imported-icons/apple-mail.svg" height="30" alt="iCloud Mail">
   </a></code><code><a href="https://devpost.com/software/edith-brshpa" target="_blank" title="Devpost" style="background-color: rgb(100,148,185); padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/devpost.svg" height="30" alt="Devpost"><strong style="font-size: 16px;"> Devpost</strong>
+    <img src="src/assets/imported-icons/devpost.svg" height="30" alt="Devpost">
   </a></code><code><a href="https://shubhthorat.medium.com/" target="_blank" title="Medium" style="background-color: white; padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/medium.svg" height="30" alt="Medium"><strong style="font-size: 16px;"> Medium</strong>
+    <img src="src/assets/imported-icons/medium.svg" height="30" alt="Medium">
   </a></code>
 </h5>
 
