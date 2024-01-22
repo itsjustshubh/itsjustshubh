@@ -34,7 +34,7 @@ Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, 
 <details><summary><h2><b>📚 Education</b></h2></summary>
 <details>
 <summary><h3><b>Bachelor of Science in Computer Science</b></h3></summary>
-<img src="src/assets/icons/images/education/northeastern.png" alt="Northeastern University Logo" style="max-width:100px; max-height:100px;"><br>
+<img src="src/assets/images/education/northeastern.png" alt="Northeastern University Logo" style="max-width:15px; max-height:15px;"><br>
 
 - **Institution:** Northeastern University
 - **Period:** Sep 2022 - Apr 2026
@@ -43,7 +43,7 @@ Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, 
 </details>
 <details>
 <summary><h3><b>Summer School Program</b></h3></summary>
-<img src="src/assets/icons/images/education/london-school-of-economics.png" alt="London School Of Economics Logo" style="max-width:100px; max-height:100px;"><br>
+<img src="src/assets/images/education/london-school-of-economics.png" alt="London School Of Economics Logo" style="max-width:100px; max-height:100px;"><br>
 
 - **Institution:** London School Of Economics
 - **Period:** Jun 2023 - Aug 2023

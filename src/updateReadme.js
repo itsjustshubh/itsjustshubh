@@ -18,13 +18,13 @@ function formatEducation(education) {
     // Replace double newlines with a space in the description
     const formattedImage = education.image.replace("", " ");
     const iconName = path.basename(education.image);
-    const iconPath = `src/assets/icons/images/education/${iconName}`;
+    const iconPath = `src/assets/images/education/${iconName}`;
 
     const formattedDescription = education.description.replace(/\n\n/g, " ");
 
     return `<details>
 <summary><h3><b>${education.degree}</b></h3></summary>
-<img src="${iconPath}" alt="${education.institution} Logo" style="max-width:100px; max-height:100px;"><br>
+<img src="${iconPath}" alt="${education.institution} Logo" style="max-width:25px; max-height:25px;"><br>
 
 - **Institution:** ${education.institution}
 - **Period:** ${education.period}
