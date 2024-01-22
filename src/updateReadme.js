@@ -43,6 +43,23 @@ function formatSkill(skill) {
     return `<a href="${skillLink}" target="_blank" title="${skill.name}" style="margin: 0 10px;"><code><img height="35" src="${iconPath}"></code></a>`;
 }
 
+function formatSocialProfiles(profiles) {
+    let profilesMarkup = `<p align="center">`;
+
+    profiles.forEach(profile => {
+        const iconName = path.basename(profile.icon);
+        const iconPath = `src/assets/imported-icons/${iconName}`; // Assuming the extension is .svg
+
+        profilesMarkup += `<a href="${profile.link}" target="_blank" title="${profile.name}" style="margin: 0 10px;">
+            <code><img height="35" src="${iconPath}"></code>
+        </a>`;
+    });
+
+    profilesMarkup += `</p>`;
+
+    return profilesMarkup;
+}
+
 function formatProject(project) {
     let projectMarkdown = `<details><summary>${project.name}</summary>\n`;
     projectMarkdown += `![${project.name} Image](${project.image})\n`; // Replace with actual path
@@ -56,25 +73,6 @@ function formatProject(project) {
     projectMarkdown += '</details>';
 
     return projectMarkdown;
-}
-
-function formatSocialProfiles(profiles) {
-    let profilesMarkup = `<div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">`;
-
-    profiles.forEach(profile => {
-        const iconName = path.basename(profile.icon);
-        const iconPath = `src/assets/imported-icons/${iconName}`; // Assuming the extension is .svg
-        const textColor = profile.color || 'white'; // Use profile's color or default to inherit
-
-        profilesMarkup += `<a href="${profile.link}" target="_blank" title="${profile.name}" style="background-color: ${profile.backgroundColor}; padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center; color: ${textColor};">
-            <img src="${iconPath}" height="35" alt="${profile.name}" style="margin-right: 5px;">
-<!--            <strong style="font-size: 30px;">${profile.name}</strong>-->
-        </a>`;
-    });
-
-    profilesMarkup += `</div>`;
-
-    return profilesMarkup;
 }
 
 function updateReadme() {
