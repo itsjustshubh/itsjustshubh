@@ -11,7 +11,7 @@
 
 <h5 align="center">
 <code><a href="https://www.github.com/itsjustshubh" target="_blank" title="Github" style="background-color: rgb(0,62,84); padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="src/assets/imported-icons/github.svg" height="30" alt="Github"><strong style="font-size: 16px;"> Github</strong>
+    <img src="src/assets/imported-icons/github.svg" height="30" alt="Github"><strong style="font-size: 20px;"> Github</strong>
   </a></code><code><a href="https://www.hackerrank.com/shubhthorat" target="_blank" title="HackerRank" style="background-color: rgb(50,199,101); padding: 5px; margin: 0 5px; border-radius: 4px;">
     <img src="src/assets/imported-icons/hackerrank-black.svg" height="30" alt="HackerRank"><strong style="font-size: 16px;"> HackerRank</strong>
   </a></code><code><a href="https://www.linkedin.com/in/shubhthorat/" target="_blank" title="Linkedin" style="background-color: rgb(0,101,153); padding: 5px; margin: 0 5px; border-radius: 4px;">
