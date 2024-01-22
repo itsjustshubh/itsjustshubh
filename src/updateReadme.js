@@ -58,18 +58,24 @@ function formatProject(project) {
     return projectMarkdown;
 }
 
-function formatSocialProfile(profile) {
-    // Extract the basename (filename) from the icon path, assuming the icon names are stored in profile.icon
+function formatSocialProfiles(profiles) {
+  // Start the container with a flexbox layout
+  let profilesMarkup = `<div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">`;
+
+  profiles.forEach(profile => {
     const iconName = path.basename(profile.icon);
-        console.log("Icon Path:", iconName);
+    const iconPath = `src/assets/imported-icons/${iconName}.svg`; // Assuming the extension is .svg
 
-        // Construct the new path using the required base directory
-        iconPath = path.join('src/assets/imported-icons/', iconName);
-        console.log("Modified Path:", iconPath);
+    profilesMarkup += `<a href="${profile.link}" target="_blank" title="${profile.name}" style="background-color: ${profile.backgroundColor}; padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center;">
+      <img src="${iconPath}" height="30" alt="${profile.name}" style="margin-right: 5px;">
+      <strong style="font-size: 16px;">${profile.name}</strong>
+    </a>`;
+  });
 
-    return `<code><a href="${profile.link}" target="_blank" title="${profile.name}" style="background-color: ${profile.backgroundColor}; padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <img src="${iconPath}" height="30" alt="${profile.name}">
-  </a></code>`;
+  // Close the container
+  profilesMarkup += `</div>`;
+
+  return profilesMarkup;
 }
 
 function updateReadme() {
