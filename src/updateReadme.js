@@ -24,7 +24,7 @@ function formatEducation(education) {
 
     return `<details>
 <summary><h3><b>${education.degree}</b></h3></summary>
-<img src="${iconPath}" alt="${education.institution} Logo" style="max-width:25px; max-height:25px;"><br>
+<img src="${iconPath}" alt="${education.institution} Logo" style="width:200px; height:200px;"><br>
 
 - **Institution:** ${education.institution}
 - **Period:** ${education.period}
