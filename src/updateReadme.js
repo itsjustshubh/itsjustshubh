@@ -18,6 +18,7 @@ function formatEducation(education) {
     return `<details>
 <summary><h3><b>${education.degree}</b></h3></summary>
 <img src="${education.image}" alt="${education.institution} Logo" style="max-width:100px; max-height:100px;"><br>
+
 - **Institution:** ${education.institution}
 - **Period:** ${education.period}
 ${education.course ? `- **Course:** ${education.course}<br>` : ''}
