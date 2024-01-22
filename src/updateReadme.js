@@ -32,7 +32,7 @@ ${education.course ? `- **Course:** ${education.course}<br>` : ''}
 }
 
 function formatProject(project) {
-    console.log("Project Image:", path.basename(project.image));
+    // console.log("Project Image:", path.basename(project.image));
     // const iconName = path.basename(project.image);
     // const iconPath = `src/assets/icons/${iconName}`;
     const formattedDescription = project.description.replace(/\n\n/g, " ");
