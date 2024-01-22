@@ -25,8 +25,9 @@ Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, 
 
 ---
 
-## 🏅 Projects
+<details><summary><h2><b>🏅 Projects</b></h2></summary>
 <!-- DYNAMIC_PROJECTS -->
+</details>
 
 ---
 

@@ -15,8 +15,6 @@ function generateExpandableMarkdown(sectionTitle, items, formatter) {
 }
 
 function formatEducation(education) {
-    // Replace double newlines with a space in the description
-    const formattedImage = education.image.replace("", " ");
     const iconName = path.basename(education.image);
     const iconPath = `src/assets/images/education/${iconName}`;
 
@@ -29,6 +27,36 @@ function formatEducation(education) {
 - **Institution:** ${education.institution}
 - **Period:** ${education.period}
 ${education.course ? `- **Course:** ${education.course}<br>` : ''}
+- **Description:** ${formattedDescription}
+</details>`;
+}
+
+// function formatProject(project) {
+//     let projectMarkdown = `<details><summary>${project.name}</summary>\n`;
+//     projectMarkdown += `![${project.name} Image](${project.image})\n`; // Replace with actual path
+//     projectMarkdown += `- **Timeline:** ${project.timeline}\n`;
+//     projectMarkdown += `- **Description:** ${project.description}\n`;
+//
+//     // Add buttons
+//     project.buttons.forEach(button => {
+//         projectMarkdown += `[![${button.buttonText}](https://img.shields.io/badge/-${encodeURIComponent(button.buttonText)}-brightgreen?style=flat&logo=${button.buttonIcon})](${button.buttonLink})\n`;
+//     });
+//     projectMarkdown += '</details>';
+//
+//     return projectMarkdown;
+// }
+
+function formatProject(project) {
+    const iconName = path.basename(project.image);
+    const iconPath = `src/assets/icons/${iconName}`;
+    const formattedDescription = project.description.replace(/\n\n/g, " ");
+
+    return `<details>
+<summary><h3><b>${project.name}</b></h3></summary>
+<img src="${iconPath}" alt="${project.name} Logo" style="width:200px; height:200px;"><br>
+
+${project.languages ? `- **Lenguages:** ${project.languages}<br>` : ''}
+- **Timeline:** ${project.timeline}
 - **Description:** ${formattedDescription}
 </details>`;
 }
@@ -69,21 +97,6 @@ function formatSocialProfiles(profiles) {
     profilesMarkup += `</p>`;
 
     return profilesMarkup;
-}
-
-function formatProject(project) {
-    let projectMarkdown = `<details><summary>${project.name}</summary>\n`;
-    projectMarkdown += `![${project.name} Image](${project.image})\n`; // Replace with actual path
-    projectMarkdown += `- **Timeline:** ${project.timeline}\n`;
-    projectMarkdown += `- **Description:** ${project.description}\n`;
-
-    // Add buttons
-    project.buttons.forEach(button => {
-        projectMarkdown += `[![${button.buttonText}](https://img.shields.io/badge/-${encodeURIComponent(button.buttonText)}-brightgreen?style=flat&logo=${button.buttonIcon})](${button.buttonLink})\n`;
-    });
-    projectMarkdown += '</details>';
-
-    return projectMarkdown;
 }
 
 function updateReadme() {
