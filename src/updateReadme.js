@@ -15,11 +15,20 @@ function generateExpandableMarkdown(sectionTitle, items, formatter) {
 }
 
 function formatEducation(education) {
-    return `<details><summary>${education.degree}</summary>
-- **Institution:** ${education.institution}
-- **Period:** ${education.period}
-- **Description:** ${education.description}
-</details>`;
+    let educationDetails = `<details>\n`;
+    educationDetails += `<summary><h2>📚 Education</h2></summary>\n`;
+
+    education.forEach(edu => {
+        educationDetails += `<div>\n`;
+        educationDetails += `<strong>${edu.degree}</strong>\n`;
+        educationDetails += `- **Institution:** ${edu.institution}\n`;
+        educationDetails += `- **Period:** ${edu.period}\n`;
+        educationDetails += `- **Description:** ${edu.description}\n`;
+        educationDetails += `</div>\n`;
+    });
+
+    educationDetails += `</details>\n`;
+    return educationDetails;
 }
 
 function formatSkill(skill) {
