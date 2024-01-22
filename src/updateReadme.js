@@ -31,29 +31,15 @@ ${education.course ? `- **Course:** ${education.course}<br>` : ''}
 </details>`;
 }
 
-// function formatProject(project) {
-//     let projectMarkdown = `<details><summary>${project.name}</summary>\n`;
-//     projectMarkdown += `![${project.name} Image](${project.image})\n`; // Replace with actual path
-//     projectMarkdown += `- **Timeline:** ${project.timeline}\n`;
-//     projectMarkdown += `- **Description:** ${project.description}\n`;
-//
-//     // Add buttons
-//     project.buttons.forEach(button => {
-//         projectMarkdown += `[![${button.buttonText}](https://img.shields.io/badge/-${encodeURIComponent(button.buttonText)}-brightgreen?style=flat&logo=${button.buttonIcon})](${button.buttonLink})\n`;
-//     });
-//     projectMarkdown += '</details>';
-//
-//     return projectMarkdown;
-// }
-
 function formatProject(project) {
+    console.log("Project Image:", project.image);
     const iconName = path.basename(project.image);
     const iconPath = `src/assets/icons/${iconName}`;
     const formattedDescription = project.description.replace(/\n\n/g, " ");
 
     return `<details>
 <summary><h3><b>${project.name}</b></h3></summary>
-<img src="${iconPath}" alt="${project.name} Logo" style="width:200px; height:200px;"><br>
+<!--<img src="${iconPath}" alt="${project.name} Logo" style="width:200px; height:200px;"><br>-->
 
 ${project.languages ? `- **Lenguages:** ${project.languages}<br>` : ''}
 - **Timeline:** ${project.timeline}
