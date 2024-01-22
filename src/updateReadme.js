@@ -18,14 +18,20 @@ function formatEducation(education) {
     let educationDetails = `<details>\n`;
     educationDetails += `<summary><h2>📚 Education</h2></summary>\n`;
 
-    education.forEach(edu => {
-        educationDetails += `<div>\n`;
-        educationDetails += `<strong>${edu.degree}</strong>\n`;
-        educationDetails += `- **Institution:** ${edu.institution}\n`;
-        educationDetails += `- **Period:** ${edu.period}\n`;
-        educationDetails += `- **Description:** ${edu.description}\n`;
-        educationDetails += `</div>\n`;
-    });
+    if (Array.isArray(education)) {
+        education.forEach(edu => {
+            educationDetails += `<div>\n`;
+            educationDetails += `<strong>${edu.degree}</strong>\n`;
+            educationDetails += `- **Institution:** ${edu.institution}\n`;
+            educationDetails += `- **Period:** ${edu.period}\n`;
+            educationDetails += `- **Description:** ${edu.description}\n`;
+            educationDetails += `</div>\n`;
+        });
+    } else {
+        console.error('Education data is not an array');
+        // Handle the case where education is not an array
+        // For instance, you could return a default message or an empty string
+    }
 
     educationDetails += `</details>\n`;
     return educationDetails;
