@@ -59,7 +59,7 @@ function formatProject(project) {
 }
 
 function formatSocialProfile(profile) {
-  const iconName = path.basename(profile.link);
+  const iconName = path.basename(profile.icon);
         console.log("Icon Path:", iconName);
 
         // Construct the new path using the required base directory

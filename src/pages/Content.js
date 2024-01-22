@@ -22,6 +22,12 @@ import { backgroundVideo,
     react,
     hackerRank,
     stackoverflow,
+    github,
+    linkedin,
+    appleMail,
+    medium,
+
+
 
     // Add any other asset imports below...
     python,
@@ -263,7 +269,7 @@ const socialProfiles = [
         name: "Github",
         backgroundColor: "rgb(0,62,84)",
         link: "https://www.github.com/itsjustshubh",
-        icon: faGithub,
+        icon: github,
     },
     {
         name: "HackerRank",
@@ -272,16 +278,10 @@ const socialProfiles = [
         icon: hackerRank,
     },
     {
-        name: "Stack Overflow",
-        backgroundColor: "rgb(244,128,35)",
-        link: "https://stackoverflow.com/users/23278666/shubhthorat",
-        icon: stackoverflow,
-    },
-    {
         name: "Linkedin",
-        backgroundColor: "rgb(11,101,194)",
+        backgroundColor: "rgb(0,101,153)",
         link: "https://www.linkedin.com/in/shubhthorat/",
-        icon: faLinkedin,
+        icon: linkedin,
     },
     {
         name: "Instagram",
@@ -290,22 +290,10 @@ const socialProfiles = [
         icon: instagram,
     },
     {
-        name: "YouTube",
-        backgroundColor: "rgb(255,0,0)",
-        link: "https://www.youtube.com/@shubhthorat",
-        icon: faYoutube,
-    },
-    {
-        name: "Medium",
-        backgroundColor: "black",
-        link: "https://shubhthorat.medium.com/",
-        icon: faMedium,
-    },
-    {
         name: "iCloud Mail",
-        backgroundColor: "black",
+        backgroundColor: "rgb(88,117,255)",
         link: "mailto:reapers-arras.0y@icloud.com",
-        icon: faApple,
+        icon: appleMail,
     },
     {
         name: "Devpost",
@@ -313,6 +301,19 @@ const socialProfiles = [
         link: "https://devpost.com/software/edith-brshpa",
         icon: devpost,
     },
+    {
+        name: "Medium",
+        backgroundColor: "white",
+        color: "black",
+        link: "https://shubhthorat.medium.com/",
+        icon: medium,
+    },
+    // {
+    //     name: "Stack Overflow",
+    //     backgroundColor: "rgb(244,128,35)",
+    //     link: "https://stackoverflow.com/users/23278666/shubhthorat",
+    //     icon: stackoverflow,
+    // },
 ];
 
 const projects = [
