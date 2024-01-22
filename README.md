@@ -1,14 +1,10 @@
-[//]: # (![Shubh Thorat Banner]&#40;link-to-your-banner-image&#41;)
-
 <div align="center">
   <img src="public/logo192.png" height="200" style="margin-bottom: 0;" />
 </div>
-
 <h1 align="center" style="margin-top: -8vh;">
   Hi there, I'm <a href="https://shubhthorat.vercel.app/" target="_blank">Shubh Thorat</a>
   <img src="src/assets/imported-icons/Hi.gif" height="30" width="30" />
 </h1>
-
 <h5 align="center">
 <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;"><a href="https://www.github.com/itsjustshubh" target="_blank" title="Github" style="background-color: rgb(0,62,84); padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center; color: white;">
             <img src="src/assets/imported-icons/github.svg" height="30" alt="Github" style="margin-right: 5px;">
@@ -38,8 +34,9 @@ Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, 
 
 🔗 **Let's connect!** Feel free to reach out if you want to collaborate on tech projects or just have a chat about innovative ideas in tech. Check out my [LinkedIn](https://www.linkedin.com/in/shubhthorat/) or visit my [portfolio website](https://shubhthorat.vercel.app) for more details about my work.
 
-## Skills
-<p align="center"><a href="https://www.python.org/" target="_blank" title="Python" style="margin: 0 10px;"><code><img height="25" src="src/assets/imported-icons/python-original.svg"></code></a> <a href="https://www.java.com/en/" target="_blank" title="Java" style="margin: 0 10px;"><code><img height="25" src="src/assets/imported-icons/java-original.svg"></code></a> <a href="#" target="_blank" title="Git" style="margin: 0 10px;"><code><img height="25" src="src/assets/imported-icons/git-original.svg"></code></a> <a href="#" target="_blank" title="React" style="margin: 0 10px;"><code><img height="25" src="src/assets/imported-icons/react-original.svg"></code></a> <a href="#" target="_blank" title="JavaScript" style="margin: 0 10px;"><code><img height="25" src="src/assets/imported-icons/javascript.svg"></code></a> <a href="#" target="_blank" title="Node.js" style="margin: 0 10px;"><code><img height="25" src="src/assets/imported-icons/nodeJs.svg"></code></a> <a href="#" target="_blank" title="HTML5" style="margin: 0 10px;"><code><img height="25" src="src/assets/imported-icons/html5.svg"></code></a> <a href="#" target="_blank" title="AWS" style="margin: 0 10px;"><code><img height="25" src="src/assets/imported-icons/aws.svg"></code></a></p>
+## Skills 
+<p align="center">
+<a href="https://www.python.org/" target="_blank" title="Python" style="margin: 0 10px;"><code><img height="25" src="src/assets/imported-icons/python-original.svg"></code></a> <a href="https://www.java.com/en/" target="_blank" title="Java" style="margin: 0 10px;"><code><img height="25" src="src/assets/imported-icons/java-original.svg"></code></a> <a href="#" target="_blank" title="Git" style="margin: 0 10px;"><code><img height="25" src="src/assets/imported-icons/git-original.svg"></code></a> <a href="#" target="_blank" title="React" style="margin: 0 10px;"><code><img height="25" src="src/assets/imported-icons/react-original.svg"></code></a> <a href="#" target="_blank" title="JavaScript" style="margin: 0 10px;"><code><img height="25" src="src/assets/imported-icons/javascript.svg"></code></a> <a href="#" target="_blank" title="Node.js" style="margin: 0 10px;"><code><img height="25" src="src/assets/imported-icons/nodeJs.svg"></code></a> <a href="#" target="_blank" title="HTML5" style="margin: 0 10px;"><code><img height="25" src="src/assets/imported-icons/html5.svg"></code></a> <a href="#" target="_blank" title="AWS" style="margin: 0 10px;"><code><img height="25" src="src/assets/imported-icons/aws.svg"></code></a></p>
 <hr>
 
 ## 📚 Education
