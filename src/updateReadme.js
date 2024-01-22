@@ -68,7 +68,7 @@ function formatSocialProfile(profile) {
         console.log("Modified Path:", iconPath);
 
     return `<code><a href="${profile.link}" target="_blank" title="${profile.name}" style="background-color: ${profile.backgroundColor}; padding: 5px; margin: 0 5px; border-radius: 4px;">
-    <strong><img src="${iconPath}" height="30" alt="${profile.name}"> ${profile.name}</strong>
+    <img src="${iconPath}" height="30" alt="${profile.name}"><strong style="font-size: 16px;"> ${profile.name}</strong>
   </a></code>`;
 }
 
