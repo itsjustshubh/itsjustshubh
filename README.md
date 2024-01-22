@@ -10,7 +10,7 @@
 <h5 align="center">
 <p align="center"><a href="https://www.github.com/itsjustshubh" target="_blank" title="Github" style="margin: 0 10px;">
             <code><img height="35" src="src/assets/imported-icons/github.svg"></code>
-        </a><a href="https://www.hackerrank.com/shubhthorat" target="_blank" title="HackerRank" style="margin: 0 10px;">
+        </a><a href="https://www.hackerrank.com/shubhcthorat" target="_blank" title="HackerRank" style="margin: 0 10px;">
             <code><img height="35" src="src/assets/imported-icons/hackerrank-black.svg"></code>
         </a><a href="https://www.linkedin.com/in/shubhthorat/" target="_blank" title="Linkedin" style="margin: 0 10px;">
             <code><img height="35" src="src/assets/imported-icons/linkedin.svg"></code>
@@ -20,8 +20,6 @@
             <code><img height="35" src="src/assets/imported-icons/apple-mail.svg"></code>
         </a><a href="https://devpost.com/software/edith-brshpa" target="_blank" title="Devpost" style="margin: 0 10px;">
             <code><img height="35" src="src/assets/imported-icons/devpost.svg"></code>
-        </a><a href="https://shubhthorat.medium.com/" target="_blank" title="Medium" style="margin: 0 10px;">
-            <code><img height="35" src="src/assets/imported-icons/medium.svg"></code>
         </a></p>
 </h5>
 
