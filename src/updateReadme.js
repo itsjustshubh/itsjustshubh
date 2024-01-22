@@ -64,6 +64,7 @@ function formatSocialProfiles(profiles) {
     profiles.forEach(profile => {
         const iconName = path.basename(profile.icon);
         const iconPath = `src/assets/imported-icons/${iconName}`; // Assuming the extension is .svg
+        const textColor = profile.color || 'white'; // Use profile's color or default to inherit
 
         profilesMarkup += `<a href="${profile.link}" target="_blank" title="${profile.name}" style="background-color: ${profile.backgroundColor}; padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center; color: ${textColor};">
             <img src="${iconPath}" height="30" alt="${profile.name}" style="margin-right: 5px;">
