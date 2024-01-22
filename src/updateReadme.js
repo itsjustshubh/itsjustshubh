@@ -59,7 +59,7 @@ function formatProject(project) {
 }
 
 function formatSocialProfiles(profiles) {
-    let profilesMarkup = `<div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">`;
+    let profilesMarkup = `<code><div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">`;
 
     profiles.forEach(profile => {
         const iconName = path.basename(profile.icon);
@@ -71,7 +71,7 @@ function formatSocialProfiles(profiles) {
         </a>`;
     });
 
-    profilesMarkup += `</div>`;
+    profilesMarkup += `</div></code>`;
 
     return profilesMarkup;
 }
