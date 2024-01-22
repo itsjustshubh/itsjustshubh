@@ -34,7 +34,7 @@ export { default as git } from '../assets/imported-icons/git-original.svg';
 export { default as reactIcon } from '../assets/imported-icons/react-original.svg';
 export { default as mysql } from '../assets/imported-icons/mysql.svg';
 export { default as firebase } from '../assets/imported-icons/firebase-icon.svg';
-export { default as hackerRank } from '../assets/imported-icons/hackerrank-black.svg';
+export { default as hackerRank } from '../assets/imported-icons/hackerrank.svg';
 export { default as github } from '../assets/imported-icons/github.svg';
 export { default as linkedin } from '../assets/imported-icons/linkedin.svg';
 export { default as appleMail } from '../assets/imported-icons/apple-mail.svg';

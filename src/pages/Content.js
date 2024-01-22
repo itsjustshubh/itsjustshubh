@@ -273,7 +273,8 @@ const socialProfiles = [
     },
     {
         name: "HackerRank",
-        backgroundColor: "rgb(50,199,101)",
+        backgroundColor: "white",
+        color: "rgb(50,199,101)",
         link: "https://www.hackerrank.com/shubhcthorat",
         icon: hackerRank,
     },
