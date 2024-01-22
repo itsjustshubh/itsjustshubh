@@ -99,56 +99,51 @@ Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, 
 
 ---
 
-## 🏅 Projects
-<details><summary>Project Loading Screen</summary>
-![Project Loading Screen Image](assets/person-walking-arrow-loop-left.svg)
+<details><summary><h2><b>🏅 Projects</b></h2></summary>
+<details>
+<summary><h3><b>Project Loading Screen</b></h3></summary>
+<!--<img src="" alt="Project Loading Screen Logo" style="width:200px; height:200px;"><br>-->
+
+
 - **Timeline:** Jan 2023 - Present
-- **Description:** 'Project Loading Screen' is an inventive display of the iconic Apple and Windows loading screens, refined to perfection. This project, developed by Shubh Thorat, presents these familiar visuals in a perpetual loop, turning a simple concept into an intriguing endless experience.
-
-Designed to showcase exceptional React skills, this project playfully explores the boundaries of user patience and perception. It’s an artistic interpretation of the endless wait, offering a polished, mesmerizing version of the screens we often encounter but rarely appreciate. Enjoy this endless journey through the most iconic loading screens, crafted to captivate and amuse.
-[![Explore Project Loading Screen](https://img.shields.io/badge/-Explore%20Project%20Loading%20Screen-brightgreen?style=flat&logo=[object Object])](https://project-loading-screen.vercel.app/)
+- **Description:** 'Project Loading Screen' is an inventive display of the iconic Apple and Windows loading screens, refined to perfection. This project, developed by Shubh Thorat, presents these familiar visuals in a perpetual loop, turning a simple concept into an intriguing endless experience. Designed to showcase exceptional React skills, this project playfully explores the boundaries of user patience and perception. It’s an artistic interpretation of the endless wait, offering a polished, mesmerizing version of the screens we often encounter but rarely appreciate. Enjoy this endless journey through the most iconic loading screens, crafted to captivate and amuse.
 </details>
-<details><summary>A Will To Live (AWTL)</summary>
-![A Will To Live (AWTL) Image](assets/awtl.svg)
+<details>
+<summary><h3><b>A Will To Live (AWTL)</b></h3></summary>
+<!--<img src="" alt="A Will To Live (AWTL) Logo" style="width:200px; height:200px;"><br>-->
+
+
 - **Timeline:** Oct 2020 - Dec 2021
-- **Description:** AWTL, a project close to my heart, focuses on aiding individuals battling mental health challenges. The initiative provides resources and support, fostering a community where everyone feels empowered to seek the help they need.
+- **Description:** AWTL, a project close to my heart, focuses on aiding individuals battling mental health challenges. The initiative provides resources and support, fostering a community where everyone feels empowered to seek the help they need. My role as President of Technology and Logistics involved spearheading the website development, strategizing marketing approaches, and partnering with social influencers to promote wellness.
 
-My role as President of Technology and Logistics involved spearheading the website development, strategizing marketing approaches, and partnering with social influencers to promote wellness.
-
-[![Explore AWTL Website](https://img.shields.io/badge/-Explore%20AWTL%20Website-brightgreen?style=flat&logo=[object Object])](https://shubhcthorat.wixsite.com/awtl)
-[![Detailed Insights](https://img.shields.io/badge/-Detailed%20Insights-brightgreen?style=flat&logo=[object Object])](/education)
 </details>
-<details><summary>Social Cloud</summary>
-![Social Cloud Image](assets/social-cloud.svg)
+<details>
+<summary><h3><b>Social Cloud</b></h3></summary>
+<!--<img src="" alt="Social Cloud Logo" style="width:200px; height:200px;"><br>-->
+
+
 - **Timeline:** Aug 2020 - Dec 2021
-- **Description:** Social Cloud is an innovative platform where business ideas meet big data for a noble cause – supporting NGOs and Charities. I was part of an enthusiastic student team that built this unique agency, specializing in customized social marketing.
+- **Description:** Social Cloud is an innovative platform where business ideas meet big data for a noble cause – supporting NGOs and Charities. I was part of an enthusiastic student team that built this unique agency, specializing in customized social marketing. Our efforts aimed to harness the power of digital platforms to create positive global impact.
 
-Our efforts aimed to harness the power of digital platforms to create positive global impact.
-
-[![Visit Social Cloud](https://img.shields.io/badge/-Visit%20Social%20Cloud-brightgreen?style=flat&logo=[object Object])](https://www.shubhthorat.com/socialcloud)
-[![Social Cloud Insights](https://img.shields.io/badge/-Social%20Cloud%20Insights-brightgreen?style=flat&logo=[object Object])](https://socialcloud.org)
 </details>
-<details><summary>Graphic Design</summary>
-![Graphic Design Image]([object Object])
+<details>
+<summary><h3><b>Graphic Design</b></h3></summary>
+<!--<img src="" alt="Graphic Design Logo" style="width:200px; height:200px;"><br>-->
+
+
 - **Timeline:** Feb 2020 - Present
-- **Description:** My journey in Graphic Design began with a keen interest in video production and typography. I focus on creating instructional tech videos, aiming to bridge the technology gap for seniors.
+- **Description:** My journey in Graphic Design began with a keen interest in video production and typography. I focus on creating instructional tech videos, aiming to bridge the technology gap for seniors. My work, which began with assisting the older generation in technology adoption, has now expanded to collaborating on diverse multimedia projects.
 
-My work, which began with assisting the older generation in technology adoption, has now expanded to collaborating on diverse multimedia projects.
-
-[![Graphic Design Portfolio](https://img.shields.io/badge/-Graphic%20Design%20Portfolio-brightgreen?style=flat&logo=[object Object])](https://www.shubhthorat.com/socialcloud)
-[![Watch Tutorial Videos](https://img.shields.io/badge/-Watch%20Tutorial%20Videos-brightgreen?style=flat&logo=[object Object])](https://socialcloud.org)
 </details>
-<details><summary>Edith (An AI Calendar App)</summary>
-![Edith (An AI Calendar App) Image](assets/edith.svg)
+<details>
+<summary><h3><b>Edith (An AI Calendar App)</b></h3></summary>
+<!--<img src="" alt="Edith (An AI Calendar App) Logo" style="width:200px; height:200px;"><br>-->
+
+
 - **Timeline:** Oct 2023 - Present
-- **Description:** Edith redefines planning in the digital age, seamlessly integrating life's many facets into a single, intuitive planner. More than just a scheduling tool, Edith offers academic planning, mood-based music suggestions, astrological insights, and activity planning based on weather forecasts.
+- **Description:** Edith redefines planning in the digital age, seamlessly integrating life's many facets into a single, intuitive planner. More than just a scheduling tool, Edith offers academic planning, mood-based music suggestions, astrological insights, and activity planning based on weather forecasts. This project, developed using agile methodologies and diverse APIs, stands out by prioritizing holistic well-being in daily organization.
 
-This project, developed using agile methodologies and diverse APIs, stands out by prioritizing holistic well-being in daily organization.
-
-[![Repository](https://img.shields.io/badge/-Repository-brightgreen?style=flat&logo=[object Object])](https://github.com/itsjustshubh/Emotion_Analysis_AI-Phase_One)
-[![Khoury Article](https://img.shields.io/badge/-Khoury%20Article-brightgreen?style=flat&logo=[object Object])](https://www.khoury.northeastern.edu/meet-edith-the-ai-powered-schedule-assistant-designed-to-reduce-your-stress/)
-[![Prototype](https://img.shields.io/badge/-Prototype-brightgreen?style=flat&logo=[object Object])](/edith-prototype)
-[![Research Paper](https://img.shields.io/badge/-Research%20Paper-brightgreen?style=flat&logo=[object Object])](https://drive.google.com/file/d/1itFukhWEn5DTPpNbw-OLsEtJN5uTv1HJ/view)
+</details>
 </details>
 
 ---
