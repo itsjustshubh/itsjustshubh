@@ -10,7 +10,7 @@
 </h1>
 
 <h5 align="center">
-<div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;"><a href="https://www.github.com/itsjustshubh" target="_blank" title="Github" style="background-color: rgb(0,62,84); padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center;">
+<code><div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;"><a href="https://www.github.com/itsjustshubh" target="_blank" title="Github" style="background-color: rgb(0,62,84); padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center;">
             <img src="src/assets/imported-icons/github.svg" height="30" alt="Github" style="margin-right: 5px;">
             <strong style="font-size: 16px;">Github</strong>
         </a><a href="https://www.hackerrank.com/shubhthorat" target="_blank" title="HackerRank" style="background-color: rgb(50,199,101); padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center;">
@@ -31,7 +31,7 @@
         </a><a href="https://shubhthorat.medium.com/" target="_blank" title="Medium" style="background-color: white; padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center;">
             <img src="src/assets/imported-icons/medium.svg" height="30" alt="Medium" style="margin-right: 5px;">
             <strong style="font-size: 16px;">Medium</strong>
-        </a></div>
+        </a></div></code>
 </h5>
 
 Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, and the founder of Social Cloud. Currently pursuing my BS in Computer Science at Northeastern University, I'm passionate about leveraging technology for social good. I thrive on challenges and constantly set goals for myself, so I have something to strive toward. I'm not comfortable with settling, and I'm always looking for an opportunity to do better and achieve greatness. 🚀
