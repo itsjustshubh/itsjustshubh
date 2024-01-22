@@ -17,7 +17,23 @@ Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, 
 
 ## Skills
 <!-- DYNAMIC_SKILLS -->
-<hr>
+
+---
+
+<details><summary><h2><b>⚡ Stats ⚡</b></h2></summary>
+<br>
+<p align=center>
+  <div align=center>
+      <img align="left" width=390 src="https://streak-stats.demolab.com/?user=itsjustshubh&theme=react&border=61dafb&hide_border=true" alt="itsjustshubh" />
+      <img align="right" width=390 src="https://github-readme-stats.vercel.app/api?username=itsjustshubh&show_icons=true&theme=react&border_color=61dafb&hide_border=true" />
+      <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsjustshubh&hide=c%23,Cuda&title_color=61dafb&text_color=ffffff&icon_color=61dafb&bg_color=20232a&langs_count=8&layout=compact&border_color=61dafb&hide_border=true&size_weight=0.5&count_weight=0.5" />
+      <img src="https://github-readme-activity-graph.vercel.app/graph?username=itsjustshubh&theme=react-dark&bg_color=20232a&hide_border=true" width="100%"/>
+  </div>
+</p>
+
+</details>
+
+---
 
 <details><summary><h2><b>📚 Education</b></h2></summary>
 <!-- DYNAMIC_EDUCATION -->
@@ -27,20 +43,6 @@ Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, 
 
 <details><summary><h2><b>🏅 Projects</b></h2></summary>
 <!-- DYNAMIC_PROJECTS -->
-</details>
-
----
-
-<details><summary><h2><b>📈 My GitHub Stats</b></h2></summary>
-
-<details><summary><h3><b>GitHub Stats</b></h3></summary>
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=itsjustshubh&show_icons=true&theme=vision-friendly-dark" />
-</details>
-
-<details><summary><h3><b>Top Languages</b></h3></summary>
-!<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsjustshubh&layout=compact&theme=vision-friendly-dark" />
-</details>
-
 </details>
 
 ---
