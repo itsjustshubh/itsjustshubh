@@ -29,7 +29,23 @@ Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, 
 
 ## Skills
 <p align="center"><a href="https://www.python.org/" target="_blank" title="Python" style="margin: 0 10px;"><code><img height="35" src="src/assets/imported-icons/python-original.svg"></code></a> <a href="https://www.java.com/en/" target="_blank" title="Java" style="margin: 0 10px;"><code><img height="35" src="src/assets/imported-icons/java-original.svg"></code></a> <a href="#" target="_blank" title="Git" style="margin: 0 10px;"><code><img height="35" src="src/assets/imported-icons/git-original.svg"></code></a> <a href="#" target="_blank" title="React" style="margin: 0 10px;"><code><img height="35" src="src/assets/imported-icons/react-original.svg"></code></a> <a href="#" target="_blank" title="JavaScript" style="margin: 0 10px;"><code><img height="35" src="src/assets/imported-icons/javascript.svg"></code></a> <a href="#" target="_blank" title="Node.js" style="margin: 0 10px;"><code><img height="35" src="src/assets/imported-icons/nodeJs.svg"></code></a> <a href="#" target="_blank" title="HTML5" style="margin: 0 10px;"><code><img height="35" src="src/assets/imported-icons/html5.svg"></code></a> <a href="#" target="_blank" title="AWS" style="margin: 0 10px;"><code><img height="35" src="src/assets/imported-icons/aws.svg"></code></a></p>
-<hr>
+
+---
+
+<details><summary><h2><b>⚡ Stats ⚡</b></h2></summary>
+<br>
+<p align=center>
+  <div align=center>
+      <img align="left" width=390 src="https://streak-stats.demolab.com/?user=itsjustshubh&theme=react&border=61dafb&hide_border=true" alt="itsjustshubh" />
+      <img align="right" width=390 src="https://github-readme-stats.vercel.app/api?username=itsjustshubh&show_icons=true&theme=react&border_color=61dafb&hide_border=true" />
+      <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsjustshubh&hide=c%23,Cuda&title_color=61dafb&text_color=ffffff&icon_color=61dafb&bg_color=20232a&langs_count=8&layout=compact&border_color=61dafb&hide_border=true&size_weight=0.5&count_weight=0.5" />
+      <img src="https://github-readme-activity-graph.vercel.app/graph?username=itsjustshubh&theme=react-dark&bg_color=20232a&hide_border=true" width="100%"/>
+  </div>
+</p>
+
+</details>
+
+---
 
 <details><summary><h2><b>📚 Education</b></h2></summary>
 <details>
@@ -144,20 +160,6 @@ Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, 
 - **Description:** Edith redefines planning in the digital age, seamlessly integrating life's many facets into a single, intuitive planner. More than just a scheduling tool, Edith offers academic planning, mood-based music suggestions, astrological insights, and activity planning based on weather forecasts. This project, developed using agile methodologies and diverse APIs, stands out by prioritizing holistic well-being in daily organization.
 
 </details>
-</details>
-
----
-
-<details><summary><h2><b>📈 My GitHub Stats</b></h2></summary>
-
-<details><summary><h3><b>GitHub Stats</b></h3></summary>
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=itsjustshubh&show_icons=true&theme=vision-friendly-dark" />
-</details>
-
-<details><summary><h3><b>Top Languages</b></h3></summary>
-!<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsjustshubh&layout=compact&theme=vision-friendly-dark" />
-</details>
-
 </details>
 
 ---
