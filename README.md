@@ -1,10 +1,12 @@
 <div align="center">
-  <img src="public/logo192.png" height="200" style="margin-bottom: 0;" />
+  <img src="public/logo192.png" height="300" style="margin-bottom: 0;" />
 </div>
+
 <h1 align="center" style="margin-top: -8vh;">
   Hi there, I'm <a href="https://shubhthorat.vercel.app/" target="_blank">Shubh Thorat</a>
   <img src="src/assets/imported-icons/Hi.gif" height="30" width="30" />
 </h1>
+
 <h5 align="center">
 <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;"><a href="https://www.github.com/itsjustshubh" target="_blank" title="Github" style="background-color: rgb(0,62,84); padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center; color: white;">
             <img src="src/assets/imported-icons/github.svg" height="30" alt="Github" style="margin-right: 5px;">
@@ -29,15 +31,16 @@
             <strong style="font-size: 16px;">Medium</strong>
         </a></div>
 </h5>
+
 Hi there! 👋 I'm **Shubh Thorat**, an aspiring computer scientist, innovator, and the founder of Social Cloud. Currently pursuing my BS in Computer Science at Northeastern University, I'm passionate about leveraging technology for social good. I thrive on challenges and constantly set goals for myself, so I have something to strive toward. I'm not comfortable with settling, and I'm always looking for an opportunity to do better and achieve greatness. 🚀
 
 🔗 **Let's connect!** Feel free to reach out if you want to collaborate on tech projects or just have a chat about innovative ideas in tech. Check out my [LinkedIn](https://www.linkedin.com/in/shubhthorat/) or visit my [portfolio website](https://shubhthorat.vercel.app) for more details about my work.
+
 ## Skills
 <p align="center"><a href="https://www.python.org/" target="_blank" title="Python"><img height="25" src="src/assets/imported-icons/python-original.svg"></a> <a href="https://www.java.com/en/" target="_blank" title="Java"><img height="25" src="src/assets/imported-icons/java-original.svg"></a> <a href="#" target="_blank" title="Git"><img height="25" src="src/assets/imported-icons/git-original.svg"></a> <a href="#" target="_blank" title="React"><img height="25" src="src/assets/imported-icons/react-original.svg"></a> <a href="#" target="_blank" title="JavaScript"><img height="25" src="src/assets/imported-icons/javascript.svg"></a> <a href="#" target="_blank" title="Node.js"><img height="25" src="src/assets/imported-icons/nodeJs.svg"></a> <a href="#" target="_blank" title="HTML5"><img height="25" src="src/assets/imported-icons/html5.svg"></a> <a href="#" target="_blank" title="AWS"><img height="25" src="src/assets/imported-icons/aws.svg"></a></p>
 <hr>
 
 ## 📚 Education
-
 <details><summary>Education</summary>
 <details><summary>Bachelor of Science in Computer Science</summary>
 - **Institution:** Northeastern University
@@ -93,7 +96,6 @@ These formative years were crucial in shaping my character and personal developm
 ---
 
 ## 🏅 Projects
-
 <details><summary>Projects</summary>
 <details><summary>Project Loading Screen</summary>
 ![Project Loading Screen Image](assets/person-walking-arrow-loop-left.svg)
@@ -150,13 +152,11 @@ This project, developed using agile methodologies and diverse APIs, stands out b
 ---
 
 ## 🚀 About Me
-
 <!-- DYNAMIC_ABOUT -->
 
 ---
 
 ## 📈 My GitHub Stats
-
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=itsjustshubh&show_icons=true&theme=vision-friendly-dark)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=itsjustshubh&layout=compact&theme=vision-friendly-dark)
