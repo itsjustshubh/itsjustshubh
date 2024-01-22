@@ -40,7 +40,7 @@ function formatSkill(skill) {
     }
 
     // Return the skill icon wrapped in an anchor tag with margin for spacing
-    return `<a href="${skillLink}" target="_blank" title="${skill.name}" style="margin: 0 10px;"><code><img height="25" src="${iconPath}"></code></a>`;
+    return `<a href="${skillLink}" target="_blank" title="${skill.name}" style="margin: 0 10px;"><code><img height="45" src="${iconPath}"></code></a>`;
 }
 
 function formatProject(project) {
