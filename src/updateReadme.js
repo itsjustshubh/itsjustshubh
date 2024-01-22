@@ -59,23 +59,21 @@ function formatProject(project) {
 }
 
 function formatSocialProfiles(profiles) {
-  // Start the container with a flexbox layout
-  let profilesMarkup = `<div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">`;
+    let profilesMarkup = `<div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">`;
 
-  profiles.forEach(profile => {
-    const iconName = path.basename(profile.icon);
-    const iconPath = `src/assets/imported-icons/${iconName}.svg`; // Assuming the extension is .svg
+    profiles.forEach(profile => {
+        const iconName = path.basename(profile.icon);
+        const iconPath = `src/assets/imported-icons/${iconName}`; // Assuming the extension is .svg
 
-    profilesMarkup += `<a href="${profile.link}" target="_blank" title="${profile.name}" style="background-color: ${profile.backgroundColor}; padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center;">
-      <img src="${iconPath}" height="30" alt="${profile.name}" style="margin-right: 5px;">
-      <strong style="font-size: 16px;">${profile.name}</strong>
-    </a>`;
-  });
+        profilesMarkup += `<code><a href="${profile.link}" target="_blank" title="${profile.name}" style="background-color: ${profile.backgroundColor}; padding: 5px; margin: 5px; border-radius: 4px; display: flex; align-items: center;">
+            <img src="${iconPath}" height="30" alt="${profile.name}" style="margin-right: 5px;">
+            <strong style="font-size: 16px;">${profile.name}</strong>
+        </a></code>`;
+    });
 
-  // Close the container
-  profilesMarkup += `</div>`;
+    profilesMarkup += `</div>`;
 
-  return profilesMarkup;
+    return profilesMarkup;
 }
 
 function updateReadme() {
