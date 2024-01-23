@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
 
-body {
+.home-page body {
   background-color: black;
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
 }
 
 /* Loading Animation Styles */
-.loading-background {
+.home-page .loading-background {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -28,35 +28,35 @@ body {
   z-index: 2;
 }
 
-@keyframes fadeOut {
+.home-page @keyframes fadeOut {
   to {
     opacity: 0;
   }
 }
 
-.loader {
+.home-page .loader {
   font-size: 4vh; /* Responsive font size */
   text-align: center;
   color: white;
   font-family: 'Questrial', sans-serif;
 }
 
-.loadTitleOne, .loadTitleTwo {
+.home-page .loadTitleOne, .home-page .loadTitleTwo {
   font-weight: 700;
   display: inline;
   animation: fadeOut 1s ease forwards;
 }
 
-.loadTitleOne {
+.home-page .loadTitleOne {
   animation-delay: 1s;
 }
 
-.loadTitleTwo {
+.home-page .loadTitleTwo {
   animation-delay: 2s;
 }
 
 /* Center Text Styles */
-.center-text {
+.home-page .center-text {
   position: absolute;
   top: 52%;
   left: 50%;
@@ -68,7 +68,7 @@ body {
   align-items: center;
 }
 
-.text-container {
+.home-page .text-container {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -77,7 +77,7 @@ body {
   height: 20%;
 }
 
-.me-text, .read-more-text {
+.home-page .me-text, .home-page  .read-more-text {
   font-size: 2.3vh; /* Responsive font size */
   color: white;
   font-weight: bold;
@@ -86,12 +86,12 @@ body {
   opacity: 1;
 }
 
-.title, .subtitle, .description {
+.home-page .title, .home-page .subtitle, .home-page .description {
   font-family: 'Plantagenet Cherokee', sans-serif;
   left: 8%;
 }
 
-.title {
+.home-page .title {
   position: absolute;
   top: 30%;
   color: white;
@@ -100,7 +100,7 @@ body {
   font-weight: bold;
 }
 
-.subtitle {
+.home-page .subtitle {
   display: flex; /* Aligns children inline */
   align-items: center; /* Centers items vertically */
   white-space: nowrap; /* Prevents wrapping into multiple lines */
@@ -111,7 +111,7 @@ body {
   font-size: calc(2.9vh + 2.9vw);
 }
 
-.description {
+.home-page .description {
   white-space: pre-line;
   position: absolute;
   top: 55%;
@@ -126,7 +126,7 @@ body {
   font-size: calc(0.5vh + 1vw); /* Increased vw proportion for consistent font size relative to width */
 }
 
-.home_project_btn_container {
+.home-page .home_project_btn_container {
   position: absolute;
   top: 35%;
   right: 1%;
@@ -146,7 +146,7 @@ body {
   overflow: hidden; /* Hide overflow */
 }
 
-.home_project_btn {
+.home-page .home_project_btn {
   width: auto; /* Width determined by content */
 
   background-color: rgba(255, 255, 255, 50%);
@@ -177,19 +177,19 @@ body {
   justify-content: center; /* Center content horizontally */
 }
 
-.home_project_btn .icon, .home_project_btn svg {
+.home-page .home_project_btn .icon, .home-page .home_project_btn svg {
     height: 5vh; /* Adjust based on your design */
     width: auto; /* Maintain aspect ratio */
     margin-right: 1vh; /* Space between icon and text */
 }
 
-.home_project_btn:hover {
+.home-page .home_project_btn:hover {
     color: navajowhite;
     border-color: navajowhite;
     transform: scale(1.1); /* Slightly increase size on hover */
 }
 
-.skillText_container {
+.home-page .skillText_container {
   top: 30%;
   right: 6%;
   position: absolute;
@@ -204,14 +204,14 @@ body {
   font-size: 4vh;
 }
 
-.skillText {
+.home-page .skillText {
   position: absolute;
   text-align: center;
   color: white;
   font-weight: bold;
 }
 
-.language {
+.home-page .language {
   position: absolute;
   font-size: 3vh;
   bottom: 10%;
@@ -222,7 +222,7 @@ body {
   font-family: 'Questrial', sans-serif;
 }
 
-.languages {
+.home-page .languages {
   position: absolute;
   bottom: 3%;
   left: 3%;
@@ -231,44 +231,44 @@ body {
   font-family: 'Questrial', sans-serif;
 }
 
-.hidden {
+.home-page .hidden {
   opacity: 0;
 }
 
-.read-more-text {
+.home-page .read-more-text {
   opacity: 0;
   position: absolute;
 }
 
-.text-container:hover .read-more-text {
+.home-page .text-container:hover, .home-page  .read-more-text {
   opacity: 1;
 }
 
-.read-more-text:hover {
+.home-page .read-more-text:hover {
   text-decoration: underline;
 }
 
 /* Image Styles */
-.main-image-one,
-.main-image-two,
-.main-image-three {
+.home-page .main-image-one,
+.home-page .main-image-two,
+.home-page .main-image-three {
   position: absolute;
   transform: translate(-50%, -50%);
   width: 36vh; /* Auto-adjust width to maintain aspect ratio */
   height: 36vh; /* Auto-adjust height to maintain aspect ratio */
 }
 
-.main-image-one {
+.home-page .main-image-one {
   top: 50%;
   left: 33%;
 }
 
-.main-image-two {
+.home-page .main-image-two {
   top: 30%;
   left: 67%;
 }
 
-.main-image-three {
+.home-page .main-image-three {
   top: 73%;
   left: 67%;
 }

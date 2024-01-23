@@ -11,25 +11,13 @@
   align-items: center;
 }
 
-.contact-container {
-  background-color: rgba(255, 255, 255, 2%); /* Adjusted for better visibility */
-  padding: 2.5vh;
-  border-radius: 4vh;
-  max-width: 100%;
-  height: 60vh;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center the items vertically */
-}
-
-.contact-header {
+.contact-page .contact-header {
   color: white;
   margin-bottom: 3vh; /* Add space below the header */
   font-size: 4vh;
 }
 
-.social-links {
+.contact-page .social-links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +25,7 @@
   margin: 3vh;
 }
 
-.social-link {
+.contact-page .social-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,12 +40,12 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
 }
 
-.social-link:hover {
+.contact-page .social-link:hover {
     opacity: 0.8;
     transform: scale(1.1); /* Slightly increase size on hover */
 }
 
-.icon {
+.contact-page .icon {
     height: 6vh; /* Adjust the size as needed */
     width: auto; /* Maintain aspect ratio */
     margin-right: 10px;
@@ -73,7 +61,7 @@
         min-height: 90vh;
     }
 
-    .contact-container {
+    .contact-page .container {
         /* Adjust the container for mobile */
         margin-top: -25%; /* Adjust this value as needed */
         height: auto; /* Auto height for flexible content */
@@ -81,23 +69,23 @@
         padding-top: 2vh; /* Adjusted padding at the top */
     }
 
-    .contact-header {
+    .contact-page .contact-header {
         /* Adjust the header font size for mobile */
         font-size: 3vh;
     }
 
-    .social-links {
+    .contact-page .social-links {
         /* Adjust the social links layout for mobile */
         flex-direction: column; /* Stack social links vertically */
         width: 100%; /* Use full container width */
     }
 
-    .social-link, .icon {
-        font-size: 5vh; /* Increase font size for readability */
+    .contact-page .social-link, .contact-page  .icon {
+        font-size: 4vh; /* Increase font size for readability */
         height: 5vh; /* Increase icon size */
     }
 
-    .social-link {
+    .contact-page .social-link {
         /* Adjust the social link buttons for mobile */
         margin: 1.3vh 0; /* Adjust margin for stacked layout */
         padding: 1vh 2vh; /* Increase padding for touch targets */
@@ -106,7 +94,7 @@
         text-align: center; /* Center the text and icon */
     }
 
-    .icon {
+    .contact-page .icon {
         /* Adjust the icon size for mobile */
         margin-right: 2vh; /* Adjust margin between icon and text */
     }

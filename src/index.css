@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container, .project-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Aligns children elements in the center */
+    align-items: flex-start; /* Aligns children elements from the start of the cross axis */
+    padding: 1vh; /* Inner spacing */
+    border-radius: 4vh; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.05); /* Semi-transparent white background */
+    border: 0.2vh solid rgba(255, 255, 255, 0.15); /* Light white border for the glass effect */
+    box-shadow: 0 0 1vh rgba(0, 0, 0, 0.5); /* Shadow effect */
+    backdrop-filter: blur(10px); /* Blur effect for the glass look */
+    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+}

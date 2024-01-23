@@ -321,7 +321,7 @@ const projects = [
     {
         hours: "1",
         name: "Project Loading Screen",
-        backgroundColor: "rgb(255,99,71,50%)", // Example background color
+        backgroundColor: "rgb(255,99,71,70%)", // Example background color
         image: personWalkingArrowLoopLeft,
         timeline: "Jan 2023 - Present", // Example timeline
         description: "'Project Loading Screen' is an inventive display of the iconic Apple and Windows loading screens, refined to perfection. This project, developed by Shubh Thorat, presents these familiar visuals in a perpetual loop, turning a simple concept into an intriguing endless experience.\n" +
@@ -340,7 +340,7 @@ const projects = [
     {
         hours: "1",
         name: "A Will To Live (AWTL)",
-        backgroundColor: "rgb(0,62,84,50%)",
+        backgroundColor: "rgb(0,62,84,70%)",
         image: awtl,
         timeline: "Oct 2020 - Dec 2021",
         description: "AWTL, a project close to my heart, focuses on aiding individuals battling mental health challenges. The initiative provides resources and support, fostering a community where everyone feels empowered to seek the help they need.\n" +
@@ -363,7 +363,7 @@ const projects = [
     {
         hours: "1",
         name: "Social Cloud",
-        backgroundColor: "rgb(0,123,255,30%)",
+        backgroundColor: "rgb(20,153,180,70%)",
         image: socialCloud,
         timeline: "Aug 2020 - Dec 2021",
         description: "Social Cloud is an innovative platform where business ideas meet big data for a noble cause – supporting NGOs and Charities. I was part of an enthusiastic student team that built this unique agency, specializing in customized social marketing.\n" +
@@ -434,7 +434,7 @@ const projects = [
             },
             {
                 buttonIcon: faGoogleDrive,
-                buttonText: "Research Paper",
+                buttonText: "Research",
                 buttonLink: "https://drive.google.com/file/d/1itFukhWEn5DTPpNbw-OLsEtJN5uTv1HJ/view",
             },
         ]

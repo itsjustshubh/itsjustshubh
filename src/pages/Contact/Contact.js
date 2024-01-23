@@ -29,7 +29,7 @@ function Contact() {
 
     return (
         <div className="contact-page">
-            <div className="contact-container">
+            <div className="container">
                 <div className="social-links">
                     {socialProfiles.map((profile, index) => (
                         <a key={index}

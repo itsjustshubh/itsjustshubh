@@ -116,6 +116,11 @@
         display: none;
     }
 
+    /* Hide the cursor on mobile */
+    .layout-background {
+        cursor: none; /* Hides the cursor */
+    }
+
     /* Mobile icon navbar styling */
     .mobile-icon-navbar {
         position: fixed; /* Fixed at the bottom */

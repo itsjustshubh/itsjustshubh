@@ -45,7 +45,7 @@ function Projects() {
      */
     useEffect(() => {
         // Initialize Masonry for the projects container
-        const msnry = new Masonry('.projects-container', {
+        const msnry = new Masonry('.container', {
             itemSelector: '.project-card',
             columnWidth: '.project-card',
             percentPosition: true
@@ -134,7 +134,7 @@ function Projects() {
                 <meta name="keywords" content={meta.projects.keywords.join(", ")} />
                 {/* Add other meta tags as needed */}
             </Helmet>
-            <div className="projects-container">
+            <div className="container">
                 {sortedProjects.map((project, index) => (
                     <div key={index} className="project-card"
                          style={{backgroundColor: project.backgroundColor, color: project.textColor}}>

@@ -151,65 +151,65 @@ function Home({loaded}) {
   const ogImage = meta.home.og.image;
 
   return (
-    <div>
-        <Helmet>
-            <title>{meta.home.title}</title>
-            <meta name="description" content={meta.home.description}/>
-            <meta name="keywords" content={meta.home.keywords.join(", ")}/>
-            {/* Add additional meta tags as needed */}
-        </Helmet>
+      <div className="home-page">
+          <Helmet>
+              <title>{meta.home.title}</title>
+              <meta name="description" content={meta.home.description}/>
+              <meta name="keywords" content={meta.home.keywords.join(", ")}/>
+              {/* Add additional meta tags as needed */}
+          </Helmet>
 
-        {loading && (
-            <div className={`loading-background ${slideLoading ? 'slide-out' : ''}`}>
-            <div className="loader">
-                <span className="loadTitleOne">{data.loadTitleOne} </span>
-                <span className="loadTitleTwo"> {data.loadTitleTwo}</span>
-            </div>
-        </div>
-      )}
-
-        {!loading && (
-            // Your main app content goes here
-            <div style={{backgroundColor: "black"}}>
-              <div className="title">
-                {data.title}
+          {loading && (
+              <div className={`loading-background ${slideLoading ? 'slide-out' : ''}`}>
+                  <div className="loader">
+                      <span className="loadTitleOne">{data.loadTitleOne} </span>
+                      <span className="loadTitleTwo"> {data.loadTitleTwo}</span>
+                  </div>
               </div>
+          )}
 
-              <h1 className="subtitle">
-                A&nbsp;
-                <ReactTyped
-                    options={{
-                      strings: data.animated,
-                      autoStart: true,
-                      delay: 50,
-                      loop: true,
-                      deleteSpeed: 2,
-                    }}
-                />
-              </h1>
+          {!loading && (
+              // Your main app content goes here
+              <div style={{backgroundColor: "black"}}>
+                  <div className="title">
+                      {data.title}
+                  </div>
 
-              <div className="description">
-                {data.description.split('\n').map((line, index) => (
-                    <React.Fragment key={index}>
-                      {line}
-                      <br/>
-                    </React.Fragment>
-                ))}
+                  <h1 className="subtitle">
+                      A&nbsp;
+                      <ReactTyped
+                          options={{
+                              strings: data.animated,
+                              autoStart: true,
+                              delay: 50,
+                              loop: true,
+                              deleteSpeed: 2,
+                          }}
+                      />
+                  </h1>
+
+                  <div className="description">
+                      {data.description.split('\n').map((line, index) => (
+                          <React.Fragment key={index}>
+                              {line}
+                              <br/>
+                          </React.Fragment>
+                      ))}
+                  </div>
+
+                  <div className="skillText_container">
+                      <div className="skillText">
+                          {data.skill}
+                      </div>
+                  </div>
+
+                  {/* New container element */}
+                  <div className="home_project_btn_container">
+                      {renderSkillButtons()}
+                  </div>
               </div>
-
-              <div className="skillText_container">
-                <div className="skillText">
-                  {data.skill}
-                </div>
-              </div>
-
-              {/* New container element */}
-              <div className="home_project_btn_container">
-                {renderSkillButtons()}
-              </div>
-            </div>
-        )}
-    </div>
+          )}
+      </div>
   );
 }
 

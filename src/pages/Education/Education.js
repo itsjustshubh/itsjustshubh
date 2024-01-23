@@ -25,16 +25,11 @@ function Education() {
     ));
   };
 
-  // Function to handle the back button click, navigates to the home page
-  const handleBackClick = () => {
-    navigate('/');
-  };
-
   return (
     <div className="education-page">
-      <div className="education-container">
+      <div className="container">
         {/* Education Slider */}
-        <div className="education-slider">
+        <div className="slider">
           {education.map((edu, index) => (
             <button
               key={index}
@@ -49,17 +44,17 @@ function Education() {
         </div>
 
         {/* Education Details */}
-        <div className="education-content" style={{color: getEducationColor(selectedEducation)}}>
+        <div className="content" style={{color: getEducationColor(selectedEducation)}}>
           <img
             src={education[selectedEducation].image}
             alt={`${education[selectedEducation].institution} logo`}
-            className="institution-image"
+            className="image"
           />
-          <div className="text-content">
-            <h2 className="education-institution">{education[selectedEducation].institution}</h2>
-            <p className="education-period">{education[selectedEducation].period}</p>
-            <p className="education-degree">{education[selectedEducation].degree || education[selectedEducation].program || education[selectedEducation].course || education[selectedEducation].board}</p>
-            <p className="education-description">{renderDescription(education[selectedEducation].description)}</p>
+          <div>
+            <h2 className="institution">{education[selectedEducation].institution}</h2>
+            <p className="period">{education[selectedEducation].period}</p>
+            <p className="degree">{education[selectedEducation].degree || education[selectedEducation].program || education[selectedEducation].course || education[selectedEducation].board}</p>
+            <p className="description">{renderDescription(education[selectedEducation].description)}</p>
           </div>
         </div>
       </div>
