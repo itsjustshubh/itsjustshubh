@@ -132,7 +132,7 @@
     text-align: center; /* Center text alignment */
     font-size: 2vh; /* Font size for readability */
     font-weight: bold; /* Bold font for emphasis */
-    border-radius: 2vh; /* Rounded corners for aesthetics */
+    border-radius: 8vh; /* Rounded corners for aesthetics */
     border: 0.5vh solid whitesmoke; /* Border styling */
     background-color: transparent; /* Transparent background */
     color: whitesmoke; /* Text color */
