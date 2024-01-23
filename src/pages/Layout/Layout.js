@@ -83,7 +83,7 @@ function Layout({ children, loading }) {
             </li>
           </ul>
         </div>
-        <AnimatedCursor {...cursorConfig} />
+        {!isMobile && <AnimatedCursor {...cursorConfig} />}
         <video className="background-video" autoPlay muted loop playsInline>
           <source src={styling.background} type="video/mp4"/>
         </video>
