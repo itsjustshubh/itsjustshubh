@@ -17,8 +17,12 @@ jobs:
         with:
           node-version: '14'
           cache: 'npm'
+      - run: npm install
       - run: npm run build --if-present
       - run: npm test --if-present
+      - name: Print npm debug log
+        if: failure()
+        run: cat /home/runner/.npm/_logs/*-debug.log
 
   update-readme:
     runs-on: ubuntu-latest
