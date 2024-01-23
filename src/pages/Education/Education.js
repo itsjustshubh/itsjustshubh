@@ -25,26 +25,51 @@ function Education() {
     ));
   };
 
+  // State to track if the device is mobile
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 600);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div className="education-page">
       <div className="container">
-        {/* Education Slider */}
-        <div className="slider">
-          {education.map((edu, index) => (
-            <button
-              key={index}
-              className={`slider-button ${index === selectedEducation ? 'active' : ''}`}
-              onMouseEnter={() => setHoveredButton(index)}
-              onMouseLeave={() => setHoveredButton(null)}
-              onClick={() => setSelectedEducation(index)}
-            >
-              {edu.degree || edu.program || edu.course || edu.board}
-            </button>
-          ))}
-        </div>
+        {/* Conditional Rendering: Slider or Dropdown */}
+        {!isMobile ? (
+          // Slider for non-mobile devices
+          <div className="slider">
+            {education.map((edu, index) => (
+              <button
+                key={index}
+                className={`slider-button ${index === selectedEducation ? 'active' : ''}`}
+                onMouseEnter={() => setHoveredButton(index)}
+                onMouseLeave={() => setHoveredButton(null)}
+                onClick={() => setSelectedEducation(index)}
+              >
+                {edu.degree || edu.program || edu.course || edu.board}
+              </button>
+            ))}
+          </div>
+        ) : (
+          // Dropdown for mobile devices
+          <select
+            className="education-dropdown"
+            value={selectedEducation}
+            onChange={(e) => setSelectedEducation(e.target.value)}
+          >
+            {education.map((edu, index) => (
+              <option key={index} value={index}>
+                {edu.degree || edu.program || edu.course || edu.board}
+              </option>
+            ))}
+          </select>
+        )}
 
         {/* Education Details */}
-        <div className="content" style={{color: getEducationColor(selectedEducation)}}>
+        <div className="content" style={{ color: getEducationColor(selectedEducation) }}>
           <img
             src={education[selectedEducation].image}
             alt={`${education[selectedEducation].institution} logo`}
