@@ -106,15 +106,93 @@
   border-radius: 0.5vh; /* Rounded corners for the image */
 }
 
-@media (max-width: 768px) {
-  .title, .subtitle, .description {
-    font-size: 14px; /* Slightly smaller font size for smaller screens */
+/* Responsive design adjustments for smaller screens */
+@media (max-width: 600px) {
+  .education-page {
+    top: 0%;
+    left: 5%;
+    width: 90%;
   }
 
-  .text-container {
-    width: 150px; /* Adjust width for smaller screens */
-    height: 150px; /* Adjust height for smaller screens */
+  .education-page .container {
+    padding: 2vh;
+    font-size: 2vh;
+    text-align: center;
+    height: auto; /* Adjust height to content */
+    margin-bottom: 10vh;
   }
 
-  /* Add other responsive adjustments as needed */
+  .education-page .education-dropdown {
+    display: inline-block; /* Use inline-block for dynamic width */
+    width: auto; /* Auto width to adjust based on content */
+    max-width: 95%; /* Maximum width limit */
+    padding: 1vh 2vh; /* Padding for better spacing */
+    margin: 1vh auto; /* Center the dropdown */
+    text-align: center; /* Center text alignment */
+    font-size: 2vh; /* Font size for readability */
+    font-weight: bold; /* Bold font for emphasis */
+    border-radius: 2vh; /* Rounded corners for aesthetics */
+    border: 0.5vh solid whitesmoke; /* Border styling */
+    background-color: transparent; /* Transparent background */
+    color: whitesmoke; /* Text color */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+
+    /* Dropdown item styling */
+    -webkit-appearance: none; /* Remove default appearance for webkit browsers */
+    -moz-appearance: none; /* Remove default appearance for Mozilla browsers */
+    appearance: none; /* Remove default appearance */
+    background-position: right 1vh center; /* Position for custom arrow icon, if used */
+    background-repeat: no-repeat; /* No repeat for custom arrow icon */
+    cursor: pointer; /* Cursor pointer for better UX */
+  }
+
+  .education-page .slider {
+    display: none; /* Hide the slider on mobile */
+  }
+
+  .education-page .content {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+  }
+
+  .education-page .image {
+    width: 45%; /* Adjust width for smaller screens */
+    height: auto; /* Adjust height based on width */
+    margin-right: 0; /* Remove margin */
+    margin-top: 1.3vh; /* Add margin to top */
+    margin-bottom: -1vh;
+    padding: 0vh; /* Adjust padding */
+  }
+
+  .education-page .institution,
+  .education-page .period,
+  .education-page .degree {
+    text-align: center; /* Center text */
+  }
+
+  .education-page .institution {
+    font-size: 2.5vh; /* Adjust font size */
+  }
+
+  .education-page .degree {
+    display: none; /* Center text */
+  }
+
+  .education-page .period{
+    font-size: 1.8vh; /* Adjust font size */
+  }
+
+  /* Adjust description font size */
+  .education-page .description {
+    font-size: 1.9vh;
+    font-weight: bolder;
+    text-align: justify;
+    text-justify: inter-word; /* Adjusts spacing between words for justification */
+    hyphens: auto; /* Allow hyphens for better line breaks */
+    word-spacing: normal; /* Adjust as needed, but avoid large values */
+    padding: 1vh;
+    margin: 1vh 0;
+    line-height: 2.5vh;
+    max-width: 90%;
+  }
 }
