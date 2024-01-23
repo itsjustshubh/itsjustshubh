@@ -93,18 +93,22 @@ function Layout({ children, loading }) {
         <div className="mobile-icon-navbar">
           <NavLink to="/" className={isActive('/') ? 'active' : ''}>
             <FaHome/>
+            <span>Home</span>
           </NavLink>
           <NavLink to="/education" className={isActive('/education') ? 'active' : ''}>
             <FaGraduationCap/>
+            <span>Education</span>
           </NavLink>
           <NavLink to="/projects" className={isActive('/projects') ? 'active' : ''}>
             <FaBriefcase/>
+            <span>Projects</span>
           </NavLink>
           <NavLink to="/contact" className={isActive('/contact') ? 'active' : ''}>
             <FaEnvelope/>
+            <span>Contact</span>
           </NavLink>
         </div>
-        )}
+      )}
       </div>
   );
 }

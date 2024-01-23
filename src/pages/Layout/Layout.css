@@ -137,22 +137,28 @@
     }
 
     /* Style for each icon link in the navbar */
-    .mobile-icon-navbar a {
-        display: flex;
-        align-items: center; /* Center align items */
-        justify-content: center; /* Center justify items */
-        text-decoration: none; /* Remove text decoration */
-        color: white; /* White color for the icons */
-    }
-
     .mobile-icon-navbar a.active svg {
         color: #00BFFF; /* Or any color you prefer for the active state */
     }
 
     /* Style for the icons */
-    .mobile-icon-navbar a svg {
-        width: 3.5vh; /* Width of the icon */
-        padding-bottom: 2.5vh;
-        height: auto; /* Height of the icon */
-    }
+    .mobile-icon-navbar a {
+      display: flex;
+      flex-direction: column; /* Arrange icon and text vertically */
+      align-items: center; /* Center align items */
+      justify-content: center; /* Center justify items */
+      text-decoration: none; /* Remove text decoration */
+      color: white; /* White color for the icons and text */
+  }
+
+  .mobile-icon-navbar a svg {
+      width: 3.5vh; /* Width of the icon */
+      margin-bottom: 0.5vh; /* Space between icon and text */
+      height: auto; /* Height of the icon */
+  }
+
+  .mobile-icon-navbar a span {
+      font-size: 1.5vh; /* Font size for the label text */
+      color: white; /* Text color */
+  }
 }
