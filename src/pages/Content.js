@@ -288,7 +288,8 @@ const socialProfiles = [
     },
     {
         name: "Linkedin",
-        backgroundColor: "rgb(0,101,153)",
+        color: "rgb(0,101,153)",
+        backgroundColor: "white",
         link: "https://www.linkedin.com/in/shubhthorat/",
         icon: linkedin,
     },
