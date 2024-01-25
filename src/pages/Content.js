@@ -268,7 +268,7 @@ const education = [
 const socialProfiles = [
     {
         name: "Github",
-        backgroundColor: "rgb(0,62,84)",
+        backgroundColor: "rgb(0,0,0)",
         link: "https://www.github.com/itsjustshubh",
         icon: github,
     },
