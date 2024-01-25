@@ -274,7 +274,8 @@ const socialProfiles = [
     },
     {
         name: "LeetCode",
-        backgroundColor: "rgb(217,139,32)",
+        color: "rgb(217,139,32)",
+        backgroundColor: "white",
         link: "https://leetcode.com/itsjustshubh/",
         icon: leetcode,
     },
