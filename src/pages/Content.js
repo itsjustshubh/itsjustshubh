@@ -273,18 +273,18 @@ const socialProfiles = [
         icon: github,
     },
     {
-        name: "LeetCode",
-        color: "rgb(217,139,32)",
-        backgroundColor: "white",
-        link: "https://leetcode.com/itsjustshubh/",
-        icon: leetcode,
-    },
-    {
         name: "HackerRank",
         backgroundColor: "white",
         color: "rgb(50,199,101)",
         link: "https://www.hackerrank.com/shubhcthorat",
         icon: hackerRank,
+    },
+    {
+        name: "LeetCode",
+        color: "rgb(217,139,32)",
+        backgroundColor: "white",
+        link: "https://leetcode.com/itsjustshubh/",
+        icon: leetcode,
     },
     {
         name: "Linkedin",
