@@ -124,6 +124,7 @@
   /*max-width: 100vh;*/
   max-width: calc(20vh + 50vw);  /* Reduced reliance on vh to adjust for reduced height */
   font-size: calc(0.5vh + 1vw); /* Increased vw proportion for consistent font size relative to width */
+  padding-bottom: 5vh;
 }
 
 .home-page .home_project_btn_container {
@@ -191,7 +192,7 @@
 
 .home-page .skillText_container {
   top: 30%;
-  right: 6%;
+  right: 4%;
   position: absolute;
   width: 40vh;
   height: 6vh;
@@ -273,85 +274,45 @@
   left: 67%;
 }
 
-/* Responsive text size */
-@media (max-width: 768px) {
-  .vertical-menu {
-    top: 15%;
-    left: 3%;
-    line-height: 5vh;
-    font-size: 4.5vw; /* Larger font for smaller screens */
+.home-page .shubh-mobile-image {
+  display: none;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 600px) {
+  .home-page .shubh-mobile-image {
+    display: block; /* Show the image */
+    position: absolute; /* Position it absolutely within the parent container */
+    top: 1%; /* Adjust the top position as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for center alignment */
+    width: 80vw; /* Responsive width, adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Ensure it's above other elements if needed */
   }
 
-  .title {
-    top: 4%;
-    left: 3%;
-    font-size: 4vh; /* Larger font for smaller screens */
+  .home-page .title {
+    top: 35%;
+    left: 5%;
+    font-size: 7vh;
+    text-align: center; /* Center text for mobile view */
   }
 
-  .subtitle {
-    top: 7.5%;
-    left: 3%;
-    font-size: 2vh; /* Larger font for smaller screens */
+  .home-page .subtitle {
+    top: 40%;
+    left: 17%;
+    font-size: 4vh;
   }
 
-  .me-text, .read-more-text {
-    font-size: 3vh; /* Larger font for smaller screens */
-    display: none;
-  }
-
-  .websitePurpose {
-    display: none;
-  }
-
-  .description {
-    bottom: 3%;
-    right: 6%;
-    font-size: 2vh; /* Larger font for smaller screens */
-    max-width: 20vh;
-  }
-
-  .language {
-    bottom: 6%;
-    right: 6%;
+  .home-page .description {
+    top: 48%;
+    left: 5%;
+    max-width: 87%;
     font-size: 2vh;
+    padding-bottom: 12vh; /* Adds 10px of space at the bottom */
   }
 
-  .languages {
-    bottom: 1.5%;
-    right: 6%;
-    font-size: 2vh;
-  }
-
-  .main-image-one,
-  .main-image-two,
-  .main-image-three {
-    max-width: 50vw;
-    max-height: 50vh;
-  }
-
-  #cursor, #follower {
+  .home-page .home_project_btn_container, .home-page .skillText {
     display: none;
   }
-}
-
-.subtitle-container {
-  animation: fadeIn 1s ease;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
-.skill-container {
-  animation: fadeIn 1s ease;
-}
-
-.fade-out {
-  animation: fadeOut 1s ease;
 }

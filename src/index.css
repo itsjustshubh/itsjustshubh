@@ -25,3 +25,18 @@ code {
     backdrop-filter: blur(10px); /* Blur effect for the glass look */
     -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
 }
+
+@media (max-width: 600px) {
+    .description {
+        font-size: 1.9vh;
+        font-weight: bolder;
+        text-align: justify;
+        text-justify: inter-word; /* Adjusts spacing between words for justification */
+        hyphens: auto; /* Allow hyphens for better line breaks */
+        word-spacing: normal; /* Adjust as needed, but avoid large values */
+        padding: 1vh;
+        margin: 1vh 0;
+        line-height: 2.5vh;
+        max-width: 90%;
+  }
+}

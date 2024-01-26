@@ -134,8 +134,11 @@ const data = {
     title: "Hi. I'm Shubh",
     displayedPurpose: "Portfolio",
     animated: ["Programmer.", "Tech Enthusiast.", "Designer."],
-    description: "In my opinion, coding has the potential to change the world in ways previously only dreamt. " +
-        "My objective is to showcase the various avenues of coding by exploring different ideas and experimenting with them.",
+    description: "I believe coding holds the key to unlocking new realms of possibilities, transforming dreams into " +
+        "tangible innovations. I've developed a strong technical foundation in Java, Python, C, and Data Science.\n\n" +
+        "My vision extends to using technology for social impact, particularly in enhancing NGO fundraising and " +
+        "community building. Join me in this exciting tech journey, where innovation meets purpose, aiming to create " +
+        "a positive and lasting impact in society.",
     skill: "My Languages:",
     contactTitle: "Connect with me on:",
     projectsTitle: "Welcome To My Projects",

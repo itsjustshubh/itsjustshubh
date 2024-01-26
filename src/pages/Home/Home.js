@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './Home.css';
+import shubhImage from '../../assets/images/home/shubh.png';
 import {meta, data, skills} from "../Content";
 import { NavLink } from "react-router-dom";
 import { Helmet } from 'react-helmet';
@@ -171,6 +172,8 @@ function Home({loaded}) {
           {!loading && (
               // Your main app content goes here
               <div style={{backgroundColor: "black"}}>
+                  <img src={shubhImage} alt="Shubh" className="shubh-mobile-image"/>
+
                   <div className="title">
                       {data.title}
                   </div>
