@@ -312,7 +312,7 @@ const socialProfiles = [
         name: "Devpost",
         backgroundColor: "rgb(1,100,153)",
         color: "white",
-        link: "https://devpost.com/software/edith-brshpa",
+        link: "https://devpost.com/itsjustshubh",
         icon: devpost,
     },
     // {
