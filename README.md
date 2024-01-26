@@ -20,7 +20,7 @@
             <code><img height="35" src="src/assets/imported-icons/instagram.svg"></code>
         </a><a href="mailto:reapers-arras.0y@icloud.com" target="_blank" title="iCloud Mail" style="margin: 0 10px;">
             <code><img height="35" src="src/assets/imported-icons/apple-mail.svg"></code>
-        </a><a href="https://devpost.com/software/edith-brshpa" target="_blank" title="Devpost" style="margin: 0 10px;">
+        </a><a href="https://devpost.com/itsjustshubh" target="_blank" title="Devpost" style="margin: 0 10px;">
             <code><img height="35" src="src/assets/imported-icons/devpost.svg"></code>
         </a></p>
 </h5>
