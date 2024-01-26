@@ -297,12 +297,6 @@ const socialProfiles = [
         icon: linkedin,
     },
     {
-        name: "Instagram",
-        backgroundColor: "LightSlateGrey",
-        link: "https://www.instagram.com/_itsjustshubh/",
-        icon: instagram,
-    },
-    {
         name: "iCloud Mail",
         backgroundColor: "rgb(88,117,255)",
         link: "mailto:reapers-arras.0y@icloud.com",
@@ -315,6 +309,12 @@ const socialProfiles = [
         link: "https://devpost.com/itsjustshubh",
         icon: devpost,
     },
+    // {
+    //     name: "Instagram",
+    //     backgroundColor: "LightSlateGrey",
+    //     link: "https://www.instagram.com/_itsjustshubh/",
+    //     icon: instagram,
+    // },
     // {
     //     name: "Medium",
     //     backgroundColor: "black",
