@@ -292,20 +292,20 @@
   }
 
   .home-page .title {
-    top: 37%;
+    top: 39%;
     left: 5%;
     font-size: 7vh;
     text-align: center; /* Center text for mobile view */
   }
 
   .home-page .subtitle {
-    top: 42%;
+    top: 44%;
     left: 17%;
     font-size: 4vh;
   }
 
   .home-page .description {
-    top: 53%;
+    top: 53.5%;
     left: 5%;
     max-width: 87%;
     font-size: 1.9vh;
