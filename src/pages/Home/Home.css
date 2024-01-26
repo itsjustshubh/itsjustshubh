@@ -283,7 +283,7 @@
   .home-page .shubh-mobile-image {
     display: block; /* Show the image */
     position: absolute; /* Position it absolutely within the parent container */
-    top: 1%; /* Adjust the top position as needed */
+    top: 0%; /* Adjust the top position as needed */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for center alignment */
     width: 80vw; /* Responsive width, adjust as needed */
@@ -292,23 +292,23 @@
   }
 
   .home-page .title {
-    top: 35%;
+    top: 37%;
     left: 5%;
     font-size: 7vh;
     text-align: center; /* Center text for mobile view */
   }
 
   .home-page .subtitle {
-    top: 40%;
+    top: 42%;
     left: 17%;
     font-size: 4vh;
   }
 
   .home-page .description {
-    top: 48%;
+    top: 53%;
     left: 5%;
     max-width: 87%;
-    font-size: 2vh;
+    font-size: 1.9vh;
     padding-bottom: 12vh; /* Adds 10px of space at the bottom */
   }
 
