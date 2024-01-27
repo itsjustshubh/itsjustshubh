@@ -297,17 +297,17 @@ const socialProfiles = [
         icon: linkedin,
     },
     {
-        name: "iCloud Mail",
-        backgroundColor: "rgb(88,117,255)",
-        link: "mailto:reapers-arras.0y@icloud.com",
-        icon: appleMail,
-    },
-    {
         name: "Devpost",
         backgroundColor: "rgb(1,100,153)",
         color: "white",
         link: "https://devpost.com/itsjustshubh",
         icon: devpost,
+    },
+    {
+        name: "iCloud Mail",
+        backgroundColor: "rgb(88,117,255)",
+        link: "mailto:reapers-arras.0y@icloud.com",
+        icon: appleMail,
     },
     // {
     //     name: "Instagram",
