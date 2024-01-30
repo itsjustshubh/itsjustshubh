@@ -7,6 +7,7 @@ import Education from './pages/Education/Education';
 import Projects from './pages/Projects/Projects';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import {SpeedInsights} from "@vercel/speed-insights/react";
+import { inject } from '@vercel/analytics';
 
 import Edith from './prototypes/Edith/Edith';
 
@@ -14,6 +15,9 @@ function App() {
     const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
+        // Inject Vercel Analytics
+        inject();
+
         // Check if the page has been loaded before
         const pageLoadedBefore = localStorage.getItem('pageLoaded');
         if (pageLoadedBefore) {
