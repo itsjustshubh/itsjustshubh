@@ -24,22 +24,24 @@ function App() {
     }, []);
 
     return (
-        <Router>
-            <Layout>
-                <Routes>
-                    {/* Main page routers */}
-                    <Route path="/" element={<Home loaded={!loaded}/>}/>
-                    <Route path="/education" element={<Education/>}/>
-                    <Route path="/contact" element={<Contact/>}/>
-                    <Route path="/projects" element={<Projects/>}/>
-                    <Route path="*" element={<NotFoundPage/>}/>
+        <div>
+            <Router>
+                <Layout>
+                    <Routes>
+                        {/* Main page routers */}
+                        <Route path="/" element={<Home loaded={!loaded}/>}/>
+                        <Route path="/education" element={<Education/>}/>
+                        <Route path="/contact" element={<Contact/>}/>
+                        <Route path="/projects" element={<Projects/>}/>
+                        <Route path="*" element={<NotFoundPage/>}/>
 
-                    {/* Demo page routers */}
-                    <Route path="/edith-prototype" element={<Edith/>}/>
-                </Routes>
-            </Layout>
+                        {/* Demo page routers */}
+                        <Route path="/edith-prototype" element={<Edith/>}/>
+                    </Routes>
+                </Layout>
+            </Router>
             <SpeedInsights/>
-        </Router>
+        </div>
     );
 }
 
