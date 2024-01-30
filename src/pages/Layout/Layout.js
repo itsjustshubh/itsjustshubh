@@ -3,7 +3,7 @@ import AnimatedCursor from 'react-animated-cursor';
 import { styling } from "../Content";
 import { useLocation, NavLink } from 'react-router-dom';
 import { FaHome, FaGraduationCap, FaBriefcase, FaEnvelope } from 'react-icons/fa';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import './Layout.css';
 
 /**
