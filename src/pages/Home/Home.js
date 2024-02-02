@@ -169,7 +169,6 @@ function Home({loaded}) {
               </div>
           )}
 
-              // Your main app content goes here
               <div style={{backgroundColor: "black"}}>
                   <img src={shubhImage} alt="Shubh" className="shubh-mobile-image"/>
 

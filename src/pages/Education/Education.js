@@ -1,9 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import { useNavigate } from 'react-router-dom'; // Allows navigation between routes
+import {useNavigate} from 'react-router-dom'; // Allows navigation between routes
 import './Education.css'; // Importing CSS for styling
-import {education, projects} from '../Content';
-import Masonry from "masonry-layout";
-import imagesLoaded from "imagesloaded"; // Importing education data
+import {education} from '../Content';
 
 function Education() {
   const [selectedEducation, setSelectedEducation] = useState(0); // State to track the selected education item
