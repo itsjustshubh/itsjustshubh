@@ -24,6 +24,10 @@
   flex-direction: column; /* Vertical layout */
 }
 
+.education-page .description {
+    font-weight: bolder;
+}
+
 /* Slider containing buttons for each education item */
 .education-page .slider {
   display: flex;
