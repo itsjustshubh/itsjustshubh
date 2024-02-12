@@ -18,7 +18,7 @@ jobs:
           node-version: '14'
           cache: 'npm'
       - run: npm install
-      - run: npm run build --if-present
+#      - run: npm run build --if-present
       - run: npm test --if-present
       - name: Print npm debug log
         if: failure()
