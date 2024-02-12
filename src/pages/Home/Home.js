@@ -205,7 +205,7 @@ function Home({loaded}) {
                   </div>
 
                   {/* New container element */}
-                  <div className="home_project_btn_container">
+                  <div className="container">
                       {renderSkillButtons()}
                   </div>
               </div>

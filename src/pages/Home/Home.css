@@ -122,16 +122,36 @@
   text-align: left;
   /*font-size: 2.3vh;*/
   /*max-width: 100vh;*/
-  max-width: calc(20vh + 50vw);  /* Reduced reliance on vh to adjust for reduced height */
+  max-width: calc(15vh + 50vw);  /* Reduced reliance on vh to adjust for reduced height */
   font-size: calc(0.5vh + 1vw); /* Increased vw proportion for consistent font size relative to width */
   padding-bottom: 5vh;
 }
 
-.home-page .home_project_btn_container {
+/*.home-page .home_project_btn_container {*/
+/*  position: absolute;*/
+/*  top: 35%;*/
+/*  right: 1%;*/
+/*  border-radius: 5vh;*/
+
+/*  !* Optional: additional styling *!*/
+/*  width: 47vh; !* Example width *!*/
+/*  height: 60vh; !* Example height *!*/
+/*  !*transform: translate(-50%, -50%); !* Center the element at the specified position *!*!*/
+/*  padding: 2vh; !* Example padding *!*/
+/*  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); !* Optional: adds a shadow for better visibility *!*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*  gap: 2vh; !* Adjust the space between buttons *!*/
+/*  justify-content: flex-start; !* Align buttons to the start *!*/
+/*  align-items: flex-start; !* Align items at the start vertically *!*/
+/*  overflow: hidden; !* Hide overflow *!*/
+/*}*/
+
+.home-page .container {
   position: absolute;
-  top: 35%;
-  right: 1%;
-  border-radius: 5vh;
+  bottom: 5%;
+  right: 2%;
+  border-radius: 3vh;
 
   /* Optional: additional styling */
   width: 47vh; /* Example width */
@@ -179,7 +199,7 @@
 }
 
 .home-page .home_project_btn .icon, .home-page .home_project_btn svg {
-    height: 5vh; /* Adjust based on your design */
+    height: 4vh; /* Adjust based on your design */
     width: auto; /* Maintain aspect ratio */
     margin-right: 1vh; /* Space between icon and text */
 }
@@ -187,11 +207,11 @@
 .home-page .home_project_btn:hover {
     color: navajowhite;
     border-color: navajowhite;
-    transform: scale(1.1); /* Slightly increase size on hover */
+    transform: scale(1.06); /* Slightly increase size on hover */
 }
 
 .home-page .skillText_container {
-  top: 30%;
+  top: 23%;
   right: 4%;
   position: absolute;
   width: 40vh;
@@ -202,7 +222,7 @@
   align-items: center; /* Center content vertically */
   font-family: 'Plantagenet Cherokee', sans-serif;
   font-weight: bold;
-  font-size: 4vh;
+  font-size: 5vh;
 }
 
 .home-page .skillText {
@@ -288,7 +308,7 @@
     transform: translateX(-50%); /* Adjust for center alignment */
     width: 80vw; /* Responsive width, adjust as needed */
     height: auto; /* Maintain aspect ratio */
-    z-index: 10; /* Ensure it's above other elements if needed */
+    z-index: 1; /* Ensure it's above other elements if needed */
   }
 
   .home-page .title {
@@ -312,7 +332,7 @@
     padding-bottom: 12vh; /* Adds 10px of space at the bottom */
   }
 
-  .home-page .home_project_btn_container, .home-page .skillText {
+  .home-page .container, .home-page .skillText {
     display: none;
   }
 }

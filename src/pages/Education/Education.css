@@ -15,7 +15,6 @@
 /* Container for the education content */
 .education-page .container {
   padding: 2.5vh;
-  border-radius: 4vh;
   width: 100%; /* Full width of the parent container */
   height: 60vh; /* Fixed height */
   font-size: 2.3vh;

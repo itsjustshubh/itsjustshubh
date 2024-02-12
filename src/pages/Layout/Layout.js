@@ -3,7 +3,10 @@ import AnimatedCursor from 'react-animated-cursor';
 import { styling } from "../Content";
 import { useLocation, NavLink } from 'react-router-dom';
 import { FaHome, FaGraduationCap, FaBriefcase, FaEnvelope } from 'react-icons/fa';
-
+import { ShaderGradientCanvas, ShaderGradient } from 'shadergradient'
+import * as reactSpring from '@react-spring/three'
+import * as drei from '@react-three/drei'
+import * as fiber from '@react-three/fiber'
 import './Layout.css';
 
 /**
@@ -60,6 +63,23 @@ function Layout({ children, loading }) {
 
   return (
       <div className="layout-background">
+        <ShaderGradientCanvas
+            importedFiber={{...fiber, ...drei, ...reactSpring}}
+            style={{
+              position: 'absolute',
+              top: 0,
+              width: '100%',
+              height: '100%',
+              zIndex: -1,
+              pointerEvents: 'none' // Disabling pointer events
+            }}
+        >
+          <ShaderGradient
+              control='query'
+              urlString=
+                  'https://www.shadergradient.co/customize?animate=on&axesHelper=off&bgColor1=%23000000&bgColor2=%23000000&brightness=1.2&cAzimuthAngle=180&cDistance=3.6&cPolarAngle=90&cameraZoom=1&color1=%23c45c00&color2=%23b20000&color3=%237b0e00&destination=onCanvas&embedMode=off&envPreset=dawn&format=gif&fov=45&frameRate=10&gizmoHelper=hide&grain=off&lightType=env&pixelDensity=1&positionX=-1.4&positionY=0&positionZ=0&range=disabled&rangeEnd=40&rangeStart=0&reflection=0.1&rotationX=0&rotationY=10&rotationZ=50&shader=defaults&type=waterPlane&uDensity=1.3&uFrequency=5.5&uSpeed=0.2&uStrength=4&uTime=0&wireframe=false'
+          />
+        </ShaderGradientCanvas>
         <div className="navbar">
           <ul>
             <li>
@@ -85,31 +105,31 @@ function Layout({ children, loading }) {
           </ul>
         </div>
         {!isMobile && <AnimatedCursor {...cursorConfig} />}
-        <video className="background-video" autoPlay muted loop playsInline>
-          <source src={styling.background} type="video/mp4"/>
-        </video>
+        {/*<video className="background-video" autoPlay muted loop playsInline>*/}
+        {/*  <source src={styling.background} type="video/mp4"/>*/}
+        {/*</video>*/}
         {children}
 
         {isMobile && (
-        <div className="mobile-icon-navbar">
-          <NavLink to="/" className={isActive('/') ? 'active' : ''}>
-            <FaHome/>
-            <span>Home</span>
-          </NavLink>
-          <NavLink to="/education" className={isActive('/education') ? 'active' : ''}>
-            <FaGraduationCap/>
-            <span>Education</span>
-          </NavLink>
-          <NavLink to="/projects" className={isActive('/projects') ? 'active' : ''}>
-            <FaBriefcase/>
-            <span>Projects</span>
-          </NavLink>
-          <NavLink to="/contact" className={isActive('/contact') ? 'active' : ''}>
-            <FaEnvelope/>
-            <span>Contact</span>
-          </NavLink>
-        </div>
-      )}
+            <div className="mobile-icon-navbar">
+              <NavLink to="/" className={isActive('/') ? 'active' : ''}>
+                <FaHome/>
+                <span>Home</span>
+              </NavLink>
+              <NavLink to="/education" className={isActive('/education') ? 'active' : ''}>
+                <FaGraduationCap/>
+                <span>Education</span>
+              </NavLink>
+              <NavLink to="/projects" className={isActive('/projects') ? 'active' : ''}>
+                <FaBriefcase/>
+                <span>Projects</span>
+              </NavLink>
+              <NavLink to="/contact" className={isActive('/contact') ? 'active' : ''}>
+                <FaEnvelope/>
+                <span>Contact</span>
+              </NavLink>
+            </div>
+        )}
       </div>
   );
 }
