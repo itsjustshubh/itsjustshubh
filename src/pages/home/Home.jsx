@@ -3,6 +3,7 @@ import "./home.css";
 
 import Transition from "../../components/transition/Transition";
 import PortraitImg from "../../assets/images/home/portrait.jpg";
+import { details } from "../../content";
 
 import { gsap } from "gsap";
 
@@ -51,15 +52,15 @@ const Home = () => {
       </div>
       <div className="hero-copy">
         <div className="hero-copy-wrapper">
-          <h1>Cura</h1>
+          <h1>{details.lastName}</h1>
         </div>
         <div className="hero-copy-wrapper">
-          <h1>Futuri</h1>
+          <h1>{details.firstName}</h1>
         </div>
       </div>
 
       <div className="hero-tagline">
-        <p>Interaction Designer based in Toronto.</p>
+        <p>{details.tagline}</p>
       </div>
     </section>
   );

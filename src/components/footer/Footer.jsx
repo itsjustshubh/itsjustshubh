@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="container">
-        <div className="footer-col">
+        {/* <div className="footer-col">
           <div className="footer-item">
             <a href="#">Getting Started</a>
           </div>
@@ -36,7 +36,7 @@ const Footer = () => {
           <div className="footer-item">
             <a href="#">Instagram</a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

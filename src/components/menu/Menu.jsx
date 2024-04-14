@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./menu.css";
 
+import { details } from "../../content";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 
@@ -140,7 +141,7 @@ const Menu = () => {
     <div className="menu-container" ref={menuContainer}>
       <div className="menu-bar">
         <div className="menu-logo" onClick={closeMenu}>
-          <Link to="/">Cura Futuri</Link>
+          <Link to="/">{details.name}</Link>
         </div>
         <div className="menu-actions">
           <div className="contact-btn">
