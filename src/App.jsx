@@ -1,6 +1,7 @@
 import "./App.css";
 
 import { Routes, Route, useLocation } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 
 import Menu from "./components/menu/Menu";
 import Footer from "./components/footer/Footer";
@@ -35,6 +36,7 @@ function App() {
         </Routes>
       </AnimatePresence>
       {showFooter && <Footer />}
+      <Analytics />
     </>
   );
 }
