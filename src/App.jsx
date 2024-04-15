@@ -34,7 +34,6 @@ function App() {
           <Route path="/projects" element={<Works />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
           {blogPosts.map((post) => (
             <Route
               path={`/blog/${post.slug}`}
@@ -54,6 +53,7 @@ function App() {
               />
             );
           })}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
       {showFooter && <Footer />}
