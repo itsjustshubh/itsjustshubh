@@ -152,7 +152,7 @@ const Works = () => {
           ))}
         </section>
 
-        <div
+        {/* <div
           className="works-marquee"
           onMouseOver={() => {
             handleResetPreivew();
@@ -164,16 +164,16 @@ const Works = () => {
               odit?
             </h1>
           </Marquee>
-        </div>
+        </div> */}
 
-        <div
+        {/* <div
           className="magnetic-btn"
           onMouseOver={() => {
             handleResetPreivew();
           }}
         >
           <MagneticButton />
-        </div>
+        </div> */}
       </div>
     </div>
   );
