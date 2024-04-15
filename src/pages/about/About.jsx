@@ -2,7 +2,7 @@ import React from "react";
 import "./about.css";
 
 import Transition from "../../components/transition/Transition";
-import { aboutData } from "../../content/content";
+import { aboutData, details } from "../../content/content";
 import Faq from "react-faq-component";
 import Marquee from "react-fast-marquee";
 import MagneticButton from "../../components/magneticbutton/MagneticButton";
@@ -168,13 +168,13 @@ const About = () => {
             <p>
               <span>
                 For a CV, portfolio, or inquiries, please reach out to
-                {aboutData.contactInfo.email}
+                {details.email}
               </span>
             </p>
 
             <br />
             <p>
-              <span>{aboutData.contactInfo.phone}</span>
+              <span>{details.phone}</span>
             </p>
             <p>
               <span>Instagram • Twitter</span>

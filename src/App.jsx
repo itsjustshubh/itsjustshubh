@@ -19,7 +19,8 @@ import { blogPosts } from "./content/blogContent";
 
 function App() {
   const location = useLocation();
-  const showFooter = location.pathname !== "/";
+  const showFooter =
+    location.pathname !== "/" && location.pathname !== "/contact";
 
   return (
     <>

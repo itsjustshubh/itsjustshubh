@@ -35,7 +35,7 @@
   top: 50%;
   right: -10%;
   transform: translate(0%, -50%);
-  background: var(--color-bg);
+  /* background: var(--color-bg); */
   transform-origin: center center;
   transition: 0.3s;
 }

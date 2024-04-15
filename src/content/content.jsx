@@ -33,10 +33,23 @@ const contactInfo = [
   //   url: "https://www.instagram.com/shubhthorat/",
 ];
 
+export const socialMedia = [
+  {
+    type: `${contactInfo[3].display}`,
+    url: `${contactInfo[3].url}`,
+  },
+  {
+    type: "Github",
+    url: "https:www.github.com/itsjustshubh/",
+  },
+];
+
 export const details = {
   firstName: firstName,
   lastName: lastName,
   name: `${firstName} ${lastName}`,
+  email: contactInfo[0].value,
+  phone: contactInfo[1].value,
   tagline: "Computer Scientist based in Boston.",
 };
 
@@ -76,7 +89,7 @@ export const aboutData = {
       awardName: "Best Interactive Design",
       awardEvent: "Webby Awards",
       project: "Dynamic Narratives Platform",
-      url: "https://www.webbyawards.com/winners/2024/interactive-design/dynamic-narratives-platform",
+      // url: "https://www.webbyawards.com/winners/2024/interactive-design/dynamic-narratives-platform",
     },
     {
       year: "2023",

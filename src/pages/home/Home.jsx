@@ -47,9 +47,9 @@ const Home = () => {
   }, []);
   return (
     <section className="hero-section">
-      <div className="hero-img">
+      {/* <div className="hero-img">
         <img src={PortraitImg} alt="" />
-      </div>
+      </div> */}
       <div className="hero-copy">
         <div className="hero-copy-wrapper">
           <h1>{details.lastName}</h1>

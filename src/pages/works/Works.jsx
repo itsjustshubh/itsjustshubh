@@ -89,6 +89,15 @@ const Works = () => {
     };
   }, []);
 
+  const getYearRange = (projects) => {
+    const years = projects.map((project) => project.content.year);
+    const minYear = Math.min(...years);
+    const maxYear = Math.max(...years);
+    return { minYear, maxYear };
+  };
+
+  const { minYear, maxYear } = getYearRange(projects);
+
   return (
     <div className="works page">
       <div className="project-preview"></div>
@@ -103,7 +112,9 @@ const Works = () => {
             <h1>CASES</h1>
           </div>
           <div className="work-copy-wrapper">
-            <h1>2018 • 2021</h1>
+            <h1>
+              {minYear} • {maxYear}
+            </h1>
           </div>
         </section>
 

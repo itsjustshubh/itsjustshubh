@@ -3,6 +3,8 @@ import Transition from "../../components/transition/Transition";
 
 import { Link } from "react-router-dom";
 import { ArrowRight } from "@phosphor-icons/react";
+
+import { details } from "../../content/content";
 import { blogPosts } from "../../content/blogContent";
 
 import MagneticButton from "../../components/magneticbutton/MagneticButton";
@@ -66,18 +68,16 @@ const Blog = () => {
             <h2>Powered by Your Creativity</h2>
             <p>
               <span>
-                For a CV, portfolio, or inquiries, please reach out to
-                hello@curafuturi.com
+                For a CV, portfolio, or inquiries, please reach out to{" "}
+                {details.email}
               </span>
             </p>
 
             <br />
             <p>
-              <span>+1 416 555 1234</span>
+              <span>{details.phone}</span>
             </p>
-            <p>
-              <span>Instagram • Twitter</span>
-            </p>
+            <p>{/* <span>Instagram • LinkedIn</span> */}</p>
           </div>
         </section>
         <MagneticButton />

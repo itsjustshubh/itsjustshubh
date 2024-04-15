@@ -1,11 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import emailjs from "emailjs-com";
 import Transition from "../../components/transition/Transition";
+import MagneticButton from "../../components/magneticbutton/MagneticButton";
+import { socialMedia } from "../../content/content"; // Adjust the path as necessary
 
 import "./contact.css";
 
-import MagneticButton from "../../components/magneticbutton/MagneticButton";
-
 const Contact = () => {
+  // Initialize state for each form field
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    // Initialize EmailJS
+    emailjs.init("ypH20sH1xs_y9jrXi"); // Your actual user ID from EmailJS
+  }, []);
+
+  const sendEmail = (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+
+    const templateParams = {
+      name, // name from state
+      email, // email from state
+      message, // message from state
+    };
+
+    emailjs.send("service_mszk77x", "template_portfolio", templateParams).then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Message Sent Successfully");
+        // Optionally reset the form fields
+        setName("");
+        setEmail("");
+        setMessage("");
+      },
+      (error) => {
+        console.log("FAILED...", error);
+        alert("Failed to send message, try again");
+      }
+    );
+  };
+
   return (
     <div className="contact page">
       <div className="container">
@@ -28,16 +64,37 @@ const Contact = () => {
               </p>
             </div>
             <div className="contact-col">
-              <form action="">
+              <form onSubmit={sendEmail}>
                 <div className="input">
-                  <input type="text" placeholder="Name" />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                  />
                 </div>
                 <div className="input">
-                  <textarea type="text" placeholder="Message" rows={6} />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
                 </div>
                 <div className="input">
-                  <input type="text" placeholder="Email" />
-                  <button>Submit</button>
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    rows="6"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    required
+                  />
+                  <button type="submit">Send</button>
                 </div>
               </form>
             </div>
@@ -78,21 +135,19 @@ const Contact = () => {
               </p>
             </div>
             <div className="contact-col">
-              <div className="contact-social-link">
-                <p>
-                  <a href="#">Instagram</a>
-                </p>
-              </div>
-              <div className="contact-social-link">
-                <p>
-                  <a href="#">Twitter</a>
-                </p>
-              </div>
-              <div className="contact-social-link">
-                <p>
-                  <a href="#">LinkedIn</a>
-                </p>
-              </div>
+              {socialMedia.map((link, index) => (
+                <div key={index} className="contact-social-link">
+                  <p>
+                    <a
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {link.type}
+                    </a>
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </section>

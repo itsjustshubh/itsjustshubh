@@ -69,7 +69,7 @@ const MagneticButton = () => {
 
   return (
     <div className="m-btn-wrapper" ref={wrapperRef}>
-      <Link to="/">
+      <Link to="/projects">
         <div className="m-btn" ref={btnRef}>
           <div className="arrow-right">
             <img
