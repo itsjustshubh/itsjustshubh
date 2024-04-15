@@ -26,11 +26,18 @@ const contactInfo = [
     display: "LinkedIn",
     url: "https://www.linkedin.com/in/shubhthorat/",
   },
+  {
+    type: "github",
+    value: "Visit my GitHub",
+    display: "GitHub",
+    url: "https://www.github.com/itsjustshubh/",
+  },
   // {
   //   type: "instagram",
   //   value: "Visit my Instagram",
   //   display: "Instagram",
   //   url: "https://www.instagram.com/shubhthorat/",
+  // },
 ];
 
 export const socialMedia = [
@@ -39,8 +46,8 @@ export const socialMedia = [
     url: `${contactInfo[3].url}`,
   },
   {
-    type: "Github",
-    url: "https:www.github.com/itsjustshubh/",
+    type: `${contactInfo[4].display}`,
+    url: `${contactInfo[4].url}`,
   },
 ];
 
