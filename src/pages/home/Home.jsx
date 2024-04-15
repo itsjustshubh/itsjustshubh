@@ -3,7 +3,7 @@ import "./home.css";
 
 import Transition from "../../components/transition/Transition";
 import PortraitImg from "../../assets/images/home/portrait.jpg";
-import { details } from "../../content";
+import { details } from "../../content/content";
 
 import { gsap } from "gsap";
 

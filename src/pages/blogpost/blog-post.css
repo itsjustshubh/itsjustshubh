@@ -71,6 +71,19 @@ p#blog-share span {
   align-items: center;
 }
 
+.blog-content-img {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-content-img img {
+  width: 100%;
+  height: auto;
+  display: block; /* Removes bottom space/gap */
+}
+
 @media (max-width: 900px) {
   .blog-content {
     flex-direction: column-reverse;

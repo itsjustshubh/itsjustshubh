@@ -22,11 +22,6 @@
   flex: 3;
 }
 
-.about-portrait-img {
-  width: 100%;
-  height: 100%;
-}
-
 .about-intro h2 {
   text-indent: 500px;
   margin: 2em 0;
@@ -62,8 +57,7 @@
 }
 
 .faqs {
-  margin: 1em 0 0em 0;
-  margin-right: 2em;
+  margin: 1em 0;
 }
 
 .faqs > div {

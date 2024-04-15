@@ -2,7 +2,7 @@ import React from "react";
 import "./about.css";
 
 import Transition from "../../components/transition/Transition";
-import { aboutData } from "../../content";
+import { aboutData } from "../../content/content";
 import Faq from "react-faq-component";
 import Marquee from "react-fast-marquee";
 import MagneticButton from "../../components/magneticbutton/MagneticButton";
@@ -28,15 +28,13 @@ const About = () => {
             <div className="about-col">
               <p>
                 <span>{aboutData.introDetails.startDate}</span>
-                <br />
-                <br />
-                <span style={{ textIndent: "100px" }}>
-                  {aboutData.introDetails.accomplishment}
-                </span>
               </p>
             </div>
             <div className="about-col">
               <h3>{aboutData.introDetails.description}</h3>
+              <h3 style={{ textIndent: "100px" }}>
+                {aboutData.introDetails.accomplishment}
+              </h3>
             </div>
           </div>
         </section>
@@ -72,14 +70,13 @@ const About = () => {
               <br />
               <br />
               <br />
-
-              <div className="faqs">
-                <Faq data={aboutData.faqData} />
-              </div>
             </div>
             <div className="about-col">
               <div className="about-portrait-img">
                 <img src={PortraitImg} alt="" />
+              </div>
+              <div className="faqs">
+                <Faq data={aboutData.faqData} />
               </div>
             </div>
           </div>

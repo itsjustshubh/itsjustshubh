@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./menu.css";
 
-import { details } from "../../content";
+import { details } from "../../content/content";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 
@@ -14,7 +14,7 @@ import LinkPreviewImg4 from "../../assets/images/menu/link-4.jpg";
 const Menu = () => {
   const menuLinks = [
     { path: "/about", label: "About" },
-    { path: "/works", label: "Work" },
+    { path: "/projects", label: "Projects" },
     { path: "/blog", label: "Blog" },
     { path: "/contact", label: "Contact" },
   ];

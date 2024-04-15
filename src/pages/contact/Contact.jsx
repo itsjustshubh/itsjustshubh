@@ -44,7 +44,7 @@ const Contact = () => {
           </div>
         </section>
 
-        <section className="contact-subscribe">
+        {/* <section className="contact-subscribe">
           <div className="contact-row">
             <div className="contact-col">
               <p>
@@ -68,7 +68,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="contact-socials">
           <div className="contact-row">

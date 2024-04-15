@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
-import "./sample-project.css";
+import "./project-page.css";
 
 import Transition from "../../components/transition/Transition";
 import { Link } from "react-router-dom";
+import { MetaLogo, XLogo } from "@phosphor-icons/react";
 import gsap from "gsap";
 
 import ProjectImg1 from "../../assets/images/projects/project-1.jpg";
@@ -11,7 +12,7 @@ import ProjectImg3 from "../../assets/images/projects/project-3.jpg";
 import ProjectImg4 from "../../assets/images/projects/project-4.jpg";
 import ProjectImg5 from "../../assets/images/projects/project-5.jpg";
 
-const SampleProject = () => {
+const ProjectPage = ({ project, nextProject }) => {
   const nextProjectPreview = useRef();
   const nextProjectPreviewBg = useRef();
 
@@ -56,28 +57,34 @@ const SampleProject = () => {
       });
   }, []);
 
+  const chunkArray = (array, size) => {
+    const chunkedArr = [];
+    for (let i = 0; i < array.length; i += size) {
+      chunkedArr.push(array.slice(i, i + size));
+    }
+    return chunkedArr;
+  };
+
+  const imageRows = chunkArray(project.content.images, 2); // Split images into rows of two
+
   return (
     <div className="project page">
       <section className="project-hero">
-        <img src={ProjectImg2} alt="" />
+        <img src={project.image} alt="" />
       </section>
 
       <div className="nextProjectPreviewBg">
-        <img src={ProjectImg3} alt="" />
+        <img src={nextProject.image} alt="" />
       </div>
 
       <div className="container">
         <section className="project-title">
-          <h1>Quantleaf</h1>
-          <p>UX/UI • Website</p>
+          <h1>{project.title}</h1>
+          <p>{project.subtitle}</p>
         </section>
 
         <section className="project-brief">
-          <h2>
-            Complete rebranding and digital transformation for Quanleaf, a
-            cutting-edge biotech firm based in Boston, specializing in
-            sustainable agricultural solutions.
-          </h2>
+          <h2>{project.content.title}</h2>
         </section>
 
         <section className="project-description">
@@ -87,73 +94,80 @@ const SampleProject = () => {
                 <p>
                   <span>Year</span>
                 </p>
-                <p>2023</p>
+                <p>{project.content.year}</p>
               </div>
               <div className="project-sub-col">
                 <p>
                   <span>Credits</span>
                 </p>
-                <p>Client: Quanleaf Innovations</p>
-                <p>Creative Direction: Elena Miro</p>
-                <p>Art Director: Samuel Hyde</p>
-                <p>Designers: Lucia Grant, Alex Moreno</p>
-                <p>Brand Strategy: Orion Strategies</p>
+                {project.content.credits.map((credit, index) => (
+                  <p key={index}>
+                    <strong>{credit.role}</strong>: {credit.name}
+                  </p>
+                ))}
+
+                <br />
+                <br />
+
+                <p>
+                  <span>Goals</span>
+                </p>
+                {project.content.goals.map((goal, index) => (
+                  <p key={index}>{goal}</p>
+                ))}
+
+                <br />
+                <br />
+
+                <p>
+                  <span>Read More</span>
+                  <br />
+                </p>
+
+                <p id="blog-share">
+                  {project.content.buttons.map((button) => (
+                    <div
+                      key={button.id}
+                      className="share-icon"
+                      onClick={() => window.open(button.link, "_blank")}
+                    >
+                      <button.icon {...button.iconProps} />
+                    </div>
+                  ))}
+                </p>
               </div>
             </div>
             <div className="project-col">
               <p>
-                <span>Goals</span>
+                <span>Description</span>
               </p>
-              <p>
-                The Quanleaf project aimed to revolutionize the brand's digital
-                presence, aligning it with their mission to innovate in the
-                field of sustainable agriculture. Our objectives were to craft a
-                brand identity that resonates with their core values of
-                sustainability, innovation, and community engagement. We focused
-                on developing a user-friendly, informative website that
-                showcases Quanleaf's groundbreaking research and product
-                offerings, while also facilitating engagement and collaboration
-                within the biotech and agricultural sectors. Through strategic
-                branding, engaging design, and intuitive user experience, we
-                aimed to position Quanleaf as a leader in sustainable biotech
-                solutions, driving awareness, and fostering a community of
-                advocates and partners.
-              </p>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: project.content.description,
+                }}
+              />
             </div>
           </div>
         </section>
 
         <section className="project-images">
-          <div className="project-img-row">
-            <div className="project-img">
-              <img src={ProjectImg1} alt="" />
+          {imageRows.map((row, rowIndex) => (
+            <div key={rowIndex} className="project-img-row">
+              {row.map((img, imgIndex) => (
+                <div key={imgIndex} className="project-img">
+                  <img
+                    src={img}
+                    alt={`Project Image ${rowIndex * 2 + imgIndex + 1}`}
+                  />
+                </div>
+              ))}
             </div>
-
-            <div className="project-img">
-              <img src={ProjectImg2} alt="" />
-            </div>
-          </div>
-          <div className="project-img-row">
-            <div className="project-img">
-              <img src={ProjectImg3} alt="" />
-            </div>
-
-            <div className="project-img">
-              <img src={ProjectImg4} alt="" />
-            </div>
-          </div>
-          <div className="project-img-row">
-            <div className="project-img">
-              <img src={ProjectImg5} alt="" />
-            </div>
-
-            <div className="project-img"></div>
-          </div>
+          ))}
         </section>
 
         <section className="next-project">
           <div className="next-project-preview">
-            <img src={ProjectImg3} alt="" />
+            <img src={nextProject.image} alt="" />
           </div>
           <div className="next-project-copy">
             <p>
@@ -169,7 +183,7 @@ const SampleProject = () => {
                 document.removeEventListener("mousemove", handleMouseMove);
               }}
             >
-              <Link to="/">Mystrove Leaf</Link>
+              <Link to={nextProject.link}>{nextProject.title}</Link>
             </h1>
           </div>
         </section>
@@ -178,4 +192,4 @@ const SampleProject = () => {
   );
 };
 
-export default Transition(SampleProject);
+export default Transition(ProjectPage);

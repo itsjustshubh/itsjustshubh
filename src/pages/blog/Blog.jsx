@@ -3,12 +3,23 @@ import Transition from "../../components/transition/Transition";
 
 import { Link } from "react-router-dom";
 import { ArrowRight } from "@phosphor-icons/react";
+import { blogPosts } from "../../content/blogContent";
 
 import MagneticButton from "../../components/magneticbutton/MagneticButton";
 
 import "./blog.css";
 
 const Blog = () => {
+  const chunkPosts = (posts, size) =>
+    posts.reduce((acc, val, i) => {
+      let idx = Math.floor(i / size);
+      let page = acc[idx] || (acc[idx] = []);
+      page.push(val);
+      return acc;
+    }, []);
+
+  const rows = chunkPosts(blogPosts, 2);
+
   return (
     <div className="blog page">
       <div className="container">
@@ -19,191 +30,35 @@ const Blog = () => {
         </div>
 
         <section className="blogs">
-          <div className="blog-row">
-            <div className="blog-col">
-              <div className="blog-item">
-                <div className="blog-divider">
-                  <div className="b-div-1"></div>
-                  <div className="b-div-2"></div>
-                </div>
+          {rows.map((row, rowIndex) => (
+            <div className="blog-row" key={rowIndex}>
+              {row.map((post, index) => (
+                <div className="blog-col" key={index}>
+                  <Link to={post.link}>
+                    <div className="blog-item">
+                      <div className="blog-divider">
+                        <div className="b-div-1"></div>
+                        <div className="b-div-2"></div>
+                      </div>
 
-                <div className="blog-title-wrapper">
-                  <div className="blog-title">
-                    <h3>
-                      <Link to="/sample-blog">
-                        Shadow & Light: Exploring Visual Depth in Design
-                      </Link>
-                    </h3>
-                    <p>
-                      <span>Design Insights</span>
-                    </p>
-                  </div>
+                      <div className="blog-title-wrapper">
+                        <div className="blog-title">
+                          <h3>{post.title}</h3>
+                          <p>
+                            <span>{post.category}</span>
+                          </p>
+                        </div>
 
-                  <div className="blog-arrow">
-                    <ArrowRight size={32} weight="light" color="#fff" />
-                  </div>
+                        <div className="blog-arrow">
+                          <ArrowRight size={32} weight="light" color="#fff" />
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
                 </div>
-              </div>
+              ))}
             </div>
-            <div className="blog-col">
-              <div className="blog-item">
-                <div className="blog-divider">
-                  <div className="b-div-1"></div>
-                  <div className="b-div-2"></div>
-                </div>
-
-                <div className="blog-title-wrapper">
-                  <div className="blog-title">
-                    <h3>
-                      <Link to="/sample-blog">
-                        Minimalist Methods: The Art of Less is More
-                      </Link>
-                    </h3>
-                    <p>
-                      <span>Creative Process</span>
-                    </p>
-                  </div>
-
-                  <div className="blog-arrow">
-                    <ArrowRight size={32} weight="light" color="#fff" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="blog-row">
-            <div className="blog-col">
-              <div className="blog-item">
-                <div className="blog-divider">
-                  <div className="b-div-1"></div>
-                  <div className="b-div-2"></div>
-                </div>
-
-                <div className="blog-title-wrapper">
-                  <div className="blog-title">
-                    <h3>
-                      <Link to="/sample-blog">
-                        Color Theory, Crafted: A Designer's Spectrum
-                      </Link>
-                    </h3>
-                    <p>
-                      <span>Techniques</span>
-                    </p>
-                  </div>
-
-                  <div className="blog-arrow">
-                    <ArrowRight size={32} weight="light" color="#fff" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="blog-col">
-              <div className="blog-item">
-                <div className="blog-divider">
-                  <div className="b-div-1"></div>
-                  <div className="b-div-2"></div>
-                </div>
-
-                <div className="blog-title-wrapper">
-                  <div className="blog-title">
-                    <h3>
-                      <Link to="/sample-blog">
-                        Digital Narratives: Telling Stories Through Design
-                      </Link>
-                    </h3>
-                    <p>
-                      <span>Storytelling</span>
-                    </p>
-                  </div>
-
-                  <div className="blog-arrow">
-                    <ArrowRight size={32} weight="light" color="#fff" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="blog-row">
-            <div className="blog-col">
-              <div className="blog-item">
-                <div className="blog-divider">
-                  <div className="b-div-1"></div>
-                  <div className="b-div-2"></div>
-                </div>
-
-                <div className="blog-title-wrapper">
-                  <div className="blog-title">
-                    <h3>
-                      <Link to="/sample-blog">
-                        The Future of UI: Interactive Beyond Imagination
-                      </Link>
-                    </h3>
-                    <p>
-                      <span>Innovation</span>
-                    </p>
-                  </div>
-
-                  <div className="blog-arrow">
-                    <ArrowRight size={32} weight="light" color="#fff" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="blog-col">
-              <div className="blog-item">
-                <div className="blog-divider">
-                  <div className="b-div-1"></div>
-                  <div className="b-div-2"></div>
-                </div>
-
-                <div className="blog-title-wrapper">
-                  <div className="blog-title">
-                    <h3>
-                      <Link to="/sample-blog">
-                        Eco Design Trends: Sustainability Meets Aesthetics
-                      </Link>
-                    </h3>
-                    <p>
-                      <span>Trends</span>
-                    </p>
-                  </div>
-
-                  <div className="blog-arrow">
-                    <ArrowRight size={32} weight="light" color="#fff" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="blog-row">
-            <div className="blog-col">
-              <div className="blog-item">
-                <div className="blog-divider">
-                  <div className="b-div-1"></div>
-                  <div className="b-div-2"></div>
-                </div>
-
-                <div className="blog-title-wrapper">
-                  <div className="blog-title">
-                    <h3>
-                      <Link to="/sample-blog">
-                        Shadow & Light: Exploring Visual Depth in Design
-                      </Link>
-                    </h3>
-                    <p>
-                      <span>Design Insights</span>
-                    </p>
-                  </div>
-
-                  <div className="blog-arrow">
-                    <ArrowRight size={32} weight="light" color="#fff" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="blog-col"></div>
-          </div>
+          ))}
         </section>
 
         <section className="about-contact">

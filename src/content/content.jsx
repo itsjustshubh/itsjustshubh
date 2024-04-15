@@ -1,11 +1,37 @@
 // content.jsx
 const firstName = "Shubh";
 const lastName = "Thorat";
-const contactInfo = {
-  email: "reapers-arras.0y@icloud.com",
-  phone: "+1 416 555 1234",
-  address: "789 Town Way, Toronto M1A 2B3",
-};
+const contactInfo = [
+  {
+    type: "email",
+    value: "reapers-arras.0y@icloud.com",
+    display: "Email",
+    url: "mailto:reapers-arras.0y@icloud.com",
+  },
+  {
+    type: "phone",
+    value: "+1 416 555 1234",
+    display: "Phone",
+    url: `tel:+14165551234`,
+  },
+  {
+    type: "address",
+    value: "7 Speare Pl, Boston, MA 02115",
+    display: "Address",
+    url: "https://maps.app.goo.gl/RFBEJXUrQ2VsSKyR9",
+  },
+  {
+    type: "linkedin",
+    value: "Visit my LinkedIn",
+    display: "LinkedIn",
+    url: "https://www.linkedin.com/in/shubhthorat/",
+  },
+  // {
+  //   type: "instagram",
+  //   value: "Visit my Instagram",
+  //   display: "Instagram",
+  //   url: "https://www.instagram.com/shubhthorat/",
+];
 
 export const details = {
   firstName: firstName,
@@ -23,32 +49,7 @@ export const aboutData = {
     description: `${details.name} partners with a broad spectrum of clients in Tech, Education, Entertainment, and eCommerce, crafting immersive web animations and interactive designs for brands of all shapes and sizes. With a focus on Branding, User Interface (UI) Design, and Motion Graphics, ${firstName} brings a unique blend of creativity and technical precision to every project.`,
     accomplishment: `Renowned for pioneering in the field of web interaction design, ${firstName} has been nominated for several industry awards, including the prestigious Webby Awards for innovative web animation.`,
   },
-  contactInfo: [
-    {
-      type: "email",
-      value: "hello@curafuturi.com",
-      display: "Email",
-      url: `mailto:hello@curafuturi.com`,
-    },
-    {
-      type: "phone",
-      value: "+1 416 555 1234",
-      display: "Phone",
-      url: `tel:+14165551234`,
-    },
-    {
-      type: "address",
-      value: "7 Speare Pl, Boston, MA 02115",
-      display: "Address",
-      url: "https://maps.app.goo.gl/RFBEJXUrQ2VsSKyR9",
-    },
-    {
-      type: "linkedin",
-      value: "Visit my LinkedIn",
-      display: "LinkedIn",
-      url: "https://www.linkedin.com/in/shubhthorat/",
-    },
-  ],
+  contactInfo: contactInfo,
   faqData: {
     title: "",
     rows: [
