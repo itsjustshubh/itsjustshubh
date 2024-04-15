@@ -2,7 +2,6 @@ import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import ScrollTop from "./components/scrolltop/scrollTop";
 import Menu from "./components/menu/Menu";
@@ -58,7 +57,6 @@ function App() {
       </AnimatePresence>
       {showFooter && <Footer />}
       <Analytics />
-      <SpeedInsights />
     </>
   );
 }
