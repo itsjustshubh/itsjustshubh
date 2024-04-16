@@ -167,7 +167,7 @@ const About = () => {
             <h2>Powered by Your Creativity</h2>
             <p>
               <span>
-                For a CV, portfolio, or inquiries, please reach out to
+                For a CV, portfolio, or inquiries, please reach out to me at{" "}
                 {details.email}
               </span>
             </p>
@@ -176,9 +176,9 @@ const About = () => {
             <p>
               <span>{details.phone}</span>
             </p>
-            <p>
+            {/* <p>
               <span>Instagram • Twitter</span>
-            </p>
+            </p> */}
           </div>
         </section>
 

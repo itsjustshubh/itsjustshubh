@@ -3,14 +3,7 @@ import "./project-page.css";
 
 import Transition from "../../components/transition/Transition";
 import { Link } from "react-router-dom";
-import { MetaLogo, XLogo } from "@phosphor-icons/react";
 import gsap from "gsap";
-
-import ProjectImg1 from "../../assets/images/projects/project-1.jpg";
-import ProjectImg2 from "../../assets/images/projects/project-2.jpg";
-import ProjectImg3 from "../../assets/images/projects/project-3.jpg";
-import ProjectImg4 from "../../assets/images/projects/project-4.jpg";
-import ProjectImg5 from "../../assets/images/projects/project-5.jpg";
 
 const ProjectPage = ({ project, nextProject }) => {
   const nextProjectPreview = useRef();
@@ -65,7 +58,7 @@ const ProjectPage = ({ project, nextProject }) => {
     return chunkedArr;
   };
 
-  const imageRows = chunkArray(project.content.images, 2); // Split images into rows of two
+  const imageRows = chunkArray(project.content.images || [], 2); // Split images into rows of two
 
   return (
     <div className="project page">
@@ -97,27 +90,53 @@ const ProjectPage = ({ project, nextProject }) => {
                 <p>{project.content.year}</p>
               </div>
               <div className="project-sub-col">
-                <p>
-                  <span>Credits</span>
-                </p>
-                {project.content.credits.map((credit, index) => (
-                  <p key={index}>
-                    <strong>{credit.role}</strong>: {credit.name}
-                  </p>
-                ))}
+                {project.content.credits &&
+                  project.content.credits.length > 0 && (
+                    <>
+                      <p>
+                        <span>Credits</span>
+                      </p>
+                      {project.content.credits.map((credit, index) => (
+                        <p key={index}>
+                          <strong>{credit.role}</strong>: {credit.name}
+                        </p>
+                      ))}
 
-                <br />
-                <br />
+                      <br />
+                      <br />
+                    </>
+                  )}
 
-                <p>
-                  <span>Goals</span>
-                </p>
-                {project.content.goals.map((goal, index) => (
-                  <p key={index}>{goal}</p>
-                ))}
+                {project.content.previousCredits &&
+                  project.content.previousCredits.length > 0 && (
+                    <>
+                      <p>
+                        <span>Previous Contributors</span>
+                      </p>
+                      {project.content.previousCredits.map((credit, index) => (
+                        <p key={index}>
+                          <strong>{credit.role}</strong>: {credit.name}
+                        </p>
+                      ))}
 
-                <br />
-                <br />
+                      <br />
+                      <br />
+                    </>
+                  )}
+
+                {project.content.goals && project.content.goals.length > 0 && (
+                  <>
+                    <p>
+                      <span>Goals</span>
+                    </p>
+                    {project.content.goals.map((goal, index) => (
+                      <p key={index}>{goal}</p>
+                    ))}
+
+                    <br />
+                    <br />
+                  </>
+                )}
 
                 <p>
                   <span>Read More</span>
@@ -150,20 +169,22 @@ const ProjectPage = ({ project, nextProject }) => {
           </div>
         </section>
 
-        <section className="project-images">
-          {imageRows.map((row, rowIndex) => (
-            <div key={rowIndex} className="project-img-row">
-              {row.map((img, imgIndex) => (
-                <div key={imgIndex} className="project-img">
-                  <img
-                    src={img}
-                    alt={`Project Image ${rowIndex * 2 + imgIndex + 1}`}
-                  />
-                </div>
-              ))}
-            </div>
-          ))}
-        </section>
+        {project.content.images && project.content.images.length > 0 && (
+          <section className="project-images">
+            {imageRows.map((row, rowIndex) => (
+              <div key={rowIndex} className="project-img-row">
+                {row.map((img, imgIndex) => (
+                  <div key={imgIndex} className="project-img">
+                    <img
+                      src={img}
+                      alt={`Project Image ${rowIndex * 2 + imgIndex + 1}`}
+                    />
+                  </div>
+                ))}
+              </div>
+            ))}
+          </section>
+        )}
 
         <section className="next-project">
           <div className="next-project-preview">

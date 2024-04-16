@@ -1,17 +1,23 @@
 import React from "react";
 import Transition from "../../components/transition/Transition";
-
 import { Link } from "react-router-dom";
 import { ArrowRight } from "@phosphor-icons/react";
-
 import { details } from "../../content/content";
 import { blogPosts } from "../../content/blogContent";
-
 import MagneticButton from "../../components/magneticbutton/MagneticButton";
-
 import "./blog.css";
 
 const Blog = () => {
+  const parseDate = (dateStr) => {
+    // Example date format: "SEPTEMBER 9, 2021"
+    const [month, day, year] = dateStr.split(" ");
+    return new Date(`${month} ${day.replace(",", "")}, ${year}`);
+  };
+
+  const sortedPosts = blogPosts.sort(
+    (a, b) => parseDate(b.date) - parseDate(a.date)
+  );
+
   const chunkPosts = (posts, size) =>
     posts.reduce((acc, val, i) => {
       let idx = Math.floor(i / size);
@@ -20,14 +26,14 @@ const Blog = () => {
       return acc;
     }, []);
 
-  const rows = chunkPosts(blogPosts, 2);
+  const rows = chunkPosts(sortedPosts, 2);
 
   return (
     <div className="blog page">
       <div className="container">
         <div className="blog-hero">
           <h1>
-            Journal <span>on design.</span>
+            Journal <span>on my Experiences.</span>
           </h1>
         </div>
 
@@ -77,7 +83,6 @@ const Blog = () => {
             <p>
               <span>{details.phone}</span>
             </p>
-            <p>{/* <span>Instagram • LinkedIn</span> */}</p>
           </div>
         </section>
         <MagneticButton />

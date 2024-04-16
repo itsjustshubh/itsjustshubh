@@ -19,7 +19,10 @@ const BlogPost = ({ post }) => {
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
           <div className="s-blog-col sticky">
-            {/* <p id="blog-share">
+            <p>
+              <span>Explore Further:</span>
+            </p>
+            <p id="blog-share">
               {post.buttons.map((button) => (
                 <div
                   key={button.id}
@@ -29,7 +32,7 @@ const BlogPost = ({ post }) => {
                   <button.icon {...button.iconProps} />
                 </div>
               ))}
-            </p> */}
+            </p>
 
             <div className="blog-content-img">
               <img src={post.image} alt="" />
