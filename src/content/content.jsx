@@ -49,7 +49,7 @@ export const details = {
 };
 
 export const aboutData = {
-  marqueeText: "Making a Difference Through Innovation. ",
+  marqueeText: " Making a Difference Through Innovation.",
   introText: `My name is ${details.name}, and I founded Social Cloud with a vision to harness technology for social good. Based in Boston, I focus on using my skills in coding and data science to help NGOs and charities increase their impact.`,
   introDetails: {
     startDate: "SINCE 2021",
