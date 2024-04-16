@@ -80,7 +80,7 @@ export const aboutData = {
       awardEvent: "HackHarvard",
       project:
         "We won the Terra API Prize for our project 'Edith', an AI-powered assistant designed to streamline daily schedules and reduce stress.",
-      url: "https://www.hackharvard.io", // Ensure this URL is correct or update accordingly
+      url: "https://devpost.com/software/edith-brshpa", // Ensure this URL is correct or update accordingly
     },
   ],
   pressData: [
