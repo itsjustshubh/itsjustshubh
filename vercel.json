@@ -10,7 +10,7 @@
     {
       "source": "/",
       "has": [{ "type": "host", "value": "perplexity.shubhthorat.com" }],
-      "destination": "https://pplx.ai/other",
+      "destination": "https://pplx.ai/shubh",
       "permanent": true
     }
   ]
