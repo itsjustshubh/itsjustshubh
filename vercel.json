@@ -4,13 +4,13 @@
     {
       "source": "/",
       "has": [{ "type": "host", "value": "pplx.shubhthorat.com" }],
-      "destination": "https://pplx.ai/shubh",
+      "destination": "https://pplx.ai/free-signup",
       "permanent": true
     },
     {
       "source": "/",
       "has": [{ "type": "host", "value": "perplexity.shubhthorat.com" }],
-      "destination": "https://pplx.ai/shubh",
+      "destination": "https://pplx.ai/free-signup",
       "permanent": true
     }
   ]
