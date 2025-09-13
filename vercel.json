@@ -1,6 +1,17 @@
 {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/index.html" }
-    ]
-  }
-  
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+  "redirects": [
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "pplx.shubhthorat.com" }],
+      "destination": "https://pplx.ai/shubh",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "perplexity.shubhthorat.com" }],
+      "destination": "https://pplx.ai/other",
+      "permanent": true
+    }
+  ]
+}
