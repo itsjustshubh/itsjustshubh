@@ -88,7 +88,7 @@ Northeastern CS. I build things that ship: frontend, backend, AI, whatever the p
 </tr>
 </table>
 
-<br>
+<!-- <br>
 
 ## 🧠 Brainrot Creations
 
@@ -104,7 +104,7 @@ Sometimes the best ideas don't fit a business plan. They just need to exist.
 
 </div>
 
-<br>
+<br> -->
 
 ---
 
