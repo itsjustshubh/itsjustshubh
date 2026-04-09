@@ -88,24 +88,6 @@ Northeastern CS. I build things that ship: frontend, backend, AI, whatever the p
 </tr>
 </table>
 
-<!-- <br>
-
-## 🧠 Brainrot Creations
-
-<div align="center">
-
-My creative studio for side projects and experiments.  
-Sometimes the best ideas don't fit a business plan. They just need to exist.
-
-<br>
-
-[![Brainrot Creations](https://img.shields.io/badge/brainrotcreations.com-000000?style=for-the-badge&logo=safari&logoColor=white)](https://brainrotcreations.com)
-[![GitHub](https://img.shields.io/badge/Brainrot--Creations-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Brainrot-Creations)
-
-</div>
-
-<br> -->
-
 ---
 
 <div align="center">
