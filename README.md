@@ -12,7 +12,7 @@ Northeastern CS. I build things that ship: frontend, backend, AI, whatever the p
 [![Portfolio](https://img.shields.io/badge/shubhthorat.com-000000?style=for-the-badge&logo=safari&logoColor=white)](https://shubhthorat.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/shubhthorat)
 [![Twitter](https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/_itsjustshubh)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shubhcthorat@gmail.com)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shubh@shubhthorat.com)
 
 </div>
 
